@@ -1,5 +1,8 @@
 :root {
+  --color-content: #121723;
   --color-bg: #fff;
+  --color-electric-violet: #6d31ee;
+  --color-gray-chateau: #a1a6b4;
 }
 
 html {
@@ -72,6 +75,73 @@ h1, h2, h3 {
 body {
   min-width: 320px;
   font-family: Muller, Verdana, sans-serif;
-  background-color: #E5E5E5;
+  color: var(--color-content);
+  background-color: var(--color-bg);
 }
+
+.btn {
+  padding: 12px 43px;
+
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--color-content);
+  border-radius: 77px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+/* header */
+.header__top {
+  align-items: center;
+  text-align: center;
+}
+
+.header__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn-search {
+  color: var(--color-electric-violet);
+}
+
+.header__btn-search > svg {
+  stroke: currentColor;
+}
+
+.header__bottom-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__bottom-link {
+  color: var(--color-gray-chateau);
+}
+
+.header__bottom-link > svg {
+  fill: currentColor;
+}
+
+.header__bottom-item {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__bottom-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
