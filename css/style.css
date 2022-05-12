@@ -1,0 +1,77 @@
+:root {
+  --color-bg: #fff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong,
+span {
+  word-break: break-word;
+}
+
+picture {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+label {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+body {
+  min-width: 320px;
+  font-family: Muller, Verdana, sans-serif;
+  background-color: #E5E5E5;
+}
+
