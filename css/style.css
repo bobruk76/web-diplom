@@ -143,5 +143,64 @@ body {
   flex-direction: column;
 }
 
+/* hero */
 
+/* podcasts */
+.podcasts__item-btn {
+  color: var(--color-gray-chateau);
+}
 
+.podcasts__item-btn > svg {
+  stroke: currentColor;
+}
+
+.podcasts__item-btn > svg >path {
+  fill: currentColor;
+}
+
+.podcasts__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.podcasts__item-left {
+  position: relative;
+}
+
+.podcasts__item-date {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+
+  background: #E6E8EC;
+}
+
+.podcasts__item-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.podcasts__item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.podcasts__item-reactions > * {
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.podcasts__item-play {
+  background-image: url("../img/triangle.svg");
+}
+
+.podcasts__item-heard {
+  background-image: url("../img/heard.svg");
+}
+
+.podcasts__item-lines {
+  background-image: url("../img/lines.svg");
+}
