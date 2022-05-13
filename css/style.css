@@ -204,3 +204,8 @@ body {
 .podcasts__item-lines {
   background-image: url("../img/lines.svg");
 }
+
+/*  */
+.broadcast__item-link > span > svg {
+  fill: currentColor;
+}

@@ -7,6 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fonts/muller.css">
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
+  />
+
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+  />
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -86,8 +95,6 @@
       <span class="col-lg-1 header__info">12+</span>
     </div>
   </div>
-
-
 </header>
 <main>
   <section id="hero" class="hero">
@@ -110,267 +117,306 @@
     </div>
   </section>
   <section id="podcasts" class="podcasts">
-    <div class="container">
-      <div class="podcasts__content">
-        <ul class="row podcasts__items list-reset podcasts__content">
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-1.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-06-14 12:00">14 июня</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">15:43</time>
-                  <h2 class="podcasts__item-title title">Европа. XIX век</h2>
-                  <p class="podcasts__item-descr">
-                    Дмитрий Гутенберг
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
+    <div class="container podcasts__content">
+      <ul class="row podcasts__items list-reset podcasts__content">
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-1.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-06-14 12:00">14 июня</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">15:43</time>
+                <h2 class="podcasts__item-title title">Европа. XIX век</h2>
+                <p class="podcasts__item-descr">
+                  Дмитрий Гутенберг
+                </p>
               </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">258</span>
-                <span class="podcasts__item-heard">104</span>
-                <span class="podcasts__item-lines">68</span>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
 
-              </div>
+              </button>
+
             </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">258</span>
+              <span class="podcasts__item-heard">104</span>
+              <span class="podcasts__item-lines">68</span>
 
-          </li>
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-2.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-06-11 12:00">11 июня</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">5:32</time>
-                  <h2 class="podcasts__item-title title">О музыке</h2>
-                  <p class="podcasts__item-descr">
-                    Дмитрий Гутенберг
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
-              </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">207</span>
-                <span class="podcasts__item-heard">34</span>
-                <span class="podcasts__item-lines">18</span>
-
-              </div>
             </div>
+          </div>
 
-          </li>
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-3.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-06-08 12:00">8 июня</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">8:54</time>
-                  <h2 class="podcasts__item-title title">Люди сегодня</h2>
-                  <p class="podcasts__item-descr">
-                    Анна Васильева
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
+        </li>
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-2.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-06-11 12:00">11 июня</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">5:32</time>
+                <h2 class="podcasts__item-title title">О музыке</h2>
+                <p class="podcasts__item-descr">
+                  Дмитрий Гутенберг
+                </p>
               </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">104</span>
-                <span class="podcasts__item-heard">54</span>
-                <span class="podcasts__item-lines">42</span>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
 
-              </div>
+              </button>
+
             </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">207</span>
+              <span class="podcasts__item-heard">34</span>
+              <span class="podcasts__item-lines">18</span>
 
-          </li>
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-4.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-06-05 12:00">5 июня</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">9:04</time>
-                  <h2 class="podcasts__item-title title">Хэллоу, Африка!</h2>
-                  <p class="podcasts__item-descr">
-                    Пётр Дмитриевский
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
-              </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">87</span>
-                <span class="podcasts__item-heard">44</span>
-                <span class="podcasts__item-lines">5</span>
-
-              </div>
             </div>
+          </div>
 
-          </li>
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-5.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-06-02 12:00">2 июня</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">7:03</time>
-                  <h2 class="podcasts__item-title title">Обо всём</h2>
-                  <p class="podcasts__item-descr">
-                    Пётр Дмитриевский
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
+        </li>
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-3.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-06-08 12:00">8 июня</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">8:54</time>
+                <h2 class="podcasts__item-title title">Люди сегодня</h2>
+                <p class="podcasts__item-descr">
+                  Анна Васильева
+                </p>
               </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">64</span>
-                <span class="podcasts__item-heard">30</span>
-                <span class="podcasts__item-lines">8</span>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
 
-              </div>
+              </button>
+
             </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">104</span>
+              <span class="podcasts__item-heard">54</span>
+              <span class="podcasts__item-lines">42</span>
 
-          </li>
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-6.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-06-28 12:00">28 июня</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">9:15</time>
-                  <h2 class="podcasts__item-title title">Физика цвета</h2>
-                  <p class="podcasts__item-descr">
-                    Татьяна Флеганова
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
-              </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">58</span>
-                <span class="podcasts__item-heard">29</span>
-                <span class="podcasts__item-lines">14</span>
-
-              </div>
             </div>
+          </div>
 
-          </li>
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-7.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-05-22 12:00">22 мая</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">16:04</time>
-                  <h2 class="podcasts__item-title title">Источник звука</h2>
-                  <p class="podcasts__item-descr">
-                    Пётр Дмитриевский
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
+        </li>
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-4.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-06-05 12:00">5 июня</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">9:04</time>
+                <h2 class="podcasts__item-title title">Хэллоу, Африка!</h2>
+                <p class="podcasts__item-descr">
+                  Пётр Дмитриевский
+                </p>
               </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">55</span>
-                <span class="podcasts__item-heard">20</span>
-                <span class="podcasts__item-lines">12</span>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
 
-              </div>
+              </button>
+
             </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">87</span>
+              <span class="podcasts__item-heard">44</span>
+              <span class="podcasts__item-lines">5</span>
 
-          </li>
-          <li class="podcasts__item col-lg-6">
-            <picture class="podcasts__item-left">
-              <img src="img/podcasts-8.jpg" alt="Обложка подкаста" class="podcasts__item-img">
-            </picture>
-            <time class="podcasts__item-date" datetime="2022-05-18 12:00">18 мая</time>
-            <div class="podcasts__item-right">
-              <div class="podcasts__item-content">
-                <div class="podcasts__item-info">
-                  <time class="podcasts__item-time">6:55</time>
-                  <h2 class="podcasts__item-title title">Правила этикета</h2>
-                  <p class="podcasts__item-descr">
-                    Татьяна Флеганова
-                  </p>
-                </div>
-                <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
-                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="24" cy="24" r="20" stroke-width="2"/>
-                    <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
-                  </svg>
-
-                </button>
-
-              </div>
-              <div class="podcasts__item-reactions">
-                <span class="podcasts__item-play">24</span>
-                <span class="podcasts__item-heard">54</span>
-                <span class="podcasts__item-lines">42</span>
-
-              </div>
             </div>
+          </div>
 
-          </li>
-        </ul>
+        </li>
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-5.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-06-02 12:00">2 июня</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">7:03</time>
+                <h2 class="podcasts__item-title title">Обо всём</h2>
+                <p class="podcasts__item-descr">
+                  Пётр Дмитриевский
+                </p>
+              </div>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
+
+              </button>
+
+            </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">64</span>
+              <span class="podcasts__item-heard">30</span>
+              <span class="podcasts__item-lines">8</span>
+
+            </div>
+          </div>
+
+        </li>
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-6.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-06-28 12:00">28 июня</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">9:15</time>
+                <h2 class="podcasts__item-title title">Физика цвета</h2>
+                <p class="podcasts__item-descr">
+                  Татьяна Флеганова
+                </p>
+              </div>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
+
+              </button>
+
+            </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">58</span>
+              <span class="podcasts__item-heard">29</span>
+              <span class="podcasts__item-lines">14</span>
+
+            </div>
+          </div>
+
+        </li>
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-7.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-05-22 12:00">22 мая</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">16:04</time>
+                <h2 class="podcasts__item-title title">Источник звука</h2>
+                <p class="podcasts__item-descr">
+                  Пётр Дмитриевский
+                </p>
+              </div>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
+
+              </button>
+
+            </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">55</span>
+              <span class="podcasts__item-heard">20</span>
+              <span class="podcasts__item-lines">12</span>
+
+            </div>
+          </div>
+
+        </li>
+        <li class="podcasts__item col-lg-6">
+          <picture class="podcasts__item-left">
+            <img src="img/podcasts-8.jpg" alt="Обложка подкаста" class="podcasts__item-img">
+          </picture>
+          <time class="podcasts__item-date" datetime="2022-05-18 12:00">18 мая</time>
+          <div class="podcasts__item-right">
+            <div class="podcasts__item-content">
+              <div class="podcasts__item-info">
+                <time class="podcasts__item-time">6:55</time>
+                <h2 class="podcasts__item-title title">Правила этикета</h2>
+                <p class="podcasts__item-descr">
+                  Татьяна Флеганова
+                </p>
+              </div>
+              <button class="podcasts__item-btn btn-reset" aria-label="Включить подкаст">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke-width="2"/>
+                  <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"/>
+                </svg>
+
+              </button>
+
+            </div>
+            <div class="podcasts__item-reactions">
+              <span class="podcasts__item-play">24</span>
+              <span class="podcasts__item-heard">54</span>
+              <span class="podcasts__item-lines">42</span>
+
+            </div>
+          </div>
+
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col-lg-12 podcasts__bottom">
+          <button class="btn-reset btn podcasts__btn">Ещё подкасты</button>
+        </div>
       </div>
+    </div>
+  </section>
+  <section id="broadcast" class="broadcast">
+    <div class="container">
+      <h2 class="visually-hidden">Передачи всех авторов</h2>
+        <ul class="broadcast__items list-reset row">
+          <li class="broadcast__item broadcast__item--first col-lg-3">
+            <h3 class="title broadcast__title">Передачи</h3>
+            <div class="form__select broadcast__form">
+              <label for="form__select" class="form__select-label">Автор</label>
+              <select id="form__select" name="form__select select__items" class="select">
+              </select>
+            </div>
+          </li>
+          <li class="broadcast__item">
+            <picture>
+              <img src="img/broadcast-1.jpg" alt="Обложка передачи" class="broadcast__item-img">
+            </picture>
+            <h3 class="broadcast__item-title title">О&nbsp;людях и&nbsp;книгах</h3>
+            <p class="descr broadcast__item-descr">
+              Анонсируется отдельно
+              <time></time>
+            </p>
+            <a href="#" class="link broadcast__item-link">
+              Подробнее
+              <span>
+                <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
+                </svg>
+              </span>
+            </a>
+
+          </li>
+
+        </ul>
+
     </div>
   </section>
 
@@ -378,5 +424,7 @@
 <footer class="footer">
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
