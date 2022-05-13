@@ -205,7 +205,12 @@ body {
   background-image: url("../img/lines.svg");
 }
 
-/*  */
+/* broadcast */
+
 .broadcast__item-link > span > svg {
   fill: currentColor;
+}
+
+.broadcast__item-btn > span > svg {
+  stroke: currentColor;
 }
