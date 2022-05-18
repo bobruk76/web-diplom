@@ -3,6 +3,7 @@
   --color-bg: #fff;
   --color-electric-violet: #6d31ee;
   --color-gray-chateau: #a1a6b4;
+  --color-mirage: #121723;
 }
 
 html {
@@ -213,4 +214,29 @@ body {
 
 .broadcast__item-btn > span > svg {
   stroke: currentColor;
+}
+
+/* guests */
+.guests {
+  background-color: var(--color-mirage);
+  color: var(--color-bg);
+}
+
+.arrow-in-circle {
+  stroke: currentColor;
+}
+
+.guests__items {
+  columns: 4 auto;
+}
+
+.guests__social {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+
+.guests__social-item > a > svg {
+  fill: currentColor;
 }
