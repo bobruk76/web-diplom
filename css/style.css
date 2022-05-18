@@ -240,3 +240,8 @@ body {
 .guests__social-item > a > svg {
   fill: currentColor;
 }
+
+/* play-lists */
+.play-lists__card-picture {
+  position: relative;
+}
