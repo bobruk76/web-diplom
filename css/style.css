@@ -47,6 +47,17 @@ h1, h2, h3 {
   margin: 0;
 }
 
+body {
+  min-width: 320px;
+  font-family: Muller, Verdana, sans-serif;
+  color: var(--color-content);
+  background-color: var(--color-bg);
+}
+
+.title {
+  color: currentColor;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,12 +86,6 @@ h1, h2, h3 {
 }
 
 
-body {
-  min-width: 320px;
-  font-family: Muller, Verdana, sans-serif;
-  color: var(--color-content);
-  background-color: var(--color-bg);
-}
 
 .btn {
   padding: 12px 43px;
@@ -299,4 +304,19 @@ body {
 
 .yandex-wave {
   fill: var(--color-charade);
+}
+
+/* about-us */
+
+.about-us {
+  background-color: var(--color-mirage);
+  color: var(--color-gray-chateau);
+}
+
+.about-us__item {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: flex-start;
 }
