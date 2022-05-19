@@ -4,6 +4,8 @@
   --color-electric-violet: #6d31ee;
   --color-gray-chateau: #a1a6b4;
   --color-mirage: #121723;
+  --color-charade: #292e39;
+  --color-buff: #f0d288;
 }
 
 html {
@@ -258,6 +260,9 @@ body {
 .play-lists__cards {
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .play-lists__card {
@@ -277,4 +282,21 @@ body {
 
   width: 16px;
   height: 12px;
+}
+ /* market */
+.market {
+  background-color: var(--color-charade);
+  color: var(--color-buff);
+}
+.market__btn {
+  color: currentColor;
+  background-color: inherit;
+}
+
+.yandex-circle {
+  fill: currentColor;
+}
+
+.yandex-wave {
+  fill: var(--color-charade);
 }
