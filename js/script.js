@@ -31,3 +31,11 @@ const choices = new Choices(elementSelect, {
   shouldSort: false,
   placeholder: false,
 });
+
+
+const playButtons = document.querySelectorAll('.header__btn--play')
+playButtons.forEach(item => {
+  item.addEventListener('click', e => {
+    item.classList.toggle('header__btn--paused')
+  })
+})
