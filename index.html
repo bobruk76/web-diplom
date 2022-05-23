@@ -29,11 +29,11 @@
         <a class="header__logo col-lg-2"><img src="img/logo.svg" alt="Лого"></a>
         <nav class="header__hav col-lg-8">
           <ul class="list-reset header__items">
-            <li class="header__item"><a href="" class="header__link">Подкасты</a></li>
-            <li class="header__item"><a href="" class="header__link">Передачи</a></li>
-            <li class="header__item"><a href="" class="header__link">Гости</a></li>
-            <li class="header__item"><a href="" class="header__link">Плейлисты</a></li>
-            <li class="header__item"><a href="" class="header__link">О нас</a></li>
+            <li class="header__item"><a href="" class="header__link link">Подкасты</a></li>
+            <li class="header__item"><a href="" class="header__link link">Передачи</a></li>
+            <li class="header__item"><a href="" class="header__link link">Гости</a></li>
+            <li class="header__item"><a href="" class="header__link link">Плейлисты</a></li>
+            <li class="header__item"><a href="" class="header__link link">О нас</a></li>
           </ul>
         </nav>
         <form action="https://postman-echo.com/post" method="post" class="col-lg-2 header__form">
@@ -55,22 +55,22 @@
       <div class="row">
         <ul class="list-reset col-lg-11 header__bottom-items">
           <li class="header__bottom-item">
-            <a href="">Новости</a>
+            <a class="link header__link" href="">Новости</a>
           </li>
           <li class="header__bottom-item">
-            <a href="">Блоги</a>
+            <a class="link header__link" href="">Блоги</a>
           </li>
           <li class="header__bottom-item">
-            <a href="">Топы</a>
+            <a class="link header__link" href="">Топы</a>
           </li>
           <li class="header__bottom-item">
-            <a href="">Опросы</a>
+            <a class="link header__link" href="">Опросы</a>
           </li>
           <li class="header__bottom-item">
-            <a href="">Рейтинги</a>
+            <a class="link header__link" href="">Рейтинги</a>
           </li>
           <li class="header__bottom-item">
-            <a href="">Реклама</a>
+            <a class="link header__link" href="">Реклама</a>
           </li>
           <li class="header__bottom-item header__bottom-item--play">
             <a href="#" class="header__bottom-link">
@@ -109,8 +109,8 @@
 <main>
   <section id="hero" class="hero">
     <div class="container hero__container">
-      <div class="row">
-        <div class="hero__content col-lg-7">
+      <div class="row hero__content">
+        <div class="col-lg-7 hero__content--left">
           <h1 class="title hero__title">
             Радио <span>W-Wawe</span>
           </h1>
@@ -119,15 +119,20 @@
             жанре. Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash;
             архив передач и&nbsp;многое другое :)
           </p>
-          <button class="btn hero__btn">Слушать эфир</button>
+          <button class="btn btn-reset hero__btn">Слушать эфир</button>
         </div>
-
+        <div class="col-lg-5 hero__content--right">
+          <img src="/img/microphone.png" aria-hidden="true">
+        </div>
       </div>
 
     </div>
   </section>
   <section id="podcasts" class="podcasts">
-    <div class="container podcasts__content">
+    <div class="container podcasts__container">
+      <div class="row">
+        <h2 class="col-lg-12 title podcasts__title">Подкасты</h2>
+      </div>
       <ul class="row podcasts__items list-reset podcasts__content">
         <li class="podcasts__item col-lg-6">
           <picture class="podcasts__item-left">

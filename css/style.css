@@ -7,7 +7,8 @@
   --color-charade: #292e39;
   --color-buff: #f0d288;
   --color-athens-gray: #e6e8ec;
-
+  --color-melrose:  #aa9dfa;
+  --color-daisy-bush: #4f28a5;
 }
 
 html {
@@ -144,6 +145,57 @@ body {
   fill: currentColor;
 }
 
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.descr {
+  line-height: 150%;
+}
+
+.link {
+  position: relative;
+  color: currentColor;
+  outline: none;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+
+  background-color: var(--color-melrose);
+  opacity: 0;
+
+  transition: opacity .3s ease-in-out;
+}
+
+
+.link:hover {
+  color: var(--color-electric-violet);
+}
+
+.link:focus {
+  color: var(--color-bg);
+}
+
+.link:focus:after {
+  opacity: 1;
+}
+
+.link:active {
+  color: var(--color-daisy-bush);
+}
+
 /* header */
 .header {
   color: var(--color-mirage);
@@ -159,6 +211,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 
 .header__logo {
   display: flex;
@@ -300,7 +353,7 @@ body {
   background-color: var(--color-bg);
   border-radius: 100px;
 
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Verdana, sans-serif;
   font-weight: 400;
   font-size: 12px;
 
@@ -309,8 +362,69 @@ body {
 
 }
 /* hero */
+.hero__container {
+  padding-top: 38px;
+  padding-bottom: 33px;
+}
+
+.hero__content--right {
+  text-align: end;
+}
+
+.hero__title {
+  padding-top: 49px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 60px;
+
+  line-height: 120%;
+}
+
+.hero__title > span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.hero__descr {
+  margin-bottom: 42px;
+}
+
+.hero__btn {
+  padding: 26px 52px;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  color: var(--color-bg);
+  background-color: var(--color-electric-violet);
+  transition: background-color .3s ease-in-out, border .3s ease-in-out;
+
+  outline: none;
+}
+
+.hero__btn:hover {
+  background-color: var(--color-melrose);
+}
+
+.hero__btn:focus {
+  background-color: var(--color-melrose);
+  border: 2px solid var(--color-daisy-bush);
+}
+
+.hero__btn:active {
+  background-color: var(--color-daisy-bush);
+}
 
 /* podcasts */
+.podcasts {
+  background-color: var(--color-athens-gray);
+}
+
+.podcasts__container {
+  padding-top: 95px;
+}
+
 .podcasts__item-btn {
   color: var(--color-gray-chateau);
 }
