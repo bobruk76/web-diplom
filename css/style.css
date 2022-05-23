@@ -492,6 +492,10 @@ body {
   padding-top: 95px;
 }
 
+.podcasts__title {
+  margin-bottom: 29px;
+}
+
 .podcasts__item-btn {
   color: var(--color-gray-chateau);
 }
@@ -504,9 +508,17 @@ body {
   fill: currentColor;
 }
 
+.podcasts__items {
+
+}
+
 .podcasts__item {
+  padding: 0;
+
   display: flex;
   flex-wrap: wrap;
+
+  background-color: var(--color-bg);
 }
 
 .podcasts__item-left {
