@@ -609,27 +609,41 @@ body {
 
   display: flex;
   align-items: center;
+}
+
+.reactions__btn {
+  margin-right: 33px;
+
+  position: relative;
 
   color: var(--color-gray-chateau);
+
+  background-color: transparent;
+  outline-color: transparent;
+  outline-style: solid;
+  outline-width: 3px;
+
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, outline-color .3s ease-in-out;
 }
 
-.podcasts__item-reactions > * {
-  padding-left: 18px;
-  margin-right: 30px;
-  background-repeat: no-repeat;
-  background-position: left center;
+.reactions__btn > svg {
+  fill: currentColor;
 }
 
-.podcasts__item-play {
-  background-image: url("../img/triangle.svg");
+
+.reactions__btn:hover {
+  color: var(--color-electric-violet);
 }
 
-.podcasts__item-heard {
-  background-image: url("../img/heard.svg");
+.reactions__btn:focus-visible,
+.reactions__btn:focus {
+  color: var(--color-bg);
+  background-color: var(--color-melrose);
+  outline-color: var(--color-melrose);
 }
 
-.podcasts__item-lines {
-  background-image: url("../img/lines.svg");
+.reactions__btn:active {
+  color: var(--color-daisy-bush);
 }
 
 .podcasts__bottom {
