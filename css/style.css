@@ -845,8 +845,20 @@ body {
   color: var(--color-bg);
 }
 
-.arrow-in-circle {
-  stroke: currentColor;
+.guests__container {
+  padding-top: 95px;
+}
+
+.guests__descr {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+
+  color: var(--color-gray-chateau);
+}
+
+.guests__title {
+  margin-bottom: 10px;
 }
 
 .guests__items {

@@ -41,3 +41,18 @@ playButtons.forEach(item => {
     item.classList.toggle('header__btn--paused')
   })
 })
+
+const accordion = new Accordion('.guests__accordion', {
+  duration: 300,
+  elementClass: 'guests__accordion-item',
+  panelClass: 'guests__items',
+  triggerClass: 'guests__accordion-item-title',
+  beforeOpen: (currentElement) => {
+    const plusButton = currentElement.querySelector('.arrow-in-circle')
+    plusButton.classList.add('arrow-in-circle--active')
+  },
+  beforeClose: (currentElement) => {
+    const plusButton = currentElement.querySelector('.arrow-in-circle')
+    plusButton.classList.remove('arrow-in-circle--active')
+  }
+})

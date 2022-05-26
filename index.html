@@ -16,6 +16,7 @@
           href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
   />
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -658,14 +659,14 @@
     </div>
   </section>
   <section id="guests" class="guests">
-    <div class="container">
+    <div class="container guests__container">
       <div class="row">
         <div class="guests__top col-lg-9">
           <h2 class="title guests__title">Гости</h2>
           <p class="descr guests__descr">У нас бывают:</p>
           <p class="descr guests__descr">
-            Живые мыслиБлогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки,
-            историки, филологи и&nbsp;много других интересных гостей!
+            Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки,
+            филологи и&nbsp;много других интересных гостей!
           </p>
         </div>
 
@@ -731,14 +732,12 @@
               <li class="guests__item">
                 <a class="guests__link">Максим Сергеев</a>
               </li>
-
-
             </ul>
           </div>
           <div class="guests__accordion-item">
             <h3 class="ac-header">
               <button class="title guests__accordion-item-title btn-reset">
-                <span>Арт-критики</span>
+                <span>Блогеры</span>
                 <svg class="arrow-in-circle" width="42" height="42" viewBox="0 0 42 42" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                   <circle cx="21" cy="21" r="20" stroke-width="2"/>
@@ -746,59 +745,53 @@
                 </svg>
               </button>
             </h3>
-
-          </div>
-          <div class="guests__accordion-item">
-            <h3 class="ac-header">
-              <button class="title guests__accordion-item-title btn-reset">
-                <span>Художники</span>
-                <svg class="arrow-in-circle" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 24L21 16L29 24" stroke-width="2" stroke-linecap="square"/>
-                </svg>
-              </button>
-            </h3>
-
-          </div>
-          <div class="guests__accordion-item">
-            <h3 class="ac-header">
-              <button class="title guests__accordion-item-title btn-reset">
-                <span>Люди науки</span>
-                <svg class="arrow-in-circle" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 24L21 16L29 24" stroke-width="2" stroke-linecap="square"/>
-                </svg>
-              </button>
-            </h3>
-
-          </div>
-          <div class="guests__accordion-item">
-            <h3 class="ac-header">
-              <button class="title guests__accordion-item-title btn-reset">
-                <span>Историки</span>
-                <svg class="arrow-in-circle" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 24L21 16L29 24" stroke-width="2" stroke-linecap="square"/>
-                </svg>
-              </button>
-            </h3>
-
-          </div>
-          <div class="guests__accordion-item">
-            <h3 class="ac-header">
-              <button class="title guests__accordion-item-title btn-reset">
-                <span>Филологи</span>
-                <svg class="arrow-in-circle" width="42" height="42" viewBox="0 0 42 42" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="21" cy="21" r="20" stroke-width="2"/>
-                  <path d="M13 24L21 16L29 24" stroke-width="2" stroke-linecap="square"/>
-                </svg>
-              </button>
-            </h3>
-
+            <ul class="guests__items list-reset">
+              <li class="guests__item">
+                <a class="guests__link">Сергей Денисов</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Матвей Мечников</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Константин Прусино</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Иван Калитников</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Евгений Войновский</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Ольга Мартынова</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Дмитрий Михалок</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Пётр Пиотровский</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Олег Свиридовский</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Владислав Кауперс</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Михаил Пожитников</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Георгий Полуян</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Денис Тельман</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Юрий Горин</a>
+              </li>
+              <li class="guests__item">
+                <a class="guests__link">Максим Сергеев</a>
+              </li>
+            </ul>
           </div>
 
         </div>
@@ -1222,6 +1215,7 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
