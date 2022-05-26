@@ -34,7 +34,6 @@ const choices = new Choices(elementSelect, {
   placeholder: false,
 });
 
-
 const playButtons = document.querySelectorAll('.header__btn--play')
 playButtons.forEach(item => {
   item.addEventListener('click', e => {

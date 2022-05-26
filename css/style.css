@@ -863,6 +863,23 @@ body {
 
 .guests__items {
   columns: 4 auto;
+  opacity: 0;
+}
+
+.guests__accordion-item.is-active .guests__items {
+  opacity: 1;
+}
+
+.guests__accordion-item-title > svg {
+  stroke: currentColor;
+}
+
+.arrow-in-circle--active {
+  transition: transform .3s ease-in-out;
+}
+
+.arrow-in-circle--active {
+  transform: rotate(180deg);
 }
 
 /* play-lists */
