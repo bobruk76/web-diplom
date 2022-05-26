@@ -1,5 +1,7 @@
 const elementSelect = document.querySelector('.select');
 const choices = new Choices(elementSelect, {
+  itemSelectText: '',
+  placeholder: false,
   choices: [
 
     {
