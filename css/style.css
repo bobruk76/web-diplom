@@ -849,6 +849,10 @@ body {
   padding-top: 95px;
 }
 
+.guests__top {
+  margin-bottom: 41px;
+}
+
 .guests__descr {
   font-weight: 400;
   font-size: 20px;
@@ -864,6 +868,27 @@ body {
 .guests__items {
   columns: 4 auto;
   opacity: 0;
+}
+
+.guests__accordion-item {
+
+}
+
+.guests__accordion-item-title {
+  padding: 23px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  width: 100%;
+
+  border-top: var(--color-gray-chateau) solid 1px;
+  border-bottom: var(--color-gray-chateau) solid 1px;
+
 }
 
 .guests__accordion-item.is-active .guests__items {
