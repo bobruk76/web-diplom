@@ -1,13 +1,12 @@
 :root {
-
   --color-bg: #fff;
-  --color-electric-violet: #6d31ee;
   --color-gray-chateau: #a1a6b4;
   --color-mirage: #121723;
   --color-charade: #292e39;
   --color-buff: #f0d288;
   --color-athens-gray: #e6e8ec;
   --color-melrose: #aa9dfa;
+  --color-electric-violet: #6d31ee;
   --color-daisy-bush: #4f28a5;
 }
 
@@ -165,10 +164,25 @@ body {
   align-items: center;
 }
 
+.social-item {
+  margin-right: 32px;
+}
+
 .social-item > a > svg {
   fill: currentColor;
 }
 
+.social-item:hover {
+  color: var(--color-electric-violet);
+}
+
+.social-item:focus {
+  color: var(--color-melrose);
+}
+
+.social-item:active {
+  color: var(--color-daisy-bush);
+}
 
 .title {
   font-weight: 400;
@@ -847,6 +861,7 @@ body {
 
 .guests__container {
   padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .guests__top {
@@ -886,7 +901,7 @@ body {
 }
 
 .guests__accordion-item-title {
-  padding: 23px 3px 23px 0;
+  padding: 23px 3px 22px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -927,15 +942,21 @@ body {
   stroke: var(--color-melrose);
 }
 
+.guests__item {
+  cursor: pointer;
+}
+
+.guests__item:hover {
+  color: var(--color-melrose);
+}
+
 .guests__item--active {
   color: var(--color-melrose);
 }
 
 .guests__accordion-item.is-active .guests__items {
-
   padding: 22px 0;
   height: 100%;
-
 }
 
 .guests__accordion-item-title > svg {
@@ -948,6 +969,49 @@ body {
 
 .arrow-in-circle--active {
   transform: rotate(180deg);
+}
+
+.guests__social-photo > img {
+  margin-bottom: 5px;
+}
+
+.guests__content-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.guests__content-descr {
+  padding-top: 6px;
+  margin-bottom: 30px;
+
+  color: var(--color-gray-chateau);
+  line-height: 180%;
+}
+
+.guests__content-btn {
+  padding: 10px 18px;
+
+  color: var(--color-melrose);
+  border-color: var(--color-melrose);
+  background-color: transparent;
+}
+
+.guests__content-btn:hover {
+  color: var(--color-bg);
+  border-color: var(--color-melrose);
+  background-color: var(--color-melrose);
+}
+
+.guests__content-btn:focus {
+  color: var(--color-bg);
+  border-color: var(--color-electric-violet);
+  background-color: var(--color-electric-violet);
+}
+
+.guests__content-btn:active {
+  color: var(--color-bg);
+  border-color: var(--color-daisy-bush);
+  background-color: var(--color-daisy-bush);
 }
 
 /* play-lists */
