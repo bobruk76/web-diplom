@@ -147,6 +147,10 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  height: 20px;
+  width: 24px;
+
+  border: var(--color-mirage) solid 4px;
 }
 
 .flag--en {
@@ -239,6 +243,22 @@ body {
   font-size: 16px;
 
   color: var(--color-gray-chateau);
+}
+
+.container {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.checkbox-new {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-wrap: nowrap;
+
+  font-size: 20px;
 }
 
 /* choice */
@@ -587,11 +607,6 @@ body {
   background-color: var(--color-athens-gray);
 }
 
-.podcasts__container {
-  padding-top: 95px;
-  padding-bottom: 94px;
-}
-
 .podcasts__title {
   margin-bottom: 29px;
 }
@@ -760,7 +775,7 @@ body {
 /* broadcast */
 .broadcast__container {
   padding-top: 108px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 }
 
 .broadcast__title {
@@ -857,11 +872,6 @@ body {
 .guests {
   background-color: var(--color-mirage);
   color: var(--color-bg);
-}
-
-.guests__container {
-  padding-top: 95px;
-  padding-bottom: 95px;
 }
 
 .guests__top {
@@ -1015,7 +1025,38 @@ body {
 }
 
 /* play-lists */
+
+.play-lists__title {
+  margin-bottom: 7px;
+}
+
+.play-lists__descr {
+  margin-bottom: 6px;
+
+  font-size: 16px;
+  color: var(--color-gray-chateau);
+}
+
+.play-lists__items {
+  font-size: 20px;
+}
+
+.play-lists__item {
+  margin-bottom: 18px;
+}
+
+.checkbox-new-checker {
+  margin-right: 16px;
+
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--color-gray-chateau);
+  border-radius: 50%;
+}
+
 .play-lists__cards {
+  padding: 13px 15px 0;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -1024,10 +1065,32 @@ body {
 }
 
 .play-lists__card {
+  margin-bottom: 34px;
+
   position: relative;
 
   display: flex;
   flex-direction: column;
+
+  max-width: 160px;
+  min-height: 220px;
+}
+.play-lists__card-picture {
+  margin-bottom: 16px;
+}
+
+.play-lists__card-title {
+  padding-left: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.play-lists__card-descr {
+  padding-left: 16px;
+
+  font-size: 12px;
+  color: var(--color-gray-chateau);
 }
 
 
@@ -1038,8 +1101,6 @@ body {
   right: 0;
   top: 0;
 
-  width: 16px;
-  height: 12px;
 }
 
 /* market */
