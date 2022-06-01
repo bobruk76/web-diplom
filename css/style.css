@@ -111,11 +111,9 @@ body {
 
   border-radius: 77px;
 
-
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-
 }
 
 .btn-outline {
@@ -363,6 +361,36 @@ body {
 .choices__list--dropdown .choices__item + .is-highlighted, .choices__list[aria-expanded] .choices__item + .is-highlighted {
   color: var(--color-mirage);
   background: rgba(230, 232, 236, 0.4);
+}
+
+/* input */
+.form__input {
+  margin-bottom: 20px;
+  padding: 22px 32px;
+
+  background-color: transparent;
+  color: var(--color-bg);
+  font-size: 20px;
+
+  border: 1px solid var(--color-bg);
+  border-radius: 40px;
+
+  min-height: 70px;
+  width: 100%;
+}
+
+.form__input::placeholder {
+  font-size: 20px;
+  color: var(--color-gray-chateau);
+}
+
+.form__textarea {
+  margin-bottom: 15px;
+  padding-top: 28px;
+
+  min-height: 150px;
+
+  border-radius: 30px;
 }
 
 /* header */
@@ -1129,6 +1157,7 @@ body {
   max-width: 160px;
   min-height: 220px;
 }
+
 .play-lists__card-picture {
   margin-bottom: 16px;
 }
@@ -1166,9 +1195,29 @@ body {
   color: var(--color-buff);
 }
 
+.market__container {
+  padding-bottom: 129px;
+}
+
 .market__left {
+  position: relative;
+  z-index: 3;
   padding-top: 9px;
   padding-left: 10px;
+}
+
+.new {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 10px;
+
+  background-image: url("../img/new.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  min-width: 160px;
+  min-height: 160px;
 }
 
 .market__right {
@@ -1177,7 +1226,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-
 
 .market__title {
   margin-bottom: 18px;
@@ -1245,9 +1293,27 @@ body {
 
 /* about-us */
 
+.about-us__title {
+  margin-bottom: 12px;
+  color: var(--color-bg);
+}
+
+.about-us__descr {
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.about-us__descr > strong {
+  line-height: 188%;
+}
+
 .about-us {
   background-color: var(--color-mirage);
   color: var(--color-gray-chateau);
+}
+
+.about-us__items {
+  margin: 0 -15px 22px;
 }
 
 .about-us__item {
@@ -1256,6 +1322,24 @@ body {
 
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.about-us__item-title {
+  padding-top: 30px;
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  color: var(--color-bg);
+}
+
+.dawn {
+  padding-top: 18px;
+}
+
+.about-us__top {
+  margin-bottom: 24px;
 }
 
 /* footer */
