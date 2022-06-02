@@ -9,6 +9,8 @@
   --color-melrose: #aa9dfa;
   --color-electric-violet: #6d31ee;
   --color-daisy-bush: #4f28a5;
+  --color-error: #FF6F6F;
+
 }
 
 html {
@@ -1327,7 +1329,7 @@ body {
   padding: 22px 32px;
 
   background-color: transparent;
-  color: var(--color-bg);
+  color: var(--color-gray-chateau);
   font-size: 20px;
 
   border: 1px solid var(--color-bg);
@@ -1335,6 +1337,26 @@ body {
 
   min-height: 70px;
   width: 100%;
+
+  outline: none;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.form__input:hover {
+  background: rgba(230, 232, 236, 0.1);
+  border-color: var(--color-bg);
+}
+
+.form__input:focus-visible,
+.form__input:focus {
+  background: rgba(230, 232, 236, 0.1);
+  border-color: var(--color-melrose);
+}
+
+
+.form__input:active {
+  color: var(--color-bg);
+  border-color: var(--color-bg);
 }
 
 .form__input::placeholder {
@@ -1452,4 +1474,20 @@ body {
 .footer__bottom {
   padding: 0;
   color: var(--color-gray-chateau);
+}
+
+/* validate */
+
+.just-validate-error-field {
+  position: relative;
+  border-color: var(--color-error);
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 9px;
+  left: 48px;
+
+  color: var(--color-error);
+  font-size: 12px;
 }

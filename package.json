@@ -1,0 +1,21 @@
+{
+  "name": "web-diplom",
+  "version": "1.0.0",
+  "description": "web diplom",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.skillbox.ru:vladimir_poliakov/web-diplom.git"
+  },
+  "keywords": [
+    "diplom"
+  ],
+  "author": "Vladimir Poliakov",
+  "license": "ISC",
+  "dependencies": {
+    "inputmask": "^5.0.7"
+  }
+}
