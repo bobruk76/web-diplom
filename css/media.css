@@ -4,15 +4,11 @@
 }
 
 @media (max-width: 1200px) {
-  .container {
-    padding-left: 68px;
-    padding-right: 68px;
-  }
 
   .header__top-content {
-    padding: 0;
-    margin: 0;
+    padding-top: 0;
   }
+
   .header__logo {
     padding-top: 22px;
     padding-left: 114px;
