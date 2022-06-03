@@ -57,6 +57,51 @@
     margin-right: 0;
     min-width: 150px;
   }
+
+
+  /* hero */
+  .hero__container {
+    padding-left: 68px;
+    padding-right: 68px;
+    padding-bottom: 86px;
+  }
+
+  .hero__title {
+    padding-top: 45px;
+  }
+
+  .hero__descr {
+    margin-bottom: 20px;
+  }
+  .hero__content-right {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  /* podcasts */
+  .podcasts__container {
+    padding: 95px 68px 92px;
+  }
+
+  /* broadcast */
+  .broadcast__container {
+    padding: 110px 68px 67px;
+  }
+
+  .broadcast__item--last {
+    margin-bottom: 0;
+  }
+
+  /* guests */
+  .guests__container {
+    padding: 95px 68px;
+  }
+
+  .guests__items {
+    columns: 3 auto;
+    column-gap: 30px;
+  }
+
 }
 
 @media (max-width: 1024px) {

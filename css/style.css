@@ -170,6 +170,7 @@ body {
 }
 
 .social-item {
+  color: var(--color-gray-chateau);
   margin-right: 32px;
 }
 
