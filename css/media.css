@@ -7,11 +7,12 @@
 
   .header__top-content {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .header__logo {
     padding-top: 22px;
-    padding-left: 114px;
+    padding-left: 68px;
     padding-bottom: 23px;
 
     background-color: var(--color-athens-gray);
@@ -19,6 +20,42 @@
 
   .header__logo >img {
     max-width: 112px;
+  }
+
+  .header__hav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 68px;
+  }
+
+  .header__item:last-child {
+    margin-right: 19px;
+  }
+
+  .header__age {
+    display: none;
+  }
+
+  .header__bottom-content {
+    padding-left: 68px;
+    padding-bottom: 10px;
+  }
+
+  .header__bottom-items{
+    padding-top: 8px;
+  }
+
+  .header__bottom-item {
+    margin-right: 28px;
+  }
+
+  .header__bottom-item--last {
+    margin-right: 38px;
+  }
+
+  .header__bottom-item--play {
+    margin-right: 0;
+    min-width: 150px;
   }
 }
 
