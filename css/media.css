@@ -167,6 +167,11 @@
     max-height: initial;
   }
 
+  /* market */
+  .market__container {
+    padding: 95px 68px;
+  }
+
 }
 
 @media (max-width: 1024px) {
