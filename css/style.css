@@ -247,7 +247,7 @@ body {
   color: var(--color-gray-chateau);
 }
 
-.container {
+.container-xl {
   padding-top: 95px;
   padding-bottom: 95px;
 }
@@ -579,11 +579,12 @@ body {
 /* hero */
 .hero__container {
   padding-top: 38px;
-  padding-bottom: 33px;
+  padding-bottom: 39px;
 }
 
-.hero__content--right {
-  text-align: end;
+.hero__content-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero__title {
@@ -810,7 +811,7 @@ body {
 /* broadcast */
 .broadcast__container {
   padding-top: 108px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
 }
 
 .broadcast__title {
@@ -1061,7 +1062,16 @@ body {
 
 /* play-lists */
 .play-lists__container {
-  padding-bottom: 63px;
+  padding-bottom: 136px;
+}
+
+.play-lists__row {
+  display: inline-flex;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  max-height:150vh;
 }
 
 .play-lists__content {

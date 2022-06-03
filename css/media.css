@@ -73,8 +73,9 @@
   .hero__descr {
     margin-bottom: 20px;
   }
+
   .hero__content-right {
-    display: flex;
+    justify-content: initial;
     align-items: flex-end;
   }
 
@@ -100,6 +101,43 @@
   .guests__items {
     columns: 3 auto;
     column-gap: 30px;
+  }
+
+  /* play-lists */
+
+  .play-lists__container {
+    padding: 95px 68px;
+  }
+
+  .play-lists__items {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    max-height: 205px;
+  }
+
+  .play-lists__item {
+    margin-bottom: 11px;
+    margin-right: 33px;
+  }
+
+  .play-lists__card {
+    flex-direction: row;
+
+    align-items: center;
+
+    max-width: 255px;
+    min-height: 122px;
+  }
+
+  .play-lists__card-flag {
+    position: absolute;
+    z-index: 1;
+    right: auto;
+    left: 0;
+    top: 0;
   }
 
 }
