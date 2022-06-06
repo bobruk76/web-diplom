@@ -89,3 +89,18 @@ validation
             errorMessage: 'Ошибка',
         },
     ]);
+
+const burgerButton = document.querySelector('.burger')
+const headerMenu = document.querySelector('.header__items')
+
+burgerButton.addEventListener('click', () => {
+    if (!burgerButton.classList.contains('burger--active')) {
+        console.log('active')
+        burgerButton.classList.add('burger--active')
+        headerMenu.classList.add('header__items--active')
+    } else {
+        console.log('inactive')
+        burgerButton.classList.remove('burger--active')
+        headerMenu.classList.remove('header__items--active')
+    }
+})

@@ -366,6 +366,72 @@ body {
   background: rgba(230, 232, 236, 0.4);
 }
 
+
+/* burger */
+.burger {
+  position: relative;
+  z-index: 35;
+
+  width: 32px;
+  height: 36px;
+
+  color: #6D31EE;
+
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.burger > .burger__first {
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 4px;
+  right: 4px;
+
+  height: 3px;
+  background-color: currentColor;
+  transition: transform .3s ease-in-out;
+}
+
+.burger--active > .burger__first {
+  transform-origin: top left;
+  transform: rotate(45deg);
+}
+
+.burger > .burger__second {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 2px);
+  left: 4px;
+  right: 4px;
+
+  height: 3px;
+  background-color: currentColor;
+  transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.burger--active > .burger__second {
+  transform-origin: center;
+  transform: rotate(-45deg);
+  visibility: hidden;
+}
+
+.burger > .burger__third {
+  position: absolute;
+  z-index: 2;
+  bottom: 7px;
+  left: 4px;
+  right: 4px;
+  height: 3px;
+  background-color: currentColor;
+  transition: transform .3s ease-in-out;
+}
+
+.burger--active > .burger__third {
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+}
+
 /* header */
 .header {
   color: var(--color-mirage);
