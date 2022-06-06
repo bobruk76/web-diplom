@@ -169,7 +169,23 @@
 
   /* market */
   .market__container {
-    padding: 95px 68px;
+    padding: 95px 68px 93px;
+  }
+
+  .market__left {
+    padding-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .new {
+    left: 5px;
+
+    background-image: url("../img/new-tablet.svg");
+
+    min-width: 100px;
+    min-height: 100px;
   }
 
 }

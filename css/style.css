@@ -1188,10 +1188,12 @@ body {
 }
 
 .market__left {
-  position: relative;
-  z-index: 3;
   padding-top: 9px;
   padding-left: 10px;
+}
+
+.market__left > picture {
+  position: relative;
 }
 
 .new {
