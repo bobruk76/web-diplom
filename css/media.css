@@ -173,10 +173,15 @@
   }
 
   .market__left {
+    position: initial;
     padding-bottom: 50px;
 
     display: flex;
     align-items: center;
+  }
+
+  .market__left > picture {
+    position: relative;
   }
 
   .new {
@@ -186,6 +191,15 @@
 
     min-width: 100px;
     min-height: 100px;
+  }
+
+  /* about-us */
+  .about-us__container {
+    padding: 95px 68px 93px;
+  }
+
+  .about-us__spiral {
+    display: none;
   }
 
 }
