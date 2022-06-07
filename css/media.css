@@ -359,6 +359,7 @@
 
   .broadcast__container {
     padding-left: 90px;
+    padding-bottom: 6px;
     padding-right: 82px;
   }
 
@@ -368,9 +369,69 @@
 
   .broadcast__item--first {
     margin-right: 36px;
-    margin-bottom: 34px;
+    margin-bottom: 36px;
   }
 
+  .broadcast__item--last {
+    margin-top: 32px;
+    padding-top: 30px;
+
+    display: inline-flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    border-top: 1px solid var(--color-athens-gray);
+  }
+
+  .broadcast__item-bottom > p {
+    width: 80%;
+
+  }
+
+  .broadcast__item--last > picture {
+    padding-right: 23px;
+    display: flex;
+    justify-content: flex-end;
+
+    width: 47%;
+
+  }
+
+  .guests__container {
+    padding-left: 90px;
+    padding-bottom: 94px;
+    padding-right: 90px;
+  }
+
+  .guests__item {
+    margin-bottom: 14px;
+  }
+
+  .guests__accordion-item.is-active .guests__items {
+    padding-bottom: 9px;
+  }
+
+  .guests__content {
+    padding-top: 49px;
+  }
+
+  .guests__content-descr {
+    width: 75%;
+  }
+
+  .play-lists__container {
+    padding-left: 90px;
+    padding-bottom: 94px;
+    padding-right: 90px;
+  }
+
+  .play-lists__items {
+    max-height: 240px;
+  }
+
+  .play-lists__item {
+    margin-bottom: 24px;
+  }
 
 }
 
