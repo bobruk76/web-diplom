@@ -469,6 +469,53 @@
   .about-us__descr {
     margin-bottom: 29px;
   }
+
+  .footer__top {
+    padding-left: 90px;
+    padding-bottom: 46px;
+    padding-right: 90px;
+  }
+
+  .footer__row {
+    padding-right: 24px;
+    margin-bottom: 83px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .social__link-phone {
+    display: block;
+  }
+
+  .social__link-desktop {
+    display: none;
+  }
+
+  .footer__logo {
+    margin-bottom: 22px;
+  }
+
+  .social-items {
+    padding-left: 22px;
+
+    justify-content: space-between;
+
+    min-width: 244px;
+  }
+
+  .footer__items {
+    padding-left: 0;
+    column-gap: 160px;
+  }
+
+  .footer__item {
+    margin-bottom: 30px;
+  }
+
+
 }
 
 @media (max-width: 768px) {
