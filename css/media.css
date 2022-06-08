@@ -229,7 +229,7 @@
     margin-bottom: 22px;
   }
 
-  .dawn {
+  .about-us__dawn {
     padding-top: 0;
     padding-bottom: 5px;
 
@@ -245,6 +245,8 @@
   .footer__items {
     padding-left: 23px;
   }
+
+
 
 }
 
@@ -421,11 +423,13 @@
 
   .play-lists__container {
     padding-left: 90px;
-    padding-bottom: 94px;
+    padding-bottom: 99px;
     padding-right: 90px;
   }
 
   .play-lists__items {
+    margin-bottom: 10px;
+
     max-height: 240px;
   }
 
@@ -433,6 +437,38 @@
     margin-bottom: 24px;
   }
 
+  .play-lists__card-content > * {
+    padding-left: 10px;
+  }
+
+  .market__container {
+    padding: 41px 90px 94px;
+  }
+
+  .new {
+    background-image: url("../img/new.svg");
+
+    min-width: 160px;
+    min-height: 160px;
+  }
+
+  .market__title {
+    max-width: 90%;
+  }
+
+  .about-us__container {
+    padding-left: 90px;
+    padding-bottom: 83px;
+    padding-right: 90px;
+  }
+
+  .about-us__spiral {
+    display: block;
+  }
+
+  .about-us__descr {
+    margin-bottom: 29px;
+  }
 }
 
 @media (max-width: 768px) {

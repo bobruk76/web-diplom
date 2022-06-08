@@ -1153,14 +1153,14 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-4 order-xl-1 order-lg-2 order-md-1">
+        <div class="col-xl-4 order-xl-1 order-lg-2 order-md-2">
           <p class="play-lists__descr warning">
             Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних.
           </p>
           <span class="copyright">&copy;&nbsp;2021&nbsp;l W-Wave</span>
           <span class="age-warning">18+</span>
         </div>
-        <ul class="col-xl-8 col-lg-12 order-xl-2 order-lg-1 order-md-2 play-lists__cards list-reset">
+        <ul class="col-xl-8 col-lg-12 order-xl-2 order-lg-1 order-md-1 play-lists__cards list-reset">
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-1.jpg" alt="Обложка альбола">
@@ -1286,7 +1286,7 @@
     </div>
   </section>
   <section id="market" class="market">
-    <div class="container-xl container-lg market__container">
+    <div class="container-xl container-lg container-md market__container">
       <div class="row">
         <div class="col-xl-7 col-lg-6 market__left">
           <picture>
@@ -1335,29 +1335,33 @@
     </div>
   </section>
   <section id="about-us" class="about-us">
-    <div class="container-xl container-lg about-us__container">
+    <div class="container-xl container-lg container-md about-us__container">
       <div class="row about-us__top">
-        <div class="col-xl-7 col-lg-8">
+        <div class="col-xl-7 col-lg-8 col-md-12">
           <h2 class="about-us__title title">О нас</h2>
 
           <p class="descr about-us__descr">
             <strong>Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</strong>
-            Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому
+            Друзья, мы&nbsp;будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому
             вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём!
             Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале
             сайта. Спасибо! Услышимся! :)
           </p>
         </div>
-        <div class="col-xl-2 about-us__spiral">
+
+        <picture class="col-xl-2 col-md-9 about-us__spiral">
+          <source media="(max-width: 992px)" srcset="img/spiral-phone.svg">
           <img src="img/spiral.svg" aria-hidden="true" alt="">
-        </div>
-        <div class="col-xl-3 col-lg-4 dawn">
+        </picture>
+
+        <div class="col-xl-3 col-lg-4 col-md-3 about-us__dawn">
           <img src="img/dawn.svg" aria-hidden="true" alt="">
         </div>
       </div>
       <ul class="about-us__items list-reset row">
-        <li class="about-us__item col-xl-3 col-lg-6">
+        <li class="about-us__item col-xl-3 col-lg-6 col-md-6">
           <picture>
+            <source media="(max-width: 992px)" srcset="img/about-us-phone-1.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-1.jpg">
             <img src="img/about-us-1.jpg" alt="Фото Дмитрий Гутенберг">
           </picture>
@@ -1366,8 +1370,9 @@
             Эксперт (ну, почти) по&nbsp;всем вопросам (почти).
           </p>
         </li>
-        <li class="about-us__item col-xl-3 col-lg-6">
+        <li class="about-us__item col-xl-3 col-lg-6 col-md-6">
           <picture>
+            <source media="(max-width: 992px)" srcset="img/about-us-phone-2.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-2.jpg">
             <img src="img/about-us-2.jpg" alt="Фото Анна Васильева">
           </picture>
@@ -1376,8 +1381,9 @@
             Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
           </p>
         </li>
-        <li class="about-us__item col-xl-3 col-lg-6">
+        <li class="about-us__item col-xl-3 col-lg-6 col-md-6">
           <picture>
+            <source media="(max-width: 992px)" srcset="img/about-us-phone-3.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-3.jpg">
             <img src="img/about-us-3.jpg" alt="Фото Пётр Дмитриевский">
           </picture>
@@ -1386,8 +1392,9 @@
             Господа! Внимание!! Благодарю за&nbsp;внимание!!!
           </p>
         </li>
-        <li class="about-us__item col-xl-3 col-lg-6">
+        <li class="about-us__item col-xl-3 col-lg-6 col-md-6">
           <picture>
+            <source media="(max-width: 992px)" srcset="img/about-us-phone-4.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-4.jpg">
             <img src="img/about-us-4.jpg" alt="Фото Татьяна Флеганова">
           </picture>
@@ -1410,7 +1417,8 @@
                  placeholder="Имя" required>
         </label>
 
-        <label for="email" aria-label="Поле Введите адрес электронной почты" class="form__input-label col-xl-5 col-lg-6">
+        <label for="email" aria-label="Поле Введите адрес электронной почты"
+               class="form__input-label col-xl-5 col-lg-6">
           <input id="email" name="email" type="email" placeholder="E-mail" class="form__input" required>
         </label>
 
