@@ -385,6 +385,15 @@ body {
   cursor: pointer;
 }
 
+.burger > .burger--left > svg {
+  transition: transform .3s ease-in-out;
+}
+
+.burger--active > .burger--left > svg {
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+
 .burger > .burger__first {
   position: absolute;
   z-index: 2;
@@ -521,6 +530,10 @@ body {
 
 .header__bottom {
   border: 1px solid var(--color-athens-gray);
+}
+
+.header__bottom-burger {
+  display: none;
 }
 
 .header__bottom-content {

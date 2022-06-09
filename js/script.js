@@ -31,7 +31,6 @@ const choices = new Choices(elementSelect, {
     ],
     searchEnabled: false,
     shouldSort: false,
-    placeholder: false,
 });
 
 const playButtons = document.querySelectorAll('.header__btn--play')
@@ -90,17 +89,17 @@ validation
         },
     ]);
 
-const burgerButton = document.querySelector('.burger')
-const headerMenu = document.querySelector('.header__items')
+const burgerButtons = document.querySelectorAll('.burger')
 
-burgerButton.addEventListener('click', () => {
-    if (!burgerButton.classList.contains('burger--active')) {
-        console.log('active')
-        burgerButton.classList.add('burger--active')
-        headerMenu.classList.add('header__items--active')
-    } else {
-        console.log('inactive')
-        burgerButton.classList.remove('burger--active')
-        headerMenu.classList.remove('header__items--active')
-    }
-})
+burgerButtons.forEach(burgerButton =>
+    burgerButton.addEventListener('click', () => {
+        let menuSelector = burgerButton.dataset.items
+        let headerMenu = document.querySelector(`.${menuSelector}`)
+        if (!burgerButton.classList.contains('burger--active')) {
+            burgerButton.classList.add('burger--active')
+            headerMenu.classList.add(`${menuSelector}--active`)
+        } else {
+            burgerButton.classList.remove('burger--active')
+            headerMenu.classList.remove(`${menuSelector}--active`)
+        }
+    }))

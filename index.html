@@ -27,9 +27,14 @@
   <div class="header__top">
     <div class="container-xl container-lg container-md header__top-content">
       <div class="row header__top-row">
-        <a class="header__logo col-xl-2 col-lg-12"><img src="img/logo.svg" alt="Лого"></a>
+        <a class="header__logo col-xl-2 col-lg-12">
+          <picture>
+            <source media="(max-width: 576px)" srcset="img/logo-small.svg">
+            <img src="img/logo.svg" alt="Лого">
+          </picture>
+        </a>
         <nav class="header__hav col-xl-8 col-lg-auto col-md-6 header__hav">
-          <button class="burger btn-reset" aria-label="Открыть основное меню">
+          <button class="burger btn-reset" aria-label="Открыть основное меню" data-items="header__items">
             <span class="burger__first burger__line"></span>
             <span class="burger__second burger__line"></span>
             <span class="burger__third burger__line"></span>
@@ -49,7 +54,6 @@
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-
           </button>
           <button class="btn btn-reset btn-outline header__btn-enter">Вход</button>
         </form>
@@ -58,7 +62,17 @@
   </div>
   <div class="header__bottom">
     <div class="container-xl container-lg container-md header__bottom-content">
-      <div class="row">
+      <div class="row header__bottom-content-row">
+        <button class="burger header__bottom-burger btn-reset" aria-label="Что в эфире?" data-items="header__bottom-items">
+          <span class="burger--left">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE"/>
+              <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
+              <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white"/>
+            </svg>
+          </span>
+          <span class="burger--right">Что в эфире?</span>
+        </button>
         <ul class="list-reset col-xl-11 col-md-12 header__bottom-items">
           <li class="header__bottom-item">
             <a class="link header__link" href="">Новости</a>
