@@ -552,20 +552,20 @@
     </div>
   </section>
   <section id="broadcast" class="broadcast">
-    <div class="container-xl container-lg container-md broadcast__container">
+    <div class="container-xl container-lg container-md container-sm broadcast__container">
       <h2 class="visually-hidden">Передачи всех авторов</h2>
       <ul class="broadcast__items list-reset row justify-content-lg-end">
 
-        <li class="broadcast__item broadcast__item--first col-xl-3 col-lg-4 col-md-12 order-xl-0 order-lg-0">
+        <li class="broadcast__item broadcast__item--first col-xl-3 col-lg-4 col-12 col-sm-6 order-xl-0 order-lg-0">
           <h3 class="title broadcast__title">Передачи</h3>
           <div class="form-select broadcast__form">
-            <label for="fselect" class="form-select__label">Автор</label>
+            <label for="fselect" class="form-select__label">Автор:</label>
             <select id="fselect" name="fselect" class="select">
             </select>
           </div>
         </li>
 
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 order-xl-1 order-lg-1">
+        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-1 order-lg-1">
           <picture>
             <img src="img/broadcast-1.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -584,7 +584,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 order-xl-2 order-lg-2">
+        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-2 order-lg-2">
           <picture>
             <img src="img/broadcast-2.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -603,7 +603,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 order-xl-3 order-lg-4">
+        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-3 order-lg-4">
           <picture>
             <img src="img/broadcast-3.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -622,7 +622,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 order-xl-5 order-lg-5">
+        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-5 order-lg-5">
           <picture>
             <img src="img/broadcast-4.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -641,7 +641,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 order-xl-6 order-lg-6">
+        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-6 order-lg-6">
           <picture>
             <img src="img/broadcast-5.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -660,7 +660,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 order-xl-7 order-lg-7">
+        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-7 order-lg-7">
           <picture>
             <img src="img/broadcast-6.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -680,8 +680,9 @@
 
         </li>
 
-        <li class="broadcast__item broadcast__item--last col-xl-3 col-lg-4 col-md-12 order-xl-4 order-lg-3">
+        <li class="broadcast__item broadcast__item--last col-xl-3 col-lg-4 col-12 order-xl-4 order-lg-3">
           <picture>
+            <source media="(max-width: 576px)" srcset="img/mic-small.png">
             <source media="(max-width: 992px)" srcset="img/mic-phone.png">
             <img src="img/mic.png" alt="Микрофон" class="broadcast__item-img">
           </picture>
@@ -700,7 +701,7 @@
               Архив
             </button>
             <p class="descr broadcast__item-content">
-              В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! <strong>Enjoy :)</strong>
+              В&nbsp;архив попадают все передачи, которые вы пропустили! <strong>Enjoy :)</strong>
             </p>
           </div>
 

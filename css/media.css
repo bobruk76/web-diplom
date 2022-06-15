@@ -756,7 +756,7 @@
     padding-top: 0;
   }
 
-  .btn-outline {
+  .podcasts__btn {
     padding: 15px 28px;
 
     font-weight: 500;
@@ -764,6 +764,125 @@
     line-height: 16px;
   }
 
+  .broadcast__container {
+    padding: 54px 30px 29px 31px;
+  }
+
+  .broadcast__form {
+    width: 100%;
+  }
+
+  .form-select__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__title {
+    margin-bottom: 20px;
+  }
+
+  .broadcast__item:not(:first-child):not(:last-child) {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    margin-bottom: 29px;
+    padding-right: 17px;
+
+    min-height: 149px;
+  }
+
+  .broadcast__item:not(:first-child):not(:last-child):after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 17px;
+
+    border: 1px solid var(--color-athens-gray);
+  }
+
+  .broadcast__item.broadcast__item--first {
+    margin-bottom: 31px;
+    transform: none;
+  }
+
+  .broadcast__item-title {
+    margin-bottom: 5px;
+
+    padding-left: 9px;
+    padding-right: 9px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__item-img {
+    margin-bottom: 10px;
+
+    width: 100%;
+    max-height: 50px;
+    object-fit: cover;
+  }
+
+  .broadcast__item-descr {
+    margin: 0;
+    padding-left: 9px;
+    padding-right: 15px;
+    flex-grow: 5;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+  .broadcast__item-link {
+    padding-bottom: 11px;
+    padding-left: 10px;
+
+    color: var(--color-electric-violet);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcast__item--last {
+    margin: 0;
+    padding-top: 31px;
+  }
+
+  .broadcast__item-bottom {
+    display: inline-flex;
+    flex-direction: column-reverse;
+  }
+
+  .broadcast__item--last > picture {
+    margin-right: 13px;
+    padding-right: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 77%;
+  }
+
+  .broadcast__item-bottom > p {
+    width: initial;
+  }
+
+  .broadcast__item--last .broadcast__item-img {
+    margin-bottom: 0;
+
+    max-height: initial;
+  }
+
+  .broadcast__item-btn {
+    margin: 0;
+    padding: 5px 17px;
+    width: fit-content;
+  }
 }
 
 
