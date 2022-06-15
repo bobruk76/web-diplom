@@ -144,6 +144,10 @@ body {
   border-color: var(--color-daisy-bush);
 }
 
+.play-btn-small {
+  display: none;
+}
+
 .flag {
   background-repeat: no-repeat;
   background-size: 100%;
