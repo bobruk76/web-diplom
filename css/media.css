@@ -999,11 +999,93 @@
   }
 
   .guests__content-descr {
-     width: initial;
+    width: initial;
   }
 
   .guests__content-btn {
     padding: 8px 13px;
+  }
+
+  .play-lists__container {
+    padding: 54px 30px 54px 31px;
+  }
+
+  .play-lists__card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 47%;
+  }
+
+  .play-lists__card-picture {
+    max-width: initial;
+  }
+
+  .play-lists__card-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .play-lists__card-descr {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+    overflow: hidden;
+  }
+
+  .play-lists__items {
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    overflow: hidden;
+  }
+
+  .play-lists__item {
+    display: flex;
+
+    margin-right: 18px;
+    margin-bottom: 0;
+  }
+
+  .radio-new {
+    position: relative;
+    padding: 10px 20px 9px 18px;
+    margin: 0;
+
+    display: inline;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    width: fit-content;
+    color: var(--color-electric-violet);
+  }
+
+  .radio-new:before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -2px;
+
+    border: 2px solid var(--color-electric-violet);
+    border-radius: 77px;
+  }
+
+  .radio-new-checker {
+    display: none;
+  }
+
+  .play-lists__title {
+    margin-bottom: 17px;
+  }
+
+  .play-lists__descr {
+    margin-bottom: 4px;
+    font-size: 12px;
   }
 
 
