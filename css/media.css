@@ -1013,7 +1013,7 @@
   .play-lists__card {
     flex-direction: column;
     align-items: flex-start;
-    width: 47%;
+    width: 44%;
   }
 
   .play-lists__card-picture {
@@ -1042,13 +1042,20 @@
     font-size: 12px;
   }
 
+  .play-lists__row {
+    width: calc(100% + 27px);
+  }
+
   .play-lists__items {
+    margin-bottom: 12px;
+
     transform: translateX(-2px);
 
     flex-direction: row;
     flex-wrap: nowrap;
 
-    overflow: hidden;
+    width: 100%;
+    overflow-x: scroll;
   }
 
   .play-lists__item {
@@ -1084,6 +1091,93 @@
     background-color: var(--color-electric-violet);
   }
 
+  .play-lists__cards {
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+
+  .play-lists__card {
+    margin-bottom: 30px;
+  }
+
+  .play-lists__card-picture {
+    margin-bottom: 0;
+  }
+
+  .play-lists__card-flag {
+    right: 0;
+    left: auto;
+  }
+
+  .play-lists__card-content {
+    padding-left: 9px;
+    padding-top: 9px;
+    padding-bottom: 1px;
+
+    width: 100%;
+    border: 1px solid var(--color-athens-gray);
+  }
+
+  .play-lists__card-content > * {
+    padding: 0;
+  }
+
+  .play-lists__card-title {
+    margin-bottom: 5px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .market__container {
+    padding: 44px 30px 54px 31px;
+  }
+
+  .new {
+    transform: scale(.4);
+    left: -43px;
+    top: -47px;
+  }
+
+  .market__left {
+    padding-bottom: 30px;
+  }
+
+  .market__title {
+    margin-bottom: 14px;
+    max-width: initial;
+  }
+
+  .market__descr {
+    line-height: 157%;
+  }
+
+  .market__descr--last {
+    margin-bottom: 7px;
+  }
+
+  .market__descr > span  {
+    white-space: nowrap;
+  }
+
+  .market__price {
+    margin: 0;
+    padding: 0;
+
+    font-size: 24px;
+  }
+
+  .market__price {
+    margin-bottom: 15px;
+  }
+
+  .market__btn {
+    padding: 13px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+  }
 
 }
 
