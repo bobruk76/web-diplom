@@ -40,12 +40,14 @@ playButtons.forEach(item => {
     })
 })
 
+let openOnItem = (+window.innerWidth < 577) ? 4 : 0
+
 const accordion = new Accordion('.guests__accordion', {
     duration: 300,
     elementClass: 'guests__accordion-item',
     panelClass: 'guests__items',
     triggerClass: 'guests__accordion-item-title',
-    openOnInit: [0],
+    openOnInit: [openOnItem],
     beforeOpen: (currentElement) => {
         const plusButton = currentElement.querySelector('.arrow-in-circle')
         plusButton.classList.add('arrow-in-circle--active')
