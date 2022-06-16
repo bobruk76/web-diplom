@@ -1079,6 +1079,11 @@
     display: none;
   }
 
+  .radio-new-check:checked ~ .radio-new-caption {
+    color: var(--color-bg);
+    background-color: var(--color-electric-violet);
+  }
+
   .play-lists__title {
     margin-bottom: 17px;
   }
