@@ -1179,6 +1179,48 @@
     line-height: 100%;
   }
 
+  .about-us__container {
+    padding: 54px 30px 54px 31px;
+  }
+  .about-us__title {
+    margin-bottom: 11px;
+  }
+
+  .about-us__descr {
+    margin-bottom: 6px;
+    line-height: 157%;
+  }
+
+  .about-us__spiral {
+    display: none;
+  }
+
+  .about-us__dawn {
+    display: none;
+  }
+
+  .about-us__item {
+    margin-bottom: 20px;
+    padding-right: 17px;
+    padding-left: 15px;
+  }
+
+  .about-us__item-title {
+    padding-top: 11px;
+    margin-bottom: 2px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    width: 90%;
+  }
+
+  .about-us__item-descr {
+    font-size: 12px;
+  }
+
+
 }
 
 
