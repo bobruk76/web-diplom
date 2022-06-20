@@ -105,3 +105,21 @@ burgerButtons.forEach(burgerButton =>
             headerMenu.classList.remove(`${menuSelector}--active`)
         }
     }))
+
+const searchButton = document.querySelector('.header__btn-search')
+const headerForm = document.querySelector('.header__form')
+const closeButton = document.querySelector('.cross-in-circle')
+
+searchButton.addEventListener('click', () => {
+    if (!headerForm.classList.contains('header__form--active')) {
+        headerForm.classList.add('header__form--active')
+    } else {
+        headerForm.classList.remove('header__form--active')
+    }
+
+})
+
+closeButton.addEventListener('click', () => {
+    headerForm.classList.remove('header__form--active')
+
+})
