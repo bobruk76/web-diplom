@@ -121,5 +121,11 @@ searchButton.addEventListener('click', () => {
 
 closeButton.addEventListener('click', () => {
     headerForm.classList.remove('header__form--active')
-
 })
+
+function overWords() {
+    var a, w = document.createNodeIterator(document, NodeFilter.SHOW_TEXT);
+    while (a = w.nextNode()) {
+        if (a.textContent.trim().length && a.parentNode.tagName != 'STYLE' && a.parentNode.tagName !== 'TITLE' && a.parentNode.tagName !== 'SCRIPT') a.textContent = 'Одиннадцатиклассница пошла посмотреть на достопримечательность, а Константин Константинопольский рассказал о клиентоориентированности.'
+    }
+}
