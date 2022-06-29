@@ -30,10 +30,10 @@ a, a:focus, a:visited {
   font-weight: initial;
 }
 
-strong,
-span {
-  word-break: break-word;
-}
+/*strong,*/
+/*span {*/
+/*  word-break: break-word;*/
+/*}*/
 
 /*picture {*/
 /*  margin: 0;*/
@@ -41,13 +41,13 @@ span {
 /*  line-height: 0;*/
 /*}*/
 
-img {
-  max-width: 100%;
-}
+/*img {*/
+/*  max-width: 100%;*/
+/*}*/
 
-label {
-  width: 100%;
-}
+/*label {*/
+/*  width: 100%;*/
+/*}*/
 
 @font-face {
   font-family: 'Open Sans';
@@ -469,6 +469,16 @@ body {
   display: flex;
 }
 
+.header__logo-picture {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.logo-img {
+  max-width: 100%;
+}
+
 .header__hav {
   padding-right: 0;
   padding-left: 31px;
@@ -714,6 +724,10 @@ body {
 .hero__content-right {
   display: flex;
   justify-content: flex-end;
+}
+
+.hero__content-right-img {
+  max-width: 100%;
 }
 
 .hero__title {
@@ -1288,6 +1302,10 @@ body {
   margin: 0 0 16px 0;
   font-size: 0;
   line-height: 0;
+}
+
+.play-lists__card-img {
+  max-width: 100%;
 }
 
 .play-lists__card-title {
