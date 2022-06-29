@@ -35,11 +35,11 @@ span {
   word-break: break-word;
 }
 
-picture {
-  margin: 0;
-  font-size: 0;
-  line-height: 0;
-}
+/*picture {*/
+/*  margin: 0;*/
+/*  font-size: 0;*/
+/*  line-height: 0;*/
+/*}*/
 
 img {
   max-width: 100%;
@@ -441,7 +441,7 @@ body {
 
 .burger--active > .burger__third {
   transform-origin: bottom left;
-  transform: rotate(-45deg)  translateY(-3px);
+  transform: rotate(-45deg) translateY(-3px);
 }
 
 /* header */
@@ -824,6 +824,9 @@ body {
 
 .podcasts__item-left {
   position: relative;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
 }
 
 .podcasts__item-date {
@@ -956,6 +959,12 @@ body {
   margin-bottom: 46px;
 }
 
+.broadcast__item-picture {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
 .broadcast__item--first {
   transform: translateY(-13px);
 }
@@ -975,7 +984,7 @@ body {
 }
 
 .broadcast__item--last .broadcast__item-img {
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 
 .broadcast__item-title {
@@ -1200,7 +1209,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
 
-  max-height:150vh;
+  max-height: 150vh;
 }
 
 .play-lists__content {
@@ -1276,7 +1285,9 @@ body {
 }
 
 .play-lists__card-picture {
-  margin-bottom: 16px;
+  margin: 16px 0 0;
+  font-size: 0;
+  line-height: 0;
 }
 
 .play-lists__card-title {
@@ -1347,6 +1358,12 @@ body {
 
 .market__title {
   margin-bottom: 18px;
+}
+
+.market__right-picture {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
 }
 
 .market__wave {
@@ -1446,6 +1463,7 @@ body {
   align-items: flex-start;
 }
 
+about-us__item-
 .about-us__item-title {
   padding-top: 30px;
   margin-bottom: 8px;
