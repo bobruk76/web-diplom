@@ -1463,7 +1463,12 @@ body {
   align-items: flex-start;
 }
 
-about-us__item-
+.about-us__item-picture {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
 .about-us__item-title {
   padding-top: 30px;
   margin-bottom: 8px;
