@@ -1285,7 +1285,7 @@ body {
 }
 
 .play-lists__card-picture {
-  margin: 16px 0 0;
+  margin: 0 0 16px 0;
   font-size: 0;
   line-height: 0;
 }
