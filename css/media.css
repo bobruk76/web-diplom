@@ -7,14 +7,14 @@
 
   .header__logo {
     padding-top: 22px;
-    padding-left: 68px;
+    padding-left: 44px;
     padding-bottom: 23px;
 
     background-color: var(--color-athens-gray);
   }
 
-  .header__logo > img {
-    max-width: 112px;
+  .header__logo-img {
+    max-width: 70%;
   }
 
   .header__hav {
