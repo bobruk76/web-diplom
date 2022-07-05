@@ -264,6 +264,10 @@
     padding-right: 72px;
   }
 
+  .header__logo-img {
+    display: block;
+  }
+
   .header__hav {
     padding-top: 23px;
     padding-bottom: 20px;
@@ -360,7 +364,7 @@
 
   .broadcast__container {
     padding-left: 90px;
-    padding-bottom: 6px;
+    padding-bottom: 12px;
     padding-right: 82px;
   }
 
@@ -436,6 +440,12 @@
     margin-bottom: 24px;
   }
 
+  .play-lists__card {
+    margin-bottom: 14px;
+    width: 47%;
+    min-height: initial;
+  }
+
   .play-lists__card-content > * {
     padding-left: 10px;
   }
@@ -455,18 +465,34 @@
     max-width: 90%;
   }
 
+  .market__left {
+    padding-bottom: 40px;
+  }
+
   .about-us__container {
     padding-left: 90px;
     padding-bottom: 83px;
     padding-right: 90px;
   }
 
+  .about-us__top {
+    margin-bottom: 21px;
+  }
+
   .about-us__spiral {
     display: block;
   }
 
+  .dawn {
+    width: 100%;
+  }
+
   .about-us__descr {
     margin-bottom: 29px;
+  }
+
+  .about-us__item-photo {
+    width: 100%;
   }
 
   .footer__top {
@@ -529,6 +555,10 @@
     font-size: 24px;
   }
 
+  .header__logo-img {
+    max-width: 100%;
+  }
+
   .header__top {
     min-height: 54px;
     /*background-color: var(--color-athens-gray);*/
@@ -576,6 +606,12 @@
   .header__btn-search {
     padding-top: 22px;
     margin-right: 1px;
+  }
+
+  .header__form {
+    right: 0;
+    top: 40px;
+    width: 80%;
   }
 
   .header__bottom {
@@ -1140,7 +1176,7 @@
   }
 
   .market__left {
-    padding-bottom: 30px;
+    padding-bottom: 22px;
   }
 
   .market__title {
