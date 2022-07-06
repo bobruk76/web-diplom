@@ -108,7 +108,7 @@ burgerButtons.forEach(burgerButton =>
 
 const searchButton = document.querySelector('.header__btn-search')
 const headerForm = document.querySelector('.header__form')
-const closeButton = document.querySelector('.cross-in-circle')
+// const closeButton = document.querySelector('.cross-in-circle')
 
 searchButton.addEventListener('click', () => {
     if (!headerForm.classList.contains('header__form--active')) {
@@ -119,12 +119,12 @@ searchButton.addEventListener('click', () => {
 
 })
 
-closeButton.addEventListener('click', () => {
-    headerForm.classList.remove('header__form--active')
-})
+// closeButton.addEventListener('click', () => {
+//     headerForm.classList.remove('header__form--active')
+// })
 
 function overWords() {
-    var a, w = document.createNodeIterator(document, NodeFilter.SHOW_TEXT);
+    let a, w = document.createNodeIterator(document, NodeFilter.SHOW_TEXT);
     while (a = w.nextNode()) {
         if (a.textContent.trim().length && a.parentNode.tagName != 'STYLE' && a.parentNode.tagName !== 'TITLE' && a.parentNode.tagName !== 'SCRIPT') a.textContent = 'Одиннадцатиклассница пошла посмотреть на достопримечательность, а Константин Константинопольский рассказал о клиентоориентированности.'
     }
