@@ -5,12 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="fonts/muller.css">
-  <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
-  />
+<!--  <link-->
+<!--          rel="stylesheet"-->
+<!--          href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"-->
+<!--  />-->
 
   <link
           rel="stylesheet"
@@ -18,6 +16,8 @@
   />
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="fonts/muller.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -81,7 +81,8 @@
           </span>
           <span class="burger-right">Что в эфире?</span>
         </button>
-        <ul class="list-reset col-xl-7 col-md-12 header__bottom-items">
+
+        <ul class="list-reset col-xl-7 col-md-auto header__bottom-items">
           <li class="header__bottom-item">
             <a class="link header__link" href="">Новости</a>
           </li>
@@ -102,8 +103,8 @@
           </li>
         </ul>
 
-        <div class="header__bottom-btns col-xl-4">
-          <div class="header__bottom-item header__bottom-item--play early">
+        <div class="header__bottom-btns col-xl-4 col-md-auto">
+          <div class="header__bottom-item--play early">
             <button class="btn-reset header__btn header__btn--play" aria-label="Кнопка проиграть">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"/>
@@ -115,7 +116,7 @@
             </p>
           </div>
 
-          <div class="header__bottom-item header__bottom-item--play now">
+          <div class="header__bottom-item--play now">
             <button class="btn-reset header__btn header__btn--play" aria-label="Кнопка проиграть">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"/>
@@ -128,13 +129,12 @@
           </div>
         </div>
 
-
-
         <div class="col-xl-1 header__age">
           <div class="header__info">
             <span>12+</span>
           </div>
         </div>
+
       </div>
     </div>
   </div>
