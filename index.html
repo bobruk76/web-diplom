@@ -9,12 +9,13 @@
 <!--          rel="stylesheet"-->
 <!--          href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"-->
 <!--  />-->
+  <link rel="stylesheet" href="css/grid.css">
 
   <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
   />
-  <link rel="stylesheet" href="css/grid.css">
+
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fonts/muller.css">
@@ -584,7 +585,7 @@
       <h2 class="visually-hidden">Передачи всех авторов</h2>
       <ul class="broadcast__items list-reset row justify-content-lg-end">
 
-        <li class="broadcast__item broadcast__item--first col-xl-3 col-lg-4 col-12 col-sm-6 order-xl-0 order-lg-0">
+        <li class="broadcast__item broadcast__item--first col-xl-3 col-lg-4 col-12 col-sm-6">
           <h3 class="title broadcast__title">Передачи</h3>
           <div class="form-select broadcast__form">
             <label for="fselect" class="form-select__label">Автор:</label>
@@ -593,7 +594,7 @@
           </div>
         </li>
 
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-1 order-lg-1">
+        <li class="broadcast__item broadcast__item-1 col-xl-3 col-lg-4 col-md-6 col-6">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-1.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -612,7 +613,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-2 order-lg-2">
+        <li class="broadcast__item broadcast__item-2 col-xl-3 col-lg-4 col-md-6 col-6">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-2.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -631,7 +632,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-3 order-lg-4">
+        <li class="broadcast__item broadcast__item-3 broadcast__item-4 col-xl-3 col-lg-4 col-md-6 col-6">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-3.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -650,7 +651,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-5 order-lg-5">
+        <li class="broadcast__item broadcast__item-4 col-xl-3 col-lg-4 col-md-6 col-6">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-4.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -669,7 +670,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-6 order-lg-6">
+        <li class="broadcast__item broadcast__item-5 col-xl-3 col-lg-4 col-md-6 col-6">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-5.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -688,7 +689,7 @@
           </a>
 
         </li>
-        <li class="broadcast__item col-xl-3 col-lg-4 col-md-6 col-6 order-xl-7 order-lg-7">
+        <li class="broadcast__item broadcast__item-6 col-xl-3 col-lg-4 col-md-6 col-6">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-6.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -708,7 +709,7 @@
 
         </li>
 
-        <li class="broadcast__item broadcast__item--last col-xl-3 col-lg-4 col-12 order-xl-4 order-lg-3">
+        <li class="broadcast__item broadcast__item--last col-xl-3 col-lg-4 col-12">
           <picture>
             <source media="(max-width: 576px)" srcset="img/mic-small.png">
             <source media="(max-width: 992px)" srcset="img/mic-phone.png">
@@ -1161,7 +1162,7 @@
   <section id="play-lists" class="play-lists">
     <div class="container-xl container-lg container-md container play-lists__container">
       <div class="row play-lists__row">
-        <div class="col-xl-4 order-xl-0 order-lg-0 order-md-0 order-0 play-lists__content">
+        <div class="col-xl-4 play-lists__content">
           <h2 class="title play-lists__title">Плейлисты</h2>
           <p class="play-lists__descr">Жанр</p>
           <ul class="play-lists__items list-reset">
@@ -1223,14 +1224,14 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-4 order-xl-1 order-lg-2 order-md-2 order-2">
+        <div class="col-xl-4 play-lists__warning">
           <p class="play-lists__descr warning">
             Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних.
           </p>
           <span class="copyright">&copy;&nbsp;2021&nbsp;l W-Wave</span>
           <span class="age-warning">18+</span>
         </div>
-        <ul class="col-xl-8 col-lg-12 order-xl-2 order-lg-1 order-md-1 order-1 play-lists__cards list-reset">
+        <ul class="col-xl-8 col-lg-12 play-lists__cards list-reset">
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-1.jpg" alt="Обложка альбола">

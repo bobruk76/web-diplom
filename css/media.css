@@ -1,5 +1,49 @@
 @media (max-width: 1200px) {
 
+  .play-lists__content {
+    order: 0;
+  }
+
+  .play-lists__warning {
+    order: 1;
+  }
+
+  .play-lists__cards {
+    order: 2;
+  }
+
+  .broadcast__item--first {
+    order: 0;
+  }
+
+  .broadcast__item-1 {
+    order: 1;
+  }
+
+  .broadcast__item-2 {
+    order: 2;
+  }
+
+  .broadcast__item-3 {
+    order: 3;
+  }
+
+  .broadcast__item-4 {
+    order: 5;
+  }
+
+  .broadcast__item-5 {
+    order: 6;
+  }
+
+  .broadcast__item-6 {
+    order: 7;
+  }
+
+  .broadcast__item--last {
+    order: 4;
+  }
+
   .header__top-content {
     padding-top: 0;
     padding-bottom: 0;
@@ -265,6 +309,22 @@
 }
 
 @media (max-width: 992px) {
+
+  .play-lists__warning {
+    order: 2;
+  }
+
+  .play-lists__cards {
+    order: 1;
+  }
+
+  .broadcast__item-3 {
+    order: 4;
+  }
+
+  .broadcast__item--last {
+    order: 3;
+  }
 
   .header__top-content {
     padding-left: 33px;
