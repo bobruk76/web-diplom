@@ -235,11 +235,12 @@ body {
 }
 
 .form-select__label {
-  margin-bottom: 4px;
-
   font-size: 16px;
-
   color: var(--color-gray-chateau);
+}
+
+.choices {
+  padding-top: 8px;
 }
 
 .radio-new {
@@ -828,13 +829,19 @@ body {
 .podcasts__items {
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: space-between;
 }
 
 .podcasts__item {
   margin-bottom: 30px;
 
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
+
+  min-width: calc(50% - 15px);
 }
 
 
@@ -1002,10 +1009,9 @@ body {
   order: 4;
 }
 
-
 .broadcast__container {
   padding-top: 108px;
-  padding-bottom: 41px;
+  padding-bottom: 66px;
 }
 
 .broadcast__title {
@@ -1013,14 +1019,19 @@ body {
 }
 
 .broadcast__items {
-  margin-right: -15px;
-  margin-left: -15px;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .broadcast__item {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+
+  width: calc(25% - 22px);
+  max-width: 25%;
 }
 
 .broadcast__item-picture {
@@ -1114,11 +1125,19 @@ body {
   color: var(--color-bg);
 }
 
+.guests__container-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .guests__top {
   margin-bottom: 41px;
 }
 
 .guests__descr {
+  margin-bottom: 8px;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
