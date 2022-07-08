@@ -27,15 +27,15 @@
 <body>
 <header class="header">
   <div class="header__top">
-    <div class="container-xl container-lg container-md header__top-content">
-      <div class="row header__top-row">
-        <a class="header__logo col-xl-2 col-lg-12">
+    <div class="container header__top-content">
+      <div class="header__top-row">
+        <a class="header__logo">
           <picture class="header__logo-picture">
             <source media="(max-width: 576px)" srcset="img/logo-small.svg">
             <img src="img/logo.svg" alt="Лого" class="header__logo-img">
           </picture>
         </a>
-        <nav class="header__hav col-xl-8 col-lg-auto col-md-6 header__hav">
+        <nav class="header__hav">
           <button class="burger btn-reset" aria-label="Открыть основное меню" data-items="header__items">
             <span class="burger__first burger__line"></span>
             <span class="burger__second burger__line"></span>
@@ -49,7 +49,7 @@
             <li class="header__item"><a href="" class="header__link link">О нас</a></li>
           </ul>
         </nav>
-        <div class="col-xl-2 col-lg-auto col-md-6 header__top-right">
+        <div class="header__top-right">
           <form action="https://postman-echo.com/post" method="post" class="form header__form"
                 aria-label="Форма поиска">
             <label for="header__input" class="visually-hidden">Введите строку поика</label>
@@ -69,8 +69,8 @@
     </div>
   </div>
   <div class="header__bottom">
-    <div class="container-xl container-lg container-md header__bottom-content">
-      <div class="row header__bottom-content-row">
+    <div class="container header__bottom-content">
+      <div class="header__bottom-content-row">
         <button class="burger header__bottom-burger btn-reset" aria-label="Что в эфире?"
                 data-items="header__bottom-items">
           <span class="burger-left">
@@ -83,7 +83,7 @@
           <span class="burger-right">Что в эфире?</span>
         </button>
 
-        <ul class="list-reset col-xl-7 col-md-auto header__bottom-items">
+        <ul class="list-reset header__bottom-items">
           <li class="header__bottom-item">
             <a class="link header__link" href="">Новости</a>
           </li>
@@ -104,7 +104,7 @@
           </li>
         </ul>
 
-        <div class="header__bottom-btns col-xl-4 col-md-auto">
+        <div class="header__bottom-btns">
           <div class="header__bottom-item--play early">
             <button class="btn-reset header__btn header__btn--play" aria-label="Кнопка проиграть">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +130,7 @@
           </div>
         </div>
 
-        <div class="col-xl-1 header__age">
+        <div class="header__age">
           <div class="header__info">
             <span>12+</span>
           </div>
@@ -142,8 +142,8 @@
 </header>
 <main>
   <section id="hero" class="hero">
-    <div class="container-xl container-lg container-md hero__container container-sm">
-      <div class="row hero__content">
+    <div class="container hero__container">
+      <div class="hero__content">
         <div class="col-xl-7 col-lg-8 col-sm-12 hero__content-left">
           <h1 class="title hero__title">
             Радио <span>W-Wawe</span>
@@ -162,12 +162,12 @@
     </div>
   </section>
   <section id="podcasts" class="podcasts">
-    <div class="container-xl container-lg container-md podcasts__container">
-      <div class="row">
+    <div class="container podcasts__container">
+      <div class="podcasts__top">
         <h2 class="col-xl-12 title podcasts__title">Подкасты</h2>
       </div>
-      <ul class="row podcasts__items list-reset">
-        <li class="podcasts__item col-xl-6 col-lg-6">
+      <ul class="podcasts__items list-reset">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <source media="(max-width: 576px)" srcset="img/podcasts-1-small.jpg">
             <img src="img/podcasts-1.jpg" alt="Обложка подкаста" class="podcasts__item-img">
@@ -218,7 +218,7 @@
             </div>
           </div>
         </li>
-        <li class="podcasts__item col-xl-6 col-lg-6">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <source media="(max-width: 576px)" srcset="img/podcasts-2-small.jpg">
             <img src="img/podcasts-2.jpg" alt="Обложка подкаста" class="podcasts__item-img">
@@ -269,7 +269,7 @@
             </div>
           </div>
         </li>
-        <li class="podcasts__item col-xl-6 col-lg-6">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <source media="(max-width: 576px)" srcset="img/podcasts-3-small.jpg">
             <img src="img/podcasts-3.jpg" alt="Обложка подкаста" class="podcasts__item-img">
@@ -320,7 +320,7 @@
             </div>
           </div>
         </li>
-        <li class="podcasts__item col-xl-6 col-lg-6">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <source media="(max-width: 576px)" srcset="img/podcasts-4-small.jpg">
             <img src="img/podcasts-4.jpg" alt="Обложка подкаста" class="podcasts__item-img">
@@ -371,7 +371,7 @@
             </div>
           </div>
         </li>
-        <li class="podcasts__item col-xl-6 col-lg-6">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <img src="img/podcasts-5.jpg" alt="Обложка подкаста" class="podcasts__item-img">
           </picture>
@@ -421,7 +421,7 @@
             </div>
           </div>
         </li>
-        <li class="podcasts__item col-xl-6 col-lg-6">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <img src="img/podcasts-6.jpg" alt="Обложка подкаста" class="podcasts__item-img">
           </picture>
@@ -471,7 +471,7 @@
             </div>
           </div>
         </li>
-        <li class="podcasts__item col-xl-6 col-lg-6">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <img src="img/podcasts-7.jpg" alt="Обложка подкаста" class="podcasts__item-img">
           </picture>
@@ -521,7 +521,7 @@
             </div>
           </div>
         </li>
-        <li class="podcasts__item col-xl-6 col-lg-6">
+        <li class="podcasts__item">
           <picture class="podcasts__item-left">
             <img src="img/podcasts-8.jpg" alt="Обложка подкаста" class="podcasts__item-img">
           </picture>
