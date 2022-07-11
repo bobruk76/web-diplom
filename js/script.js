@@ -48,14 +48,6 @@ const accordion = new Accordion('.guests__accordion', {
     panelClass: 'guests__items',
     triggerClass: 'guests__accordion-item-title',
     openOnInit: [openOnItem],
-    beforeOpen: (currentElement) => {
-        const plusButton = currentElement.querySelector('.arrow-in-circle')
-        plusButton.classList.add('arrow-in-circle--active')
-    },
-    beforeClose: (currentElement) => {
-        const plusButton = currentElement.querySelector('.arrow-in-circle')
-        plusButton.classList.remove('arrow-in-circle--active')
-    }
 })
 
 

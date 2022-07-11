@@ -1240,11 +1240,11 @@ body {
   stroke: var(--color-gray-chateau);
 }
 
-.arrow-in-circle--active {
+.arrow-in-circle{
   transition: transform .3s ease-in-out;
 }
 
-.arrow-in-circle--active {
+.guests__accordion-item.is-active .arrow-in-circle{
   transform: rotate(180deg);
 }
 
