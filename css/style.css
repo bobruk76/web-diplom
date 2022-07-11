@@ -1057,7 +1057,7 @@ body {
 .broadcast__item-down {
   padding-top: 20px;
   padding-left: 16px;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1149,6 +1149,10 @@ body {
   margin-bottom: 10px;
 }
 
+.guests__accordion {
+  max-width: calc((100% * 2 / 3));
+}
+
 .guests__items {
   padding: 0;
 
@@ -1163,6 +1167,10 @@ body {
   overflow: hidden;
 
   transition: height .3s ease-in-out;
+}
+
+.guests__content {
+  max-width: calc((100% / 3) - 20px);
 }
 
 .guests__accordion-item:last-child {
@@ -1242,16 +1250,18 @@ body {
 
 .guests__social-photo > img {
   max-width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .guests__content-title {
   font-weight: 500;
   font-size: 20px;
+  line-height: 175%;
 }
 
 .guests__content-descr {
-  padding-top: 6px;
+  padding: 0;
+  margin-top: 0;
   margin-bottom: 30px;
 
   color: var(--color-gray-chateau);
