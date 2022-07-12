@@ -718,11 +718,18 @@ body {
 .hero__content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero__content-left {
+  flex-basis: calc(100% * 2 / 3);
 }
 
 .hero__content-right {
   display: flex;
+
   justify-content: flex-end;
+  flex-basis: calc(100% / 3);
 }
 
 .hero__content-right-img {
@@ -746,7 +753,7 @@ body {
 
 .hero__descr {
   margin-bottom: 45px;
-  max-width: 95%;
+  max-width: 85%;
 }
 
 .form__btn,
@@ -1139,6 +1146,8 @@ body {
 .guests__descr {
   margin-bottom: 8px;
 
+  max-width: 75%;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
@@ -1369,7 +1378,7 @@ body {
 }
 
 .play-lists__cards {
-  padding: 13px 15px 0;
+  padding: 13px 0 0;
 
   align-self: flex-end;
 
@@ -1379,7 +1388,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 
-  max-width: calc((100% * 2 / 3) - 20px);
+  max-width: calc((100% * 2 / 3) - 10px);
 }
 
 .play-lists__card {
@@ -1402,6 +1411,10 @@ body {
 
 .play-lists__card-img {
   max-width: 100%;
+}
+
+.play-lists__card-content {
+  padding-left: 16px;
 }
 
 .play-lists__card-title {
@@ -1439,13 +1452,22 @@ body {
 
 .market__container {
   padding-bottom: 129px;
+
+  max-width: 1121px;
+}
+
+.market__container-row {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .market__left {
+  padding-top: 7px;
   position: relative;
 
-  padding-top: 9px;
-  padding-left: 10px;
+  flex-basis: calc(100% * 7 / 12);
 }
 
 
@@ -1453,7 +1475,7 @@ body {
   position: absolute;
   z-index: 2;
   top: 0;
-  left: 10px;
+  left: 0;
 
   background-image: url("../img/new.svg");
   background-repeat: no-repeat;
@@ -1464,6 +1486,7 @@ body {
 }
 
 .market__right {
+  flex-basis: calc((100% * 5 / 12) - 16px);
   display: flex;
 
   flex-direction: column;
@@ -1491,12 +1514,16 @@ body {
   color: var(--color-bg);
 }
 
+.market__descr:last-child {
+  margin-bottom: 16px;
+}
+
 .market__descr > span {
   color: var(--color-buff);
 }
 
 .market__price {
-  margin-bottom: 23px;
+  margin-bottom: 27px;
   padding-top: 12px;
 
   color: var(--color-bg);
