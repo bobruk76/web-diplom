@@ -9,7 +9,7 @@
   <!--          rel="stylesheet"-->
   <!--          href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"-->
   <!--  />-->
-<!--  <link rel="stylesheet" href="css/grid.css">-->
+  <!--  <link rel="stylesheet" href="css/grid.css">-->
 
   <link
           rel="stylesheet"
@@ -1412,15 +1412,15 @@
     </div>
   </section>
   <section id="about-us" class="about-us">
-    <div class="container-xl container-lg container-md container about-us__container">
-      <div class="row about-us__top">
-        <div class="col-xl-7 col-lg-8 col-md-12">
+    <div class="container about-us__container">
+      <div class="about-us__top">
+        <div class="about-us__top-content col-xl-7 col-lg-8 col-md-12">
           <h2 class="about-us__title title">О нас</h2>
           <p class="descr about-us__descr">
             <strong>Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</strong>
             Друзья, мы&nbsp;будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому
             вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём!
-            Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале
+            Это можно сделать либо написав нам в&nbsp;форме ниже, либо&nbsp;кликнув на&nbsp;наши соцсети в&nbsp;подвале
             сайта. Спасибо! Услышимся! :)
           </p>
         </div>
@@ -1435,7 +1435,7 @@
         </div>
       </div>
       <ul class="about-us__items list-reset row">
-        <li class="about-us__item col-xl-3 col-lg-6 col-md-6 col-6">
+        <li class="about-us__item">
           <picture class="about-us__item-picture">
             <source media="(max-width: 992px)" srcset="img/about-us-phone-1.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-1.jpg">
@@ -1446,7 +1446,7 @@
             Эксперт (ну, почти) по&nbsp;всем вопросам (почти).
           </p>
         </li>
-        <li class="about-us__item col-xl-3 col-lg-6 col-md-6 col-6">
+        <li class="about-us__item">
           <picture class="about-us__item-picture">
             <source media="(max-width: 992px)" srcset="img/about-us-phone-2.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-2.jpg">
@@ -1457,7 +1457,7 @@
             Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
           </p>
         </li>
-        <li class="about-us__item col-xl-3 col-lg-6 col-md-6 col-6">
+        <li class="about-us__item">
           <picture class="about-us__item-picture">
             <source media="(max-width: 992px)" srcset="img/about-us-phone-3.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-3.jpg">
@@ -1468,7 +1468,7 @@
             Господа! Внимание!! Благодарю за&nbsp;внимание!!!
           </p>
         </li>
-        <li class="about-us__item col-xl-3 col-lg-6 col-md-6 col-6">
+        <li class="about-us__item">
           <picture class="about-us__item-picture">
             <source media="(max-width: 992px)" srcset="img/about-us-phone-4.jpg">
             <source media="(max-width: 1200px)" srcset="img/about-us-tablet-4.jpg">
@@ -1481,27 +1481,26 @@
         </li>
       </ul>
 
-      <form action="https://postman-echo.com/post" method="post" class="row form about-us__form"
+      <form action="https://postman-echo.com/post" method="post" class="form about-us__form"
             autocomplete="off">
-        <label for="message" aria-label="Поле Введите сообщение" class="form__input-label col-xl-10 col-lg-12">
+        <label for="message" aria-label="Поле Введите сообщение" class="form__message-label">
           <textarea id="message" name="message" placeholder="Что скажете?" class="form__textarea form__input"
                     required></textarea>
         </label>
 
-        <label for="name" aria-label="Поле Введите фамилие, имя и отчество" class="form__input-label col-xl-5 col-lg-6">
+        <label for="name" aria-label="Поле Введите фамилие, имя и отчество" class="form__input-label">
           <input id="name" name="name" type="text" class="form__input"
                  placeholder="Имя" required>
         </label>
 
-        <label for="email" aria-label="Поле Введите адрес электронной почты"
-               class="form__input-label col-xl-5 col-lg-6">
+        <label for="email" aria-label="Поле Введите адрес электронной почты" class="form__input-label">
           <input id="email" name="email" type="email" placeholder="E-mail" class="form__input" required>
         </label>
 
-        <div class="col-xl-auto">
+        <div class="form__button">
           <button class="btn btn-reset form__btn" type="submit">Отправить</button>
         </div>
-        <div class="col-xl-10">
+        <div class="form__bottom">
           <label class="form__checkbox">
             <input type="checkbox" class="form__checkbox-input form__checkbox-input--hide">
             <span class="form__checkbox-descr checkbox-icon">Согласен на&nbsp;обработку персональных данных</span>
