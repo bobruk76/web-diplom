@@ -139,8 +139,22 @@
     /*padding: 110px 68px 67px;*/
   }
 
+  .broadcast__item {
+    width: calc((100% / 3) - 20px);
+    max-width: calc(100% / 3);
+  }
+
+  .broadcast__item-3 {
+    order: 4;
+  }
+
   .broadcast__item--last {
     margin-bottom: 0;
+    order: 3;
+  }
+
+  .broadcast__item-down {
+    padding-left: 14px;
   }
 
   /* guests */
