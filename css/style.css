@@ -486,6 +486,8 @@ body {
 }
 
 .header__top-right {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -496,7 +498,7 @@ body {
 .header__form {
   z-index: 2;
   position: absolute;
-  right: 132px;
+  right: 116px;
 
   padding-left: 18px;
   padding-right: 36px;
@@ -1643,7 +1645,7 @@ body {
 }
 
 .about-us__top {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 
   display: flex;
   flex-wrap: nowrap;
@@ -1800,6 +1802,7 @@ body {
 }
 
 .footer__top {
+  padding-top: 93px;
   padding-bottom: 70px;
 }
 
@@ -1848,13 +1851,20 @@ body {
   color: var(--color-gray-chateau);
 }
 
+.footer__wave {
+  margin-bottom: 5px;
+  display: block;
+}
+
 .footer__bottom-logo {
   margin: 0;
-  padding: 0;
-  
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
+
+  font-size: 14px;
+  letter-spacing: 0.14rem;
 }
 
 /* validate */
