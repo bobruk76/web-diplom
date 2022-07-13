@@ -363,13 +363,15 @@ body {
   position: relative;
   z-index: 35;
 
-  width: 32px;
+  width: 0;
   height: 36px;
 
   color: var(--color-electric-violet);
 
   visibility: hidden;
   cursor: pointer;
+
+  transition: width .3s ease-in-out;
 }
 
 .burger > .burger--left > svg {

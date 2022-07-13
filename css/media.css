@@ -1,7 +1,15 @@
 @media (max-width: 1200px) {
+  .container {
+    max-width: calc(100% - 200px);
+  }
 
-  .play-lists__content {
-    order: 0;
+  .header__top-content {
+    max-width: 100%;
+  }
+
+  .header__top-row {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .play-lists__warning {
@@ -13,20 +21,33 @@
   }
 
   .header__top-content {
+    order: 0;
     padding-top: 0;
     padding-bottom: 0;
+
+    text-align: initial;
   }
 
   .header__logo {
+    margin: 0;
+
     padding-top: 22px;
-    padding-left: 44px;
     padding-bottom: 23px;
 
+    justify-content: flex-start;
+
+    width: 100%;
     background-color: var(--color-athens-gray);
   }
 
+  .header__logo-picture {
+    margin: 0 auto;
+
+    width: calc(100% - 198px);
+  }
+
   .header__logo-img {
-    max-width: 70%;
+    max-width: 112px;
   }
 
   .header__bottom-content-row {
@@ -39,10 +60,14 @@
   .header__hav {
     padding-top: 14px;
     padding-bottom: 30px;
-    padding-left: 36px;
+
+    justify-content: flex-start;
   }
 
   .header__items {
+    margin-right: 16px;
+
+    justify-content: flex-start;
     align-items: flex-end;
   }
 
@@ -52,14 +77,14 @@
 
   .header__age {
     display: none;
+    width: 0;
   }
 
   .header__bottom-content {
-    padding: 10px 68px;
+    padding: 12px 0;
   }
 
   .header__bottom-items {
-    padding-left: 15px;
     padding-right: initial;
   }
 
@@ -80,12 +105,10 @@
     min-width: 150px;
   }
 
-
   /* hero */
   .hero__container {
-    padding-left: 68px;
-    padding-right: 68px;
-    padding-bottom: 86px;
+    padding-top: 40px;
+    padding-bottom: 90px;
   }
 
   .hero__title {
@@ -94,21 +117,26 @@
 
   .hero__descr {
     margin-bottom: 20px;
+    max-width: initial;
   }
 
   .hero__content-right {
-    justify-content: initial;
+    justify-content: flex-end;
     align-items: flex-end;
+  }
+
+  .hero__content-right-img {
+    max-width: 93%;
   }
 
   /* podcasts */
   .podcasts__container {
-    padding: 95px 68px 92px;
+    padding-bottom: 92px;
   }
 
   /* broadcast */
   .broadcast__container {
-    padding: 110px 68px 67px;
+    /*padding: 110px 68px 67px;*/
   }
 
   .broadcast__item--last {
@@ -322,6 +350,7 @@
   }
 
   .burger {
+    width: 32px;
     visibility: visible;
   }
 
@@ -1196,7 +1225,6 @@
   /*.play-lists__card-content > * {*/
   /*  padding: 0;*/
   /*}*/
-
   .play-lists__card-title {
     margin-bottom: 5px;
   }
