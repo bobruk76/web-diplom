@@ -12,14 +12,6 @@
     justify-content: center;
   }
 
-  .play-lists__warning {
-    order: 1;
-  }
-
-  .play-lists__cards {
-    order: 2;
-  }
-
   .header__top-content {
     order: 0;
     padding-top: 0;
@@ -177,9 +169,13 @@
     column-gap: 30px;
   }
 
+  .guests__content-descr {
+    margin-bottom: 32px;
+  }
+
   /* play-lists */
   .play-lists__container {
-    padding: 95px 68px 98px;
+    padding-bottom: 94px;
   }
 
   .play-lists__items {
@@ -197,17 +193,25 @@
   }
 
   .play-lists__item {
-    margin-bottom: 11px;
-    margin-right: 33px;
+    margin-bottom: 20px;
+    margin-right: 34px;
+  }
+
+  .play-lists__warning {
+    order: 2;
+
+    max-width: initial;
   }
 
   .play-lists__cards {
+    order: 1;
     padding-top: 10px;
-    padding-bottom: 23px;
+    padding-bottom: 20px;
 
     margin-bottom: 31px;
 
     border-bottom: 1px solid var(--color-mischka);
+    max-width: initial;
   }
 
   .play-lists__card {
@@ -218,7 +222,7 @@
     align-items: center;
 
     min-width: 31%;
-    min-height: 122px;
+    min-height: 129px;
   }
 
   .play-lists__card-picture {
@@ -232,6 +236,11 @@
     right: auto;
     left: 0;
     top: 0;
+  }
+
+  .play-lists__card-content {
+    padding-left: 0;
+    margin-bottom: 15px;
   }
 
   .play-lists__row {
