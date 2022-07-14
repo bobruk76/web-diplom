@@ -1,5 +1,8 @@
 @media (max-width: 1200px) {
   .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     max-width: calc(100% - 200px);
   }
 
@@ -128,6 +131,7 @@
 
   /* broadcast */
   .broadcast__container {
+    padding-top: 109px;
     padding-bottom: 64px;
   }
 
@@ -154,12 +158,15 @@
     order: 4;
   }
 
-
   .broadcast__item-down {
     padding-left: 14px;
   }
 
   /* guests */
+  .guests__content {
+    padding-bottom: 96px;
+  }
+
   .guests__social-photo > img {
     margin-bottom: 5px;
   }
@@ -173,11 +180,11 @@
     margin-bottom: 32px;
   }
 
-  /* play-lists */
-  .play-lists__container {
-    padding-bottom: 94px;
+  .guests__descr {
+    margin-bottom: 9px;
   }
 
+  /* play-lists */
   .play-lists__items {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -205,7 +212,7 @@
 
   .play-lists__cards {
     order: 1;
-    padding-top: 10px;
+    padding-top: 11px;
     padding-bottom: 20px;
 
     margin-bottom: 31px;
@@ -252,14 +259,11 @@
   }
 
   /* market */
-  .market__container {
-    padding: 95px 68px 93px;
-  }
-
   .market__left {
     position: initial;
-    padding-bottom: 50px;
+    padding-bottom: 41px;
 
+    flex-basis: calc((100% / 2) - 15px);
     display: flex;
     align-items: center;
   }
@@ -273,7 +277,8 @@
   }
 
   .new {
-    left: 5px;
+    top: -5px;
+    left: 0;
 
     background-image: url("../img/new-tablet.svg");
 
@@ -281,20 +286,24 @@
     min-height: 100px;
   }
 
-  /* about-us */
-  .about-us__container {
-    padding: 95px 68px 84px;
+  .market__price {
+    margin-bottom: 28px;
   }
+
+  /* about-us */
+  /*.about-us__container {*/
+  /*  padding: 95px 68px 84px;*/
+  /*}*/
 
   .about-us__spiral {
     display: none;
+    width: 0;
   }
 
   .about-us__descr {
     margin-bottom: 5px;
     line-height: 163%;
   }
-
 
   .about-us__descr > strong {
     display: block;
