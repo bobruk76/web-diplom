@@ -387,8 +387,8 @@ body {
   position: absolute;
   z-index: 2;
   top: 5px;
-  left: 4px;
-  right: 4px;
+  left: 0;
+  right: 8px;
 
   height: 3px;
   background-color: currentColor;
@@ -404,8 +404,8 @@ body {
   position: absolute;
   z-index: 2;
   top: calc(50% - 2px);
-  left: 4px;
-  right: 4px;
+  left: 0;
+  right: 8px;
 
   height: 3px;
   background-color: currentColor;
@@ -422,8 +422,8 @@ body {
   position: absolute;
   z-index: 2;
   bottom: 7px;
-  left: 4px;
-  right: 4px;
+  left: 0;
+  right: 8px;
   height: 3px;
   background-color: currentColor;
   transition: transform .3s ease-in-out;

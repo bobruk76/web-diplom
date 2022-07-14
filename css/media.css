@@ -381,23 +381,14 @@
 }
 
 @media (max-width: 992px) {
+  .container {
+    max-width: calc(100% - 228px);;
+  }
 
   /* header */
-  .header__top-content {
-    /*padding-left: 33px;*/
-    /*padding-right: 33px;*/
-  }
-
-  .header__logo {
-    /*padding-left: 72px;*/
-    /*padding-right: 72px;*/
-  }
-
-  /*.header__logo-img {*/
-  /*  display: block;*/
-  /*}*/
   .header__logo-picture {
-    width: calc(100% - 225px);
+    margin: 0;
+    width: initial;
   }
 
   .header__hav {
@@ -425,8 +416,8 @@
     position: absolute;
     z-index: 99;
 
-    top: 60px;
-    left: 70px;
+    top: 110px;
+    left: 110px;
 
     flex-direction: column;
     align-items: flex-start;
@@ -449,13 +440,30 @@
   }
 
   .header__bottom-content {
-    padding-left: 90px;
-    padding-right: 82px;
-    padding-bottom: 18px;
+    padding: 19px 0;
+  }
+
+  .header__bottom-content-row {
+    justify-content: space-between;
+  }
+
+  .header__bottom-items {
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100% - 47px);
   }
 
   .header__bottom-item:not(:last-child) {
     margin: 0;
+  }
+
+  .header__bottom-item--last {
+    margin-right: 0;
+  }
+
+  .header__btn--play {
+    margin-right: 3px;
   }
 
   .early {
@@ -473,36 +481,40 @@
     display: none;
   }
 
-  .header__bottom-items {
-    padding-top: 18px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* hero */
+  .hero__container {
+    padding-top: 84px;
   }
 
-  .hero__container {
-    padding-left: 90px;
-    padding-right: 82px;
+  .hero__content-left {
+    flex-basis: initial;
+  }
+
+  .hero__title {
+    padding: 0;
   }
 
   .hero__content-right {
     display: none;
+    width: 0;
   }
 
+  /*podcasts*/
   .podcasts__container {
-    padding-left: 90px;
-    padding-right: 82px;
+    padding-bottom: 94px;
   }
-
+  
   .podcasts__item {
-    padding-right: 23px;
+    width: 100%;
   }
 
+  .podcasts__bottom {
+    padding-top: 31px;
+  }
+
+  /*broadcast*/
   .broadcast__container {
-    padding-left: 90px;
     padding-bottom: 12px;
-    padding-right: 82px;
   }
 
   .broadcast__form {
