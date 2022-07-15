@@ -720,7 +720,6 @@
     width: 20%;
   }
 
-
   .dawn {
     width: 100%;
   }
@@ -729,7 +728,15 @@
     margin-bottom: 29px;
   }
 
+  .about-us__item {
+    width: calc(50% - 15px);
+  }
+
   .about-us__item-photo {
+    width: 100%;
+  }
+
+  .form__input-label {
     width: 100%;
   }
 
