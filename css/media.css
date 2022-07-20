@@ -1102,7 +1102,7 @@
   /*broadcast*/
   .broadcast__container {
     padding-top: 54px;
-    padding-bottom: 29px;
+    padding-bottom: 28px;
   }
 
   .broadcast__form {
@@ -1239,7 +1239,7 @@
   /*guests*/
   .guests__container {
     padding-top: 54px;
-    /*padding: 54px 30px 54px 31px;*/
+    padding-bottom: 54px;
   }
 
   .guests__title {
@@ -1342,7 +1342,7 @@
   }
 
   .guests__social-photo > img {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   .guests__social {
@@ -1369,14 +1369,26 @@
     padding: 8px 13px;
   }
 
+  .guests__content-descr {
+    margin-bottom: 30px;
+  }
+
+  /*play-lists*/
   .play-lists__container {
-    padding: 54px 30px 54px 31px;
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .play-lists__row {
+    width: 100%;
   }
 
   .play-lists__card {
     flex-direction: column;
     align-items: flex-start;
+
     width: 44%;
+    min-width: 40%;
   }
 
   .play-lists__card-picture {
@@ -1397,7 +1409,7 @@
   }
 
   .play-lists__title {
-    margin-bottom: 17px;
+    margin-bottom: 21px;
   }
 
   .play-lists__descr {
@@ -1405,12 +1417,8 @@
     font-size: 12px;
   }
 
-  .play-lists__row {
-    width: calc(100% + 27px);
-  }
-
   .play-lists__items {
-    margin-bottom: 12px;
+    margin-bottom: 18px;
 
     transform: translateX(-2px);
 
@@ -1464,7 +1472,7 @@
   }
 
   .play-lists__card-picture {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .play-lists__card-flag {
