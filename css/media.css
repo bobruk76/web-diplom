@@ -1102,7 +1102,7 @@
   /*broadcast*/
   .broadcast__container {
     padding-top: 54px;
-    /*padding: 54px 30px 29px 31px;*/
+    padding-bottom: 29px;
   }
 
   .broadcast__form {
@@ -1133,15 +1133,20 @@
   }
 
   .broadcast__item:not(:first-child):not(:last-child) {
+    margin-bottom: 29px;
+
     display: flex;
     flex-direction: column;
 
     position: relative;
 
-    margin-bottom: 29px;
-    padding-right: 17px;
-
     min-height: 149px;
+  }
+
+  .broadcast__item-down {
+    padding: 10px 0 0;
+
+    min-height: 100px;
   }
 
   .broadcast__item:not(:first-child):not(:last-child):after {
@@ -1152,12 +1157,10 @@
     bottom: 0;
     left: 15px;
     right: 17px;
-
-    border: 1px solid var(--color-athens-gray);
   }
 
   .broadcast__item.broadcast__item--first {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
     transform: none;
   }
 
@@ -1173,8 +1176,6 @@
   }
 
   .broadcast__item-img {
-    margin-bottom: 10px;
-
     width: 100%;
     max-height: 50px;
     object-fit: cover;
@@ -1202,7 +1203,7 @@
 
   .broadcast__item--last {
     margin: 0;
-    padding-top: 31px;
+    padding-top: 29px;
   }
 
   .broadcast__item-bottom {
@@ -1219,6 +1220,7 @@
   }
 
   .broadcast__item-bottom > p {
+    margin-bottom: 7px;
     width: initial;
   }
 
@@ -1234,8 +1236,10 @@
     width: fit-content;
   }
 
+  /*guests*/
   .guests__container {
-    padding: 54px 30px 54px 31px;
+    padding-top: 54px;
+    /*padding: 54px 30px 54px 31px;*/
   }
 
   .guests__title {
@@ -1257,6 +1261,10 @@
 
   .arrow-in-circle {
     transform: scale(.6);
+  }
+
+  .guests__accordion-item.is-active .arrow-in-circle {
+    transform: scale(.6) rotate(180deg);
   }
 
   .arrow-in-circle--active {
@@ -1287,6 +1295,8 @@
   .guests__accordion {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
   }
 
   .guests__accordion-item-5 {
@@ -1335,19 +1345,20 @@
     margin-bottom: 10px;
   }
 
-  .social-items {
+  .guests__social {
     margin-bottom: 6px;
     padding-left: 6px;
     justify-content: initial;
     min-width: initial;
+    width: 100%;
   }
 
   .guests__content .social__link.icon-link > svg {
     transform: scale(1.5);
   }
 
-  .social-item {
-    margin-right: 34px;
+  .guests__social .social-item {
+    margin-right: 35px;
   }
 
   .guests__content-descr {
