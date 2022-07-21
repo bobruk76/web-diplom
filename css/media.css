@@ -95,7 +95,7 @@
     margin-right: 38px;
   }
 
-  .header__bottom-item--play {
+  .header__bottom-btns-play {
     margin-right: 0;
     min-width: 150px;
   }
@@ -381,6 +381,7 @@
 }
 
 @media (max-width: 992px) {
+
   :root {
     --indent: 114px;
   }
@@ -409,8 +410,8 @@
     content: "";
     top: 0;
     bottom: 0;
-    left: 0 - var(--indent);
-    right: 0 - var(--indent);
+    left: calc(0 - var(--indent));
+    right: calc(0 - var(--indent));
 
 
     background-color: var(--color-athens-gray);
@@ -967,18 +968,15 @@
   /*  min-width: initial;*/
   /*  border: none;*/
   /*}*/
-
   /*.now > p {*/
   /*  display: flex;*/
   /*}*/
-
   .burger-left {
     padding-top: 4px;
     margin-right: 5px;
   }
 
   /*hero*/
-
   .hero__container {
     padding-top: 35px;
     padding-bottom: 42px;
