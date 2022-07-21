@@ -980,8 +980,8 @@
   /*hero*/
 
   .hero__container {
-    padding-top: 37px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 42px;
   }
 
   .hero__title {
@@ -1463,12 +1463,13 @@
   }
 
   .play-lists__cards {
+    padding-top: 13px;
     padding-bottom: 12px;
     margin-bottom: 20px;
   }
 
   .play-lists__card {
-    margin-bottom: 30px;
+    margin-bottom: 14px;
   }
 
   .play-lists__card-picture {
@@ -1483,17 +1484,18 @@
   .play-lists__card-content {
     padding-left: 9px;
     padding-top: 9px;
-    padding-bottom: 1px;
+    padding-bottom: 9px;
 
     width: 100%;
     border: 1px solid var(--color-athens-gray);
   }
 
-  /*.play-lists__card-content > * {*/
-  /*  padding: 0;*/
-  /*}*/
   .play-lists__card-title {
     margin-bottom: 5px;
+  }
+
+  .play-lists__descr.warning {
+    line-height: 130%;
   }
 
   .copyright {
