@@ -66,7 +66,6 @@ body {
   border: 0;
   padding: 0;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -76,7 +75,6 @@ body {
   background-color: transparent;
   color: inherit;
   cursor: pointer;
-  word-break: break-word;
 }
 
 .list-reset {
@@ -126,7 +124,7 @@ body {
 .btn-outline:active {
   color: var(--color-bg);
   background-color: var(--color-daisy-bush);
-  border-color: var(--color-daisy-bush);
+  border: none;
 }
 
 .play-btn-small {
@@ -1291,20 +1289,20 @@ body {
 
 .guests__content-btn:hover {
   color: var(--color-bg);
-  border-color: var(--color-melrose);
   background-color: var(--color-melrose);
+  border: none;
 }
 
 .guests__content-btn:focus {
   color: var(--color-bg);
-  border-color: var(--color-electric-violet);
   background-color: var(--color-electric-violet);
+  border: none;
 }
 
 .guests__content-btn:active {
   color: var(--color-bg);
-  border-color: var(--color-daisy-bush);
   background-color: var(--color-daisy-bush);
+  border: none;
 }
 
 /* play-lists */
