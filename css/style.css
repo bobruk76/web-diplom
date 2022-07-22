@@ -288,7 +288,7 @@ body {
   height: 8px;
   width: 8px;
   z-index: 3;
-  top: 40%;
+  top: 50%;
   right: 17.5px;
   border-style: solid;
   border-color: var(--color-gray-chateau);
@@ -298,6 +298,8 @@ body {
 }
 
 .choices[data-type*=select-one].is-open:after {
+  margin-top: -2.5px;
+
   top: 60%;
   border-style: solid;
   border-color: var(--color-gray-chateau);
@@ -1094,12 +1096,35 @@ body {
 }
 
 .broadcast__item-link {
+
+  width: fit-content;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
 
   color: var(--color-mirage);
+  outline: none;
 }
+
+.broadcast__item-link:hover {
+  color: var(--color-electric-violet);
+}
+
+.broadcast__item-link:focus-visible,
+.broadcast__item-link:focus {
+  padding: 0 5px 0 2px;
+  background-color: var(--color-melrose);
+  color: var(--color-bg);
+}
+
+.broadcast__item-link:focus:after {
+  opacity: 1;
+}
+
+.broadcast__item-link:active {
+  color: var(--color-daisy-bush);
+}
+
 
 .broadcast__item-link > span > svg {
   fill: currentColor;

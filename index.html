@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
   />
-
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fonts/muller.css">
@@ -37,7 +34,7 @@
             <span class="burger__third burger__line"></span>
           </button>
           <ul class="list-reset header__items">
-            <li class="header__item"><a href="" class="header__link link">Подкасты</a></li>
+            <li class="header__item"><a href=".podcasts" class="header__link link">Подкасты</a></li>
             <li class="header__item"><a href="" class="header__link link">Передачи</a></li>
             <li class="header__item"><a href="" class="header__link link">Гости</a></li>
             <li class="header__item"><a href="" class="header__link link">Плейлисты</a></li>
@@ -48,7 +45,7 @@
           <form action="https://postman-echo.com/post" method="post" class="form header__form"
                 aria-label="Форма поиска">
             <label for="header__input" class="visually-hidden">Введите строку поика</label>
-            <input id="header__input" name="search-string" type="text" class="header__input"
+            <input class="header__input" id="header__input" name="search-string" type="text"
                    placeholder="Поиск по сайту">
           </form>
           <button class="btn-reset header__btn header__btn-search">
@@ -136,7 +133,7 @@
   </div>
 </header>
 <main>
-  <section id="hero" class="hero">
+  <section class="hero">
     <div class="container hero__container">
       <div class="hero__content">
         <div class="hero__content-left">
@@ -156,7 +153,7 @@
       </div>
     </div>
   </section>
-  <section id="podcasts" class="podcasts">
+  <section class="podcasts">
     <div class="container podcasts__container">
       <div class="podcasts__top">
         <h2 class="col-xl-12 title podcasts__title">Подкасты</h2>
@@ -575,7 +572,7 @@
       </div>
     </div>
   </section>
-  <section id="broadcast" class="broadcast">
+  <section class="broadcast">
     <div class="container broadcast__container">
       <h2 class="visually-hidden">Передачи всех авторов</h2>
       <div class="broadcast__items list-reset">
@@ -598,7 +595,7 @@
               Анонсируется отдельно
               <!--            <time></time>-->
             </p>
-            <a href="#" class="link broadcast__item-link">
+            <a href="#" class="broadcast__item-link">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -618,7 +615,7 @@
               По понедельникам в
               <time datetime="10:00">10:00</time>
             </p>
-            <a href="#" class="link broadcast__item-link">
+            <a href="#" class="broadcast__item-link">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -638,7 +635,7 @@
               По вторникам в
               <time datetime="12:00">12:00</time>
             </p>
-            <a href="#" class="link broadcast__item-link">
+            <a href="#" class="broadcast__item-link">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -658,7 +655,7 @@
               По пятницам в
               <time datetime="17:00">17:00</time>
             </p>
-            <a href="#" class="link broadcast__item-link">
+            <a href="#" class="broadcast__item-link">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -678,7 +675,7 @@
               По субботам в
               <time datetime="10:00">10:00</time>
             </p>
-            <a href="#" class="link broadcast__item-link">
+            <a href="#" class="broadcast__item-link">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -698,7 +695,7 @@
               По воскресеньям в
               <time datetime="15:30">15:30</time>
             </p>
-            <a href="#" class="link broadcast__item-link">
+            <a href="#" class="broadcast__item-link">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -738,7 +735,7 @@
       </div>
     </div>
   </section>
-  <section id="guests" class="guests">
+  <section class="guests">
     <div class="container guests__container">
       <div class="guests__container-row">
         <div class="guests__top col-xl-9 col-lg-8">
@@ -1160,7 +1157,7 @@
       </div>
     </div>
   </section>
-  <section id="play-lists" class="play-lists">
+  <section class="play-lists">
     <div class="container play-lists__container">
       <div class="play-lists__row">
         <div class="play-lists__content">
@@ -1357,7 +1354,7 @@
       </div>
     </div>
   </section>
-  <section id="market" class="market">
+  <section class="market">
     <div class="container market__container">
       <div class="market__container-row">
 
@@ -1380,7 +1377,8 @@
             начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать :)
           </p>
           <p class="descr market__descr market__descr--last">
-            Итак, встречайте! Портативный радиоприёмник&#8209;колонка <span>W&#8209;Wave&nbsp;1.0&nbsp;xm</span>. Тщательный подбор всех
+            Итак, встречайте! Портативный радиоприёмник&#8209;колонка <span>W&#8209;Wave&nbsp;1.0&nbsp;xm</span>.
+            Тщательный подбор всех
             делатей,
             ручная сборка, качественный звук. Пока доступно только&nbsp;60&nbsp;штук в&nbsp;3&nbsp;цветах, но&nbsp;мы&nbsp;активно
             трудимся над новыми партиями и&nbsp;дизайном. Спешите приобрести!
@@ -1407,7 +1405,7 @@
       </div>
     </div>
   </section>
-  <section id="about-us" class="about-us">
+  <section class="about-us">
     <div class="container about-us__container">
       <div class="about-us__top">
 
@@ -1482,17 +1480,17 @@
       <form action="https://postman-echo.com/post" method="post" class="form about-us__form"
             autocomplete="off">
         <label for="message" aria-label="Поле Введите сообщение" class="form__message-label">
-          <textarea id="message" name="message" placeholder="Что скажете?" class="form__textarea form__input"
+          <textarea class="form__textarea form__input" id="message" name="message" placeholder="Что скажете?"
                     required></textarea>
         </label>
 
         <label for="name" aria-label="Поле Введите фамилие, имя и отчество" class="form__input-label">
-          <input id="name" name="name" type="text" class="form__input"
+          <input class="form__input" id="name" name="name" type="text"
                  placeholder="Имя" required>
         </label>
 
         <label for="email" aria-label="Поле Введите адрес электронной почты" class="form__input-label">
-          <input id="email" name="email" type="email" placeholder="E-mail" class="form__input" required>
+          <input class="form__input" id="email" name="email" type="email" placeholder="E-mail" required>
         </label>
 
         <div class="form__button">
@@ -1599,7 +1597,7 @@
 
   <div class="container footer__bottom">
     <p class="footer__bottom-logo">
-        W-WAVE <span class="reg">&reg;</span> 2021
+      W-WAVE <span class="reg">&reg;</span> 2021
     </p>
   </div>
 </footer>
