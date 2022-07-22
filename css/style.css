@@ -222,6 +222,7 @@ body {
   color: var(--color-electric-violet);
 }
 
+.link:focus-visible,
 .link:focus {
   color: var(--color-bg);
 }
@@ -1104,6 +1105,7 @@ body {
 
   color: var(--color-mirage);
   outline: none;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .broadcast__item-link:hover {
@@ -1431,10 +1433,89 @@ body {
   min-height: 220px;
 }
 
+.play-lists__card:hover {
+  background-color: var(--color-electric-violet);
+  color: var(--color-bg);
+}
+
+.play-lists__card:hover .play-lists__card-descr {
+  color: var(--color-bg);
+}
+
+.play-lists__card:hover .play-lists__card-picture:after {
+  opacity: .8;
+}
+
+.play-lists__card:hover .play-lists__card-picture:before {
+  opacity: 1;
+}
+
+
+.play-lists__card:focus {
+  background-color: var(--color-melrose);
+  color: var(--color-mirage);
+}
+
+.play-lists__card:focus .play-lists__card-descr {
+  color: var(--color-mirage);
+}
+
+.play-lists__card:focus .play-lists__card-picture:after {
+  opacity: .8;
+}
+
+.play-lists__card:focus .play-lists__card-picture:before {
+  opacity: 1;
+}
+
+.play-lists__card:active {
+  background-color: var(--color-daisy-bush);
+  color: var(--color-bg);
+}
+
+.play-lists__card:active .play-lists__card-descr {
+  color: var(--color-bg);
+}
+
+.play-lists__card:active .play-lists__card-picture:after {
+  opacity: .8;
+}
+
+.play-lists__card:active .play-lists__card-picture:before {
+  opacity: 1;
+}
+
 .play-lists__card-picture {
+  position: relative;
   margin: 0 0 16px 0;
   font-size: 0;
   line-height: 0;
+}
+
+.play-lists__card-picture:after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-mirage);
+  opacity: 0;
+}
+
+.play-lists__card-picture:before {
+  content: "";
+  position: absolute;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/play_btn_blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
 }
 
 .play-lists__card-img {
@@ -1689,8 +1770,8 @@ body {
 }
 
 .about-us__dawn {
-   flex-grow: 3;
- }
+  flex-grow: 3;
+}
 
 .about-us__form {
   display: flex;
@@ -1707,6 +1788,7 @@ body {
 .form__input-label {
   width: calc(48% + 3px);
 }
+
 /* input */
 .form__input {
   margin-bottom: 30px;
