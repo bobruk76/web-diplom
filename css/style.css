@@ -1040,6 +1040,7 @@ body {
 
 .broadcast__item {
   margin-bottom: 30px;
+
   display: flex;
   flex-direction: column;
 
@@ -1047,18 +1048,64 @@ body {
   max-width: 25%;
 }
 
+.broadcast__item:hover .broadcast__item-picture:after{
+  opacity: .7;
+}
+
+.broadcast__item:hover .broadcast__item-link{
+  color: var(--color-electric-violet);
+}
+
+.broadcast__item:focus-visible .broadcast__item-link,
+.broadcast__item:focus .broadcast__item-link{
+  padding: 0 5px 0 2px;
+  background-color: var(--color-melrose);
+  color: var(--color-bg);
+}
+
+.broadcast__item:focus .broadcast__item-link:after {
+  opacity: 1;
+}
+
+.broadcast__item:active .broadcast__item-link{
+  color: var(--color-daisy-bush);
+}
+
 .broadcast__item-picture {
+  position: relative;
   margin: 0;
   font-size: 0;
   line-height: 0;
 }
 
+.broadcast__item-picture:after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-bg);
+  opacity: 0;
+}
+
 .broadcast__item--first {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  width: calc(25% - 22px);
+  max-width: 25%;
   transform: translateY(-13px);
 }
 
 .broadcast__item--last {
+  margin-bottom: 30px;
   padding-top: 48px;
+
+  width: calc(25% - 22px);
+  max-width: 25%;
 
   display: flex;
   flex-direction: column;
@@ -1107,26 +1154,6 @@ body {
   outline: none;
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
-
-.broadcast__item-link:hover {
-  color: var(--color-electric-violet);
-}
-
-.broadcast__item-link:focus-visible,
-.broadcast__item-link:focus {
-  padding: 0 5px 0 2px;
-  background-color: var(--color-melrose);
-  color: var(--color-bg);
-}
-
-.broadcast__item-link:focus:after {
-  opacity: 1;
-}
-
-.broadcast__item-link:active {
-  color: var(--color-daisy-bush);
-}
-
 
 .broadcast__item-link > span > svg {
   fill: currentColor;
@@ -1343,7 +1370,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
 
-  max-height: 200vh;
+  max-height: 800px;
 }
 
 .play-lists__warning {
