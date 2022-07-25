@@ -268,13 +268,13 @@
     align-items: center;
   }
 
-  .market__left-picture {
-    position: relative;
-  }
+  /*.market__left-picture {*/
+  /*  position: relative;*/
+  /*}*/
 
-  .market__left-img {
-    max-width: 100%;
-  }
+  /*.market__left-img {*/
+  /*  max-width: 100%;*/
+  /*}*/
 
   .new {
     top: -5px;

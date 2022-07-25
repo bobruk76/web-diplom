@@ -1064,16 +1064,16 @@ body {
   max-width: 25%;
 }
 
-.broadcast__item:hover .broadcast__item-picture:after{
+.broadcast__item:hover .broadcast__item-picture:after {
   opacity: .7;
 }
 
-.broadcast__item:hover .broadcast__item-link{
+.broadcast__item:hover .broadcast__item-link {
   color: var(--color-electric-violet);
 }
 
 .broadcast__item:focus-visible .broadcast__item-link,
-.broadcast__item:focus .broadcast__item-link{
+.broadcast__item:focus .broadcast__item-link {
   padding: 0 5px 0 2px;
   background-color: var(--color-melrose);
   color: var(--color-bg);
@@ -1083,7 +1083,7 @@ body {
   opacity: 1;
 }
 
-.broadcast__item:active .broadcast__item-link{
+.broadcast__item:active .broadcast__item-link {
   color: var(--color-daisy-bush);
 }
 
@@ -1474,6 +1474,7 @@ body {
 
   max-width: 160px;
   min-height: 220px;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .play-lists__card:hover {
@@ -1492,7 +1493,6 @@ body {
 .play-lists__card:hover .play-lists__card-picture:before {
   opacity: 1;
 }
-
 
 .play-lists__card:focus {
   background-color: var(--color-melrose);
@@ -1526,6 +1526,7 @@ body {
 
 .play-lists__card:active .play-lists__card-picture:before {
   opacity: 1;
+  transform: scale(calc(49 / 42));
 }
 
 .play-lists__card-picture {
@@ -1545,6 +1546,7 @@ body {
   left: 0;
   background-color: var(--color-mirage);
   opacity: 0;
+  transition: opacity .3s ease-in-out;
 }
 
 .play-lists__card-picture:before {
@@ -1559,6 +1561,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0;
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
 }
 
 .play-lists__card-img {
@@ -1577,10 +1580,10 @@ body {
 }
 
 .play-lists__card-descr {
-  /*padding-left: 16px;*/
-
   font-size: 12px;
   color: var(--color-gray-chateau);
+
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 
@@ -1609,21 +1612,19 @@ body {
 }
 
 .market__container-row {
-  display: flex;
-
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.market__left {
-  padding-top: 7px;
   position: relative;
 
-  flex-basis: calc(100% * 7 / 12);
+  display: flex;
+  justify-content: right;
+
+  background-image: url("../img/market.png");
+  background-size: calc(100% * 7 / 12 - 14px);
+  background-repeat: no-repeat;
+  background-position: 0 7px;
 }
 
-
-.new {
+.market__container-row:before {
+  content: "";
   position: absolute;
   z-index: 2;
   top: 0;
@@ -1644,6 +1645,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
+
 
 .market__title {
   margin-bottom: 18px;
