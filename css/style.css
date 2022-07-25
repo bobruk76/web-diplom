@@ -1,6 +1,7 @@
 :root {
   --color-bg: #fff;
   --color-gray-chateau: #a1a6b4;
+  --color-shade-gray: #d2d5dd;
   --color-mischka: #d2d5dd;
   --color-mirage: #121723;
   --color-charade: #292e39;
@@ -10,6 +11,7 @@
   --color-electric-violet: #6d31ee;
   --color-daisy-bush: #4f28a5;
   --color-error: #FF6F6F;
+
 
 }
 
@@ -253,6 +255,20 @@ body {
   flex-wrap: nowrap;
 
   font-size: 20px;
+}
+
+.play-lists__item:hover .radio-new-checker {
+  border-color: var(--color-electric-violet);
+}
+
+.play-lists__item:focus .radio-new-checker {
+  border-color: var(--color-electric-violet);
+  background-color: var(--color-shade-gray);
+}
+
+.play-lists__item:active .radio-new-checker {
+  border-color: var(--color-electric-violet);
+  border-width: 7px;
 }
 
 .copyright {
@@ -1152,7 +1168,7 @@ body {
 
   color: var(--color-mirage);
   outline: none;
-  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, padding .3s ease-in-out;
 }
 
 .broadcast__item-link > span > svg {
@@ -1426,7 +1442,7 @@ body {
   border-width: 2px;
   border-radius: 50%;
 
-  transition: border .3s ease-in-out;
+  transition: border .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .radio-new-check:checked + .radio-new-checker {
