@@ -1827,10 +1827,14 @@ body {
 }
 
 .form__message-label {
+  position: relative;
+
   width: 100%;
 }
 
 .form__input-label {
+  position: relative;
+
   width: calc(48% + 3px);
 }
 
@@ -2023,16 +2027,14 @@ body {
 }
 
 /* validate */
-
 .just-validate-error-field {
-  position: relative;
   border-color: var(--color-error);
 }
 
 .just-validate-error-label {
   position: absolute;
   top: 9px;
-  left: 48px;
+  left: 32px;
 
   color: var(--color-error);
   font-size: 12px;
