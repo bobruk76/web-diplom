@@ -60,6 +60,18 @@ const validation = new JustValidate(
 ;
 
 validation
+    .addField('#agree', [
+        {
+            rule: 'required',
+            errorMessage: 'Вы не дали согласие',
+        },
+    ])
+    .addField('#message', [
+        {
+            rule: 'required',
+            errorMessage: 'Вы не ввели сообщение',
+        },
+    ])
     .addField('#name', [
         {
             rule: 'required',
