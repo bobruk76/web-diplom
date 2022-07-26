@@ -416,7 +416,7 @@ body {
 
 .burger--active > .burger__first {
   transform-origin: top left;
-  transform: rotate(45deg) translateY(3px);
+  transform: rotate(45deg) translateX(3px);
 }
 
 .burger > .burger__second {
@@ -433,7 +433,7 @@ body {
 
 .burger--active > .burger__second {
   transform-origin: left;
-  transform: rotate(-45deg) translateX(-8px) translateY(4px);
+  transform: rotate(-45deg) translateX(-4px) translateY(7px);
   visibility: hidden;
 }
 
@@ -450,7 +450,7 @@ body {
 
 .burger--active > .burger__third {
   transform-origin: bottom left;
-  transform: rotate(-45deg) translateY(-3px);
+  transform: rotate(-45deg) translateX(4px);
 }
 
 /* header */
@@ -473,6 +473,8 @@ body {
   padding-bottom: 20px;
   align-items: center;
   text-align: center;
+
+  overflow-x: initial;
 }
 
 .header__logo {
@@ -1957,15 +1959,18 @@ body {
 
 /* footer */
 .footer {
+  padding: 0;
   background-color: var(--color-charade);
   color: var(--color-bg);
 
+  width: 100%;
   overflow-x: hidden;
 }
 
 .footer__top {
   padding-top: 93px;
-  padding-bottom: 70px;
+  padding-bottom: 0;
+  margin-bottom: 73px;
 }
 
 .footer__top-row {
@@ -1982,6 +1987,14 @@ body {
 
 .footer__logo {
   margin-bottom: 13px;
+}
+
+.footer__top-logo {
+  padding-top: 40px;
+
+  background-image: url("../img/logo-footer.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .footer__social {
@@ -2014,8 +2027,15 @@ body {
 }
 
 .footer__wave {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   display: block;
+
+  background-image: url("../img/long-wave.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+
+  height: 12px;
 }
 
 .footer__bottom-logo {
