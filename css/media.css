@@ -272,14 +272,14 @@
     background-position-x: left;
   }
 
-  .market__left {
-    position: initial;
-    padding-bottom: 41px;
+  /*.market__left {*/
+  /*  position: initial;*/
+  /*  padding-bottom: 41px;*/
 
-    flex-basis: calc((100% / 2) - 15px);
-    display: flex;
-    align-items: center;
-  }
+  /*  flex-basis: calc((100% / 2) - 15px);*/
+  /*  display: flex;*/
+  /*  align-items: center;*/
+  /*}*/
 
   .market__container-row:before {
     top: calc(25% - 41px);
@@ -716,7 +716,8 @@
   }
 
   .market__container-row:before {
-    top: 0;
+    top: 15px;
+
     background-image: url("../img/new.svg");
 
     min-width: 160px;
@@ -727,10 +728,10 @@
     max-width: 90%;
   }
 
-  .market__left {
-    flex-basis: initial;
-    padding-bottom: 44px;
-  }
+  /*.market__left {*/
+  /*  flex-basis: initial;*/
+  /*  padding-bottom: 44px;*/
+  /*}*/
 
   .market__right {
     flex-basis: initial;
@@ -1523,10 +1524,10 @@
     min-width: 100px;
   }
 
-  .market__left {
-    margin-bottom: 29px;
-    padding: 0;
-  }
+  /*.market__left {*/
+  /*  margin-bottom: 29px;*/
+  /*  padding: 0;*/
+  /*}*/
 
   .market__title {
     margin-bottom: 10px;
