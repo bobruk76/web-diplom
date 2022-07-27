@@ -1624,18 +1624,17 @@ body {
 }
 
 .market__container-row {
-  position: relative;
-
   display: flex;
-  justify-content: right;
-
-  background-image: url("../img/market.png");
-  background-size: calc(100% * 7 / 12 - 14px);
-  background-repeat: no-repeat;
-  background-position: 0 7px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.market__container-row:before {
+.market__left {
+  position: relative;
+  padding-top: 8px;
+}
+
+.market__left:before {
   content: "";
   position: absolute;
   z-index: 2;
@@ -1650,6 +1649,10 @@ body {
   min-height: 160px;
 }
 
+.market__left-img {
+  width: 100%;
+}
+
 .market__right {
   flex-basis: calc((100% * 5 / 12) - 16px);
   display: flex;
@@ -1661,16 +1664,11 @@ body {
 
 .market__title {
   margin-bottom: 18px;
-}
+  padding-bottom: 30px;
 
-.market__right-picture {
-  margin: 0;
-  font-size: 0;
-  line-height: 0;
-}
-
-.market__wave {
-  margin-bottom: 19px;
+  background-image: url("../img/wave.svg");
+  background-repeat: repeat-x;
+  background-position: left bottom;
 }
 
 .market__descr {
@@ -1737,17 +1735,18 @@ body {
 
 .about-us__container {
   padding-top: 97px;
-  padding-bottom: 90px;
+  padding-bottom: 91px;
 }
 
 .about-us__title {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
   color: var(--color-bg);
 }
 
 .about-us__descr {
   font-size: 20px;
   line-height: 160%;
+  width: 97%;
 }
 
 .about-us__descr > strong {
