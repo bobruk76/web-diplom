@@ -110,6 +110,8 @@ body {
   border-color: currentColor;
   color: currentColor;
 
+  cursor: pointer;
+
   transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
@@ -255,21 +257,9 @@ body {
   flex-wrap: nowrap;
 
   font-size: 20px;
+  cursor: pointer;
 }
 
-.play-lists__item:hover .radio-new-checker {
-  border-color: var(--color-electric-violet);
-}
-
-.play-lists__item:focus .radio-new-checker {
-  border-color: var(--color-electric-violet);
-  background-color: var(--color-shade-gray);
-}
-
-.play-lists__item:active .radio-new-checker {
-  border-color: var(--color-electric-violet);
-  border-width: 7px;
-}
 
 .copyright {
   margin-bottom: 6px;
@@ -1064,6 +1054,8 @@ body {
 
   width: calc(25% - 22px);
   max-width: 25%;
+
+  cursor: pointer;
 }
 
 .broadcast__item:hover .broadcast__item-picture:after {
@@ -1431,6 +1423,22 @@ body {
 
 .play-lists__item {
   margin-bottom: 20px;
+
+}
+
+
+.play-lists__item:hover .radio-new-checker {
+  border-color: var(--color-electric-violet);
+}
+
+.play-lists__item:focus .radio-new-checker {
+  border-color: var(--color-electric-violet);
+  background-color: var(--color-shade-gray);
+}
+
+.play-lists__item:active .radio-new-checker {
+  border-color: var(--color-electric-violet);
+  border-width: 7px;
 }
 
 .radio-new-checker {
@@ -1476,6 +1484,8 @@ body {
 
   max-width: 160px;
   min-height: 220px;
+  cursor: pointer;
+
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
