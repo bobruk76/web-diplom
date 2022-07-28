@@ -330,12 +330,26 @@ body {
   position: relative;
   z-index: 2;
 
-  background: var(--color-athens-gray);
+  background-color: var(--color-athens-gray);
   border-radius: 10px;
   font-size: 16px;
   line-height: 100%;
 
   min-height: 39px;
+}
+
+.choices__inner:hover {
+  background-color: rgba(230, 232, 236, .4);
+  border-color: transparent;
+}
+
+.choices__inner:focus {
+  border-color: var(--color-electric-violet);
+}
+
+.choices__inner:active {
+  background-color: var(--color-shade-gray);
+  border-color: transparent;
 }
 
 .is-open .choices__inner {
