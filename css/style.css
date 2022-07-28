@@ -785,6 +785,31 @@ body {
   max-width: 85%;
 }
 
+.hero__descr-link {
+  padding: 2px;
+  color: var(--color-electric-violet);
+  outline: none;
+
+  cursor: pointer;
+}
+
+.hero__descr-link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+
+.hero__descr-link:focus {
+  background-color: var(--color-melrose);
+  color: var(--color-bg);
+}
+
+
+.hero__descr-link:focus-visible,
+.hero__descr-link:active {
+  color: var(--color-daisy-bush);
+  border-bottom: 1px solid currentColor;
+}
+
 .form__btn,
 .hero__btn {
   padding: 23px 52px;
