@@ -1539,6 +1539,12 @@
     padding: 0;
   }
 
+  .market__left:before {
+    top: -49px;
+    left: -48px;
+    transform: scale(0.39);
+  }
+
   .market__title {
     padding-bottom: 23px;
     margin-bottom: 19px;
@@ -1546,6 +1552,7 @@
   }
 
   .market__descr {
+    width: 101%;
     line-height: 157%;
   }
 
@@ -1578,7 +1585,7 @@
   /*abous-us*/
   .about-us__container {
     padding-top: 54px;
-    padding-bottom: 54px;
+    padding-bottom: 51px;
   }
 
   .about-us__title {
@@ -1623,8 +1630,8 @@
   }
 
   .form__input {
-    margin-bottom: 28px;
     padding: 16px 23px;
+    margin-bottom: 29px;
 
     font-size: 16px;
     line-height: 16px;
@@ -1667,6 +1674,8 @@
   .footer__top {
     padding-top: 54px;
     padding-bottom: 0;
+
+    overflow-x: initial;
     /*padding: 54px 30px 0 31px;*/
   }
 
@@ -1691,13 +1700,15 @@
   }
 
   .footer__top-logo {
-    margin-bottom: 56px;
+    padding-top: 43px;
+    margin-bottom: 31px;
   }
 
   .footer__top-menu {
     position: relative;
     padding-top: 28px;
     padding-bottom: 26px;
+    margin-bottom: 11px;
     background-color: var(--color-mirage);
   }
 
@@ -1725,10 +1736,6 @@
 
   .footer__bottom {
     font-size: 12px;
-  }
-
-  .footer__wave {
-    padding-top: 8px;
   }
 
   .footer__bottom p {
