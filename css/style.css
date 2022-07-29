@@ -550,6 +550,8 @@ body {
   visibility: visible;
   transform: none;
   opacity: 1;
+
+  min-width: 260px;
 }
 
 .header__input {

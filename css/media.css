@@ -909,7 +909,7 @@
   }
 
   .header__hav {
-    padding-top: 62px;
+    padding-top: 61px;
     padding-bottom: 6px;
   }
 
@@ -925,7 +925,12 @@
   .header__form {
     right: 0;
     top: 40px;
-    width: 80%;
+    width: initial;
+    min-width: 200px;
+  }
+
+  .header__input {
+    width: 100%;
   }
 
   .header__bottom {
@@ -933,7 +938,7 @@
   }
 
   .header__bottom-content {
-    padding: 10px 0;
+    padding: 9px 0;
 
     position: relative;
   }
