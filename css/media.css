@@ -1,9 +1,13 @@
 @media (max-width: 1200px) {
+  :root {
+    --indent: 100px;
+  }
+
   .container {
     padding-top: 94px;
     padding-bottom: 94px;
 
-    max-width: calc(100% - 200px);
+    max-width: calc(100% - (2 * var(--indent)));
   }
 
   .header__top-content {
@@ -402,7 +406,7 @@
   }
 
   .container {
-    max-width: calc(100% - (2 * var(--indent)));
+    max-width: max(calc(100% - (2 * var(--indent))), 530px);
   }
 
   /* header */
@@ -860,6 +864,10 @@
     --indent: 32px;
   }
 
+  .container {
+    max-width: calc(100% - (2 * var(--indent)));
+  }
+
   .title {
     font-weight: 400;
     font-size: 24px;
@@ -1233,6 +1241,7 @@
     display: inline-flex;
     justify-content: flex-end;
     width: 77%;
+    max-width: 80px;
   }
 
   .broadcast__item-bottom > p {
@@ -1748,7 +1757,6 @@
   }
 
 }
-
 
 @media (max-width: 320px) {
 
