@@ -853,13 +853,11 @@
 
 @media (max-width: 768px) {
 
-
 }
-
 
 @media (max-width: 576px) {
   :root {
-    --indent: 31px;
+    --indent: 32px;
   }
 
   .title {
@@ -997,12 +995,12 @@
 
   /*hero*/
   .hero__container {
-    padding-top: 35px;
-    padding-bottom: 42px;
+    padding-top: 37px;
+    padding-bottom: 41px;
   }
 
   .hero__title {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     padding-top: 0;
     font-weight: 700;
     font-size: 32px;
@@ -1044,8 +1042,7 @@
   }
 
   .podcasts__item-content {
-    padding-top: 17px;
-    padding-bottom: 15px;
+    padding: 17px 0 15px;
   }
 
   .podcasts__item-date {
@@ -1145,6 +1142,8 @@
   }
 
   .broadcast__item--first {
+    margin-bottom: 28px;
+
     max-width: 100%;
     width: 100%;
   }
@@ -1220,7 +1219,7 @@
 
   .broadcast__item--last {
     margin: 0;
-    padding-top: 29px;
+    padding-top: 31px;
   }
 
   .broadcast__item-bottom {
@@ -1277,11 +1276,7 @@
   }
 
   .arrow-in-circle {
-    transform: scale(.6);
-  }
-
-  .guests__accordion-item.is-active .arrow-in-circle {
-    transform: scale(.6) rotate(180deg);
+    width: 26px;
   }
 
   .arrow-in-circle--active {
@@ -1289,7 +1284,7 @@
   }
 
   .guests__accordion-item-title {
-    padding: 4px 0 5px;
+    padding: 4px 3px 5px 0;
   }
 
   .guests__items {
@@ -1458,7 +1453,7 @@
   }
 
   .radio-new-caption {
-    padding: 7px 18px 8px 18px;
+    padding: 7px 19px 7px 20px;
     margin: 0;
 
     display: inline;
@@ -1490,7 +1485,7 @@
   }
 
   .play-lists__card {
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 
   .play-lists__card-picture {
@@ -1503,9 +1498,7 @@
   }
 
   .play-lists__card-content {
-    padding-left: 9px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding: 9px 0 9px 9px;
 
     width: 100%;
     border: 1px solid var(--color-athens-gray);
@@ -1513,6 +1506,8 @@
 
   .play-lists__card-title {
     margin-bottom: 5px;
+
+    display: block;
   }
 
   .play-lists__descr.warning {
@@ -1539,13 +1534,14 @@
     min-width: 100px;
   }
 
-  /*.market__left {*/
-  /*  margin-bottom: 29px;*/
-  /*  padding: 0;*/
-  /*}*/
+  .market__left {
+    margin-bottom: 36px;
+    padding: 0;
+  }
 
   .market__title {
-    margin-bottom: 10px;
+    padding-bottom: 23px;
+    margin-bottom: 19px;
     max-width: initial;
   }
 
@@ -1554,7 +1550,7 @@
   }
 
   .market__descr--last {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 
   .market__descr > span {
