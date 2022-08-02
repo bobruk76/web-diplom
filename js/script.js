@@ -112,7 +112,6 @@ burgerButtons.forEach(burgerButton =>
 
 const searchButton = document.querySelector('.header__btn-search')
 const headerForm = document.querySelector('.header__form')
-// const closeButton = document.querySelector('.cross-in-circle')
 
 searchButton.addEventListener('click', () => {
     if (!headerForm.classList.contains('header__form--active')) {
@@ -123,9 +122,6 @@ searchButton.addEventListener('click', () => {
 
 })
 
-// closeButton.addEventListener('click', () => {
-//     headerForm.classList.remove('header__form--active')
-// })
 
 function overWords() {
     let a, w = document.createNodeIterator(document, NodeFilter.SHOW_TEXT);
