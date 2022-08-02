@@ -192,6 +192,8 @@
 
   /* play-lists */
   .play-lists__content {
+    margin-bottom: 10px;
+
     max-width: 100%;
   }
 
@@ -222,7 +224,7 @@
 
   .play-lists__cards {
     order: 1;
-    padding-top: 11px;
+    padding-top: 0;
     padding-bottom: 20px;
 
     margin-bottom: 31px;
@@ -677,18 +679,22 @@
     margin-bottom: 10px;
   }
 
-  .play-lists__item {
-    margin-bottom: 34px;
+  .play-lists__content {
+    margin-bottom: 18px;
   }
 
   .play-lists__items {
-    margin-bottom: 6px;
+    margin-bottom: 0;
 
     max-height: 240px;
   }
 
+  .play-lists__item {
+    margin-bottom: 34px;
+  }
+
   .play-lists__card {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     min-width: calc(47% + 2px);
     min-height: initial;
   }
