@@ -506,7 +506,7 @@ body {
   line-height: 100%;
 }
 
-.header__item {
+.header__item:not(:last-child) {
   margin-right: 59px;
 }
 
