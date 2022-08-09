@@ -158,9 +158,9 @@ body {
   align-items: center;
 }
 
-.social__link-phone {
-  display: none;
-}
+/*.social__link-phone {*/
+/*  display: none;*/
+/*}*/
 
 .social-item {
   color: var(--color-gray-chateau);
