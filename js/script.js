@@ -129,7 +129,7 @@ function overWords() {
     }
 }
 
-// guests__item--active
+// guests__item
 const guestsItems = document.querySelectorAll('.guests__item')
 let guestsItemsActive = document.querySelectorAll('.guests__item--active')
 guestsItems.forEach(guestsItem =>
@@ -140,4 +140,27 @@ guestsItems.forEach(guestsItem =>
             guestsItem.classList.add('guests__item--active')
         }
         guestsItemsActive = [guestsItem]
+    }))
+
+// podcasts__item-btn
+const podcastsItems = document.querySelectorAll('.podcasts__item-btn')
+let podcastsItemPlay = document.querySelector('.podcasts__item-btn--play')
+podcastsItems.forEach(podcastsItem =>
+    podcastsItem.addEventListener('click', () => {
+        if (podcastsItem.classList.contains('podcasts__item-btn--paused')) {
+            podcastsItem.classList.remove('podcasts__item-btn--paused')
+        } else {
+            if (podcastsItemPlay !== podcastsItem) {
+                if (podcastsItemPlay) {
+                    podcastsItemPlay.classList.remove('podcasts__item-btn--play')
+                    if (podcastsItemPlay.classList.contains('podcasts__item-btn--paused')) {
+                        podcastsItemPlay.classList.remove('podcasts__item-btn--paused')
+                    }
+                }
+                podcastsItem.classList.add('podcasts__item-btn--play')
+                podcastsItemPlay = podcastsItem
+            } else {
+                podcastsItem.classList.add('podcasts__item-btn--paused')
+            }
+        }
     }))

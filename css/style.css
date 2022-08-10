@@ -71,10 +71,12 @@ body {
 
 .btn-reset {
   padding: 0;
-  border: none;
+
   background-color: transparent;
   color: inherit;
   cursor: pointer;
+
+  border: none;
 }
 
 .list-reset {
@@ -128,7 +130,7 @@ body {
 .btn-outline:active {
   color: var(--color-bg);
   background-color: var(--color-daisy-bush);
-  border: none;
+  border-color: transparent;
 }
 
 .flag {
@@ -856,32 +858,46 @@ body {
 .podcasts__item-btn {
   color: var(--color-gray-chateau);
   outline: none;
-  transition: color .3s ease-in-out;
+  overflow: hidden;
+  transition: color .3s ease-in-out, transform .3s ease-in-out;
 }
 
-.podcasts__item-content:hover .podcasts__item-btn{
+.podcasts__item-btn:hover {
   color: var(--color-electric-violet);
 }
 
-.podcasts__item-content:focus-visible .podcasts__item-btn,
-.podcasts__item-content:focus .podcasts__item-btn {
+.podcasts__item-btn:focus-visible,
+.podcasts__item-btn:focus {
   color: var(--color-melrose);
 }
 
-.podcasts__item-content:active .podcasts__item-btn {
+.podcasts__item-btn--play,
+.podcasts__item-btn:active {
   color: var(--color-bg);
 }
 
-.podcasts__item-content:active .podcasts__item-btn > svg {
+.podcasts__item-btn--play > svg,
+.podcasts__item-btn:active > svg {
   fill: var(--color-daisy-bush);
 }
 
 .podcasts__item-btn > svg {
   stroke: currentColor;
+  transition: transform .3s ease-in-out;
 }
 
 .podcasts__item-btn > svg > path {
   fill: currentColor;
+}
+
+.podcasts__item-btn--paused {
+  background-image: url("../img/btn-paused.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.podcasts__item-btn--paused > svg {
+  transform: translateX(50px);
 }
 
 .podcasts__top {
@@ -1400,19 +1416,19 @@ body {
 .guests__content-btn:hover {
   color: var(--color-bg);
   background-color: var(--color-melrose);
-  border: none;
+  border-color: transparent;
 }
 
 .guests__content-btn:focus {
   color: var(--color-bg);
   background-color: var(--color-electric-violet);
-  border: none;
+  border-color: transparent;
 }
 
 .guests__content-btn:active {
   color: var(--color-bg);
   background-color: var(--color-daisy-bush);
-  border: none;
+  border-color: transparent;
 }
 
 /* play-lists */
@@ -1828,7 +1844,7 @@ body {
 }
 
 .about-us__item-picture {
-  margin: 0;
+  margin: 0 0 30px 0;
 
   flex: 0 0 auto;
   font-size: 0;
@@ -1836,7 +1852,6 @@ body {
 }
 
 .about-us__item-title {
-  padding-top: 30px;
   margin-bottom: 8px;
 
   flex: 0 1 auto;
