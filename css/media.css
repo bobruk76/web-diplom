@@ -555,6 +555,10 @@
     width: 100%;
   }
 
+  .podcasts__item:nth-child(2n-1) {
+    margin-right: 0;
+  }
+
   .podcasts__bottom {
     padding-top: 31px;
   }
@@ -1095,12 +1099,9 @@
     line-height: 12px;
   }
 
-  .play-btn-small {
-    display: initial;
-  }
-
   .play-btn {
-    display: none;
+    width: 36px;
+    height: 36px;
   }
 
   .podcasts__item-btn {

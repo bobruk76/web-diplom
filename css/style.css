@@ -99,6 +99,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
+
+  transition: color .3s ease-in-out, border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .btn-outline {
@@ -127,10 +129,6 @@ body {
   color: var(--color-bg);
   background-color: var(--color-daisy-bush);
   border: none;
-}
-
-.play-btn-small {
-  display: none;
 }
 
 .flag {
@@ -165,6 +163,8 @@ body {
 .social-item {
   color: var(--color-gray-chateau);
   margin-right: 32px;
+
+  transition: color .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out;
 }
 
 .social-item > a > svg {
@@ -853,25 +853,24 @@ body {
 
 .podcasts__item-btn {
   color: var(--color-gray-chateau);
-  transition: color .3s ease-in-out;
-
   outline: none;
+  transition: color .3s ease-in-out;
 }
 
-.podcasts__item-btn:hover {
+.podcasts__item-content:hover .podcasts__item-btn{
   color: var(--color-electric-violet);
 }
 
-.podcasts__item-btn:focus-visible,
-.podcasts__item-btn:focus {
+.podcasts__item-content:focus-visible .podcasts__item-btn,
+.podcasts__item-content:focus .podcasts__item-btn {
   color: var(--color-melrose);
 }
 
-.podcasts__item-btn:active {
+.podcasts__item-content:active .podcasts__item-btn {
   color: var(--color-bg);
 }
 
-.podcasts__item-btn:active > svg {
+.podcasts__item-content:active .podcasts__item-btn > svg {
   fill: var(--color-daisy-bush);
 }
 
@@ -954,6 +953,7 @@ body {
   align-items: center;
 
   border-bottom: var(--color-athens-gray) solid 1px;
+  cursor: pointer;
 }
 
 .podcasts__item-info {
@@ -1140,6 +1140,8 @@ body {
   left: 0;
   background-color: var(--color-bg);
   opacity: 0;
+
+  transition: opacity .3s ease-in-out;
 }
 
 .broadcast__item-first {
