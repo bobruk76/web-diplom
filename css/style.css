@@ -202,6 +202,8 @@ body {
   color: currentColor;
   outline: none;
   transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+  cursor: pointer;
 }
 
 .link:after {
