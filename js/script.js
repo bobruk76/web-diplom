@@ -122,10 +122,22 @@ searchButton.addEventListener('click', () => {
 
 })
 
-
 function overWords() {
     let a, w = document.createNodeIterator(document, NodeFilter.SHOW_TEXT);
     while (a = w.nextNode()) {
         if (a.textContent.trim().length && a.parentNode.tagName != 'STYLE' && a.parentNode.tagName !== 'TITLE' && a.parentNode.tagName !== 'SCRIPT') a.textContent = 'Одиннадцатиклассница пошла посмотреть на достопримечательность, а Константин Константинопольский рассказал о клиентоориентированности.'
     }
 }
+
+// guests__item--active
+const guestsItems = document.querySelectorAll('.guests__item')
+let guestsItemsActive = document.querySelectorAll('.guests__item--active')
+guestsItems.forEach(guestsItem =>
+    guestsItem.addEventListener('click', () => {
+        if (!guestsItem.classList.contains('guests__item--active')) {
+            guestsItemsActive.forEach(item =>
+                item.classList.remove('guests__item--active'))
+            guestsItem.classList.add('guests__item--active')
+        }
+        guestsItemsActive = [guestsItem]
+    }))
