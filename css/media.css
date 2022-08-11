@@ -1644,8 +1644,11 @@
     margin-bottom: 29px;
   }
 
+  .about-us__item-picture {
+    margin-bottom: 12px;
+  }
+
   .about-us__item-title {
-    padding-top: 11px;
     margin-bottom: 4px;
 
     font-weight: 500;
@@ -1662,7 +1665,7 @@
 
   .form__input {
     padding: 16px 23px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
 
     font-size: 16px;
     line-height: 16px;
@@ -1676,8 +1679,9 @@
   }
 
   .form__textarea {
-    min-height: 149px;
+    margin-bottom: 25px;
 
+    min-height: 149px;
     border-radius: 20px;
   }
 
@@ -1707,17 +1711,10 @@
     padding-bottom: 0;
 
     overflow-x: initial;
-    /*padding: 54px 30px 0 31px;*/
   }
 
   .footer .social-items {
-    width: 81%;
-    justify-content: space-between;
-    padding-left: 0;
-  }
-
-  .footer .social-item {
-    margin: 0;
+    width: 84%;
   }
 
   .footer__items {
@@ -1731,8 +1728,8 @@
   }
 
   .footer__top-logo {
-    padding-top: 43px;
-    margin-bottom: 31px;
+    padding-top: 37px;
+    margin-bottom: 5px;
   }
 
   .footer__top-menu {
