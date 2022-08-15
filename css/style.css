@@ -914,8 +914,6 @@ body {
 .podcasts__items {
   display: flex;
   flex-wrap: wrap;
-
-  /*justify-content: space-between;*/
 }
 
 .podcasts__item {
@@ -927,6 +925,16 @@ body {
   flex-wrap: wrap;
 
   min-width: calc(50% - 15px);
+
+  opacity: 1;
+
+  transition: opacity .3s ease-in-out, height .3s ease-in-out;
+}
+
+.podcasts__item--hide {
+  margin: 0;
+  opacity: 0;
+  height: 0;
 }
 
 .podcasts__item:nth-child(2n-1) {

@@ -143,9 +143,9 @@ guestsItems.forEach(guestsItem =>
     }))
 
 // podcasts__item-btn
-const podcastsItems = document.querySelectorAll('.podcasts__item-btn')
+const podcastsItemsBtn = document.querySelectorAll('.podcasts__item-btn')
 let podcastsItemPlay = document.querySelector('.podcasts__item-btn--play')
-podcastsItems.forEach(podcastsItem =>
+podcastsItemsBtn.forEach(podcastsItem =>
     podcastsItem.addEventListener('click', () => {
         if (podcastsItem.classList.contains('podcasts__item-btn--paused')) {
             podcastsItem.classList.remove('podcasts__item-btn--paused')
@@ -164,3 +164,15 @@ podcastsItems.forEach(podcastsItem =>
             }
         }
     }))
+
+// podcasts__btn
+const podcastsBtn = document.querySelector('.podcasts__btn')
+const podcastsItems = [...document.querySelectorAll('.podcasts__item')].slice(-4)
+
+podcastsBtn.addEventListener('click', (event) => {
+    event.preventDefault()
+    podcastsItems.forEach(item => {
+        item.classList.toggle('podcasts__item--hide')
+    })
+})
+
