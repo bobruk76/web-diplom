@@ -167,30 +167,31 @@ body {
   align-items: center;
 }
 
-/*.social__link-phone {*/
-/*  display: none;*/
-/*}*/
-
 .social-item {
   color: var(--color-gray-chateau);
   margin-right: 32px;
 
+
+}
+
+.icon-link {
+  cursor: pointer;
   transition: color .3s ease-in-out, width .3s ease-in-out, height .3s ease-in-out;
 }
 
-.social-item > a > svg {
+.icon-link > svg {
   fill: currentColor;
 }
 
-.social-item:hover {
+.icon-link:hover {
   color: var(--color-electric-violet);
 }
 
-.social-item:focus {
+.icon-link:focus {
   color: var(--color-melrose);
 }
 
-.social-item:active {
+.icon-link:active {
   color: var(--color-daisy-bush);
 }
 
@@ -1850,6 +1851,7 @@ body {
 }
 
 .about-us__item {
+  margin: 0;
   display: flex;
 
   flex-direction: column;
