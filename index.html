@@ -1623,17 +1623,26 @@
 
       <form action="https://postman-echo.com/post" method="post" class="form about-us__form"
             autocomplete="off">
-        <label class="form__message-label" for="message" aria-label="Поле Введите сообщение">
+        <label class="form__message-label" for="message">
+          <span class="visually-hidden">
+            Поле Введите сообщение
+          </span>
           <textarea class="form__textarea form__input" id="message" name="message" placeholder="Что скажете?"
                     required></textarea>
         </label>
 
-        <label class="form__input-label" for="name" aria-label="Поле Введите фамилие, имя и отчество">
+        <label class="form__input-label" for="name">
+          <span class="visually-hidden">
+            Поле Введите фамилие, имя и отчество
+          </span>
           <input class="form__input" id="name" name="name" type="text"
                  placeholder="Имя" required>
         </label>
 
-        <label class="form__input-label" for="email" aria-label="Поле Введите адрес электронной почты">
+        <label class="form__input-label" for="email">
+          <span class="visually-hidden">
+            Поле Введите адрес электронной почты
+          </span>
           <input class="form__input" id="email" name="email" type="email" placeholder="E-mail" required>
         </label>
 
@@ -1641,7 +1650,7 @@
           <button class="btn btn-reset form__btn" type="submit" aria-label="Кнопка отправить форму">Отправить</button>
         </div>
         <div class="form__bottom">
-          <label class="form__checkbox" for="agree" aria-label="Согласен на обработку персональных данных">
+          <label class="form__checkbox" for="agree">
             <input class="form__checkbox-input form__checkbox-input--hide" type="checkbox" id="agree">
             <span class="form__checkbox-descr checkbox-icon">Согласен на&nbsp;обработку персональных данных</span>
           </label>
