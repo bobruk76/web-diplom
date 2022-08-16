@@ -21,35 +21,35 @@
   <div class="header__top">
     <div class="container header__top-content">
       <div class="header__top-row">
-        <a class="header__logo">
-          <picture class="header__logo-picture">
+        <a class="header__logo" aria-label="Лого" href="#">
+          <picture class="header__logo-picture" aria-hidden="true">
             <source media="(max-width: 576px)" srcset="img/logo-small.svg">
             <img src="img/logo.svg" alt="Лого" class="header__logo-img">
           </picture>
         </a>
         <nav class="header__hav">
           <button class="burger btn-reset" aria-label="Открыть основное меню" data-items="header__items">
-            <span class="burger__first burger__line"></span>
-            <span class="burger__second burger__line"></span>
-            <span class="burger__third burger__line"></span>
+            <span class="burger__first burger__line" aria-hidden="true"></span>
+            <span class="burger__second burger__line" aria-hidden="true"></span>
+            <span class="burger__third burger__line" aria-hidden="true"></span>
           </button>
-          <ul class="list-reset header__items">
-            <li class="header__item"><a href="#podcasts" class="header__link link">Подкасты</a></li>
-            <li class="header__item"><a href="#broadcast" class="header__link link">Передачи</a></li>
-            <li class="header__item"><a href="#guests" class="header__link link">Гости</a></li>
-            <li class="header__item"><a href="#play-lists" class="header__link link">Плейлисты</a></li>
-            <li class="header__item"><a href="#about-us" class="header__link link">О нас</a></li>
+          <ul class="list-reset header__items" aria-label="Основное меню сервиса">
+            <li class="header__item"><a class="header__link link" href="#podcasts">Подкасты</a></li>
+            <li class="header__item"><a class="header__link link" href="#broadcast">Передачи</a></li>
+            <li class="header__item"><a class="header__link link" href="#guests">Гости</a></li>
+            <li class="header__item"><a class="header__link link" href="#play-lists">Плейлисты</a></li>
+            <li class="header__item"><a class="header__link link" href="#about-us">О нас</a></li>
           </ul>
         </nav>
         <div class="header__top-right">
           <form action="https://postman-echo.com/post" method="post" class="form header__form"
                 aria-label="Форма поиска">
-            <label for="header__input" class="visually-hidden">Введите строку поика</label>
+            <label for="header__input" class="visually-hidden">Введите строку поиска</label>
             <input class="header__input" id="header__input" name="search-string" type="text"
                    placeholder="Поиск по сайту">
           </form>
           <button class="btn-reset header__btn header__btn-search" aria-label="Кнопка поиска по сайту">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -65,9 +65,9 @@
   <div class="header__bottom">
     <div class="container header__bottom-content">
       <div class="header__bottom-content-row">
-        <button class="burger header__bottom-burger btn-reset" aria-label="Что в эфире?"
+        <button class="burger header__bottom-burger btn-reset" aria-label="Кнопка что в эфире?"
                 data-items="header__bottom-items">
-          <span class="burger-left">
+          <span class="burger-left" aria-hidden="true">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE"/>
               <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
@@ -100,31 +100,31 @@
 
         <div class="header__bottom-btns">
           <div class="header__bottom-btns-play early">
-            <button class="btn-reset header__btn header__btn--play" aria-label="Кнопка проиграть">
+            <button class="btn-reset header__btn header__btn--play" aria-label="Кнопка проиграть ранее в эфире">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"/>
               </svg>
             </button>
-            <p class="header__bottom-descr">
+            <p class="header__bottom-descr" aria-hidden="true">
               <span class="header__bottom-header">Ранее в эфире</span>
               <span>«Музыка»</span>
             </p>
           </div>
 
           <div class="header__bottom-btns-play now">
-            <button class="btn-reset header__btn header__btn--play" aria-label="Кнопка проиграть">
+            <button class="btn-reset header__btn header__btn--play" aria-label="Кнопка проиграть сейчас в эфире">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"/>
               </svg>
             </button>
-            <p class="header__bottom-descr">
+            <p class="header__bottom-descr" aria-hidden="true">
               <span class="header__bottom-header">Сейчас в эфире</span>
               <span>«Как так?»</span>
             </p>
           </div>
         </div>
 
-        <div class="header__age">
+        <div class="header__age" aria-label="Возрастные ограничения старше 12 лет">
           <div class="header__info">
             <span>12+</span>
           </div>
@@ -150,8 +150,8 @@
           </p>
           <button class="btn btn-reset hero__btn">Слушать эфир</button>
         </div>
-        <div class="hero__content-right">
-          <img src="img/microphone.png" aria-hidden="true" alt="" class="hero__content-right-img">
+        <div class="hero__content-right" aria-hidden="true">
+          <img src="img/microphone.png" alt="Старинный микрофон" class="hero__content-right-img">
         </div>
       </div>
     </div>
@@ -719,9 +719,10 @@
   <section class="broadcast" id="broadcast">
     <div class="container broadcast__container">
       <h2 class="visually-hidden">Передачи всех авторов</h2>
-      <div class="broadcast__items list-reset">
-        <div class="broadcast__item-first">
-          <div class="title broadcast__title">Передачи</div>
+      <div class="broadcast__items" role="list">
+
+        <div class="broadcast__item-first" role="option">
+          <div class="title broadcast__title" role="heading" aria-label="3">Передачи</div>
           <div class="form-select broadcast__form">
             <label for="fselect" class="form-select__label">Автор:</label>
             <select id="fselect" name="fselect" class="select">
@@ -729,7 +730,7 @@
           </div>
         </div>
 
-        <div class="broadcast__item broadcast__item-1">
+        <div class="broadcast__item broadcast__item-1" role="listitem">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-1.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -749,7 +750,7 @@
             </a>
           </div>
         </div>
-        <div class="broadcast__item broadcast__item-2">
+        <div class="broadcast__item broadcast__item-2" role="listitem">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-2.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -769,7 +770,7 @@
             </a>
           </div>
         </div>
-        <div class="broadcast__item broadcast__item-3">
+        <div class="broadcast__item broadcast__item-3" role="listitem">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-3.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -789,7 +790,7 @@
             </a>
           </div>
         </div>
-        <div class="broadcast__item broadcast__item-4">
+        <div class="broadcast__item broadcast__item-4" role="listitem">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-4.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -809,7 +810,7 @@
             </a>
           </div>
         </div>
-        <div class="broadcast__item broadcast__item-5">
+        <div class="broadcast__item broadcast__item-5" role="listitem">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-5.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -829,7 +830,7 @@
             </a>
           </div>
         </div>
-        <div class="broadcast__item broadcast__item-6">
+        <div class="broadcast__item broadcast__item-6" role="listitem">
           <picture class="broadcast__item-picture">
             <img src="img/broadcast-6.jpg" alt="Обложка передачи" class="broadcast__item-img">
           </picture>
@@ -851,15 +852,15 @@
         </div>
 
         <div class="broadcast__item-last">
-          <picture>
+          <picture aria-hidden="true">
             <source media="(max-width: 576px)" srcset="img/mic-small.png">
             <source media="(max-width: 992px)" srcset="img/mic-phone.png">
             <img src="img/mic.png" alt="Микрофон" class="broadcast__item-img">
           </picture>
 
           <div class="broadcast__item-bottom">
-            <button class="btn-reset btn btn-outline broadcast__item-btn">
-              <span>
+            <button class="btn-reset btn btn-outline broadcast__item-btn" aria-label="Кнопка входа в архив">
+              <span aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round"/>
@@ -1260,31 +1261,34 @@
             <source media="(max-width: 992px)" srcset="img/guest-1-phone.jpg">
             <img src="img/guest-1.jpg" alt="Фото гостя">
           </picture>
-          <ul class="social social-items guests__social list-reset">
+          <ul class="social social-items guests__social list-reset" aria-label="Список доступных соцсетей">
 
             <li class="social-item">
               <a class="social__link icon-link" href="https://instagram.com/" target="_blank">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Instagram</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"/>
                 </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social__link icon-link" href="https://facebook.com/" target="_blank">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Facebook</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M13.78 20V12.26H16.3722L16.76 9.25111H13.78V7.33111C13.78 6.46 14.0222 5.86556 15.2711 5.86556H16.8644V3.17444C16.0931 3.09261 15.3179 3.05292 14.5422 3.05556C12.2456 3.05556 10.6733 4.45778 10.6733 7.03333V9.25111H8.07556V12.26H10.6733V20H1.11111C0.816426 20 0.533811 19.8829 0.325437 19.6746C0.117063 19.4662 0 19.1836 0 18.8889V1.11111C0 0.816426 0.117063 0.533811 0.325437 0.325437C0.533811 0.117063 0.816426 0 1.11111 0H18.8889C19.1836 0 19.4662 0.117063 19.6746 0.325437C19.8829 0.533811 20 0.816426 20 1.11111V18.8889C20 19.1836 19.8829 19.4662 19.6746 19.6746C19.4662 19.8829 19.1836 20 18.8889 20H13.78Z"/>
                 </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social__link icon-link" href="https://twitter.com/" target="_blank">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="visually-hidden">Twitter</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path d="M22.1621 5.65593C21.3986 5.99362 20.589 6.2154 19.7601 6.31393C20.6338 5.79136 21.2878 4.96894 21.6001 3.99993C20.7801 4.48793 19.8811 4.82993 18.9441 5.01493C18.3147 4.34151 17.4804 3.89489 16.571 3.74451C15.6616 3.59413 14.728 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0772 6.14972C11.6979 6.98983 11.6068 7.93171 11.8181 8.82893C10.1552 8.74558 8.52838 8.31345 7.04334 7.56059C5.55829 6.80773 4.24818 5.75097 3.19805 4.45893C2.82634 5.09738 2.63101 5.82315 2.63205 6.56193C2.63205 8.01193 3.37005 9.29293 4.49205 10.0429C3.82806 10.022 3.17869 9.84271 2.59805 9.51993V9.57193C2.59825 10.5376 2.93242 11.4735 3.5439 12.221C4.15538 12.9684 5.00653 13.4814 5.95305 13.6729C5.33667 13.84 4.69036 13.8646 4.06305 13.7449C4.32992 14.5762 4.85006 15.3031 5.55064 15.824C6.25123 16.3449 7.09718 16.6337 7.97005 16.6499C7.10253 17.3313 6.10923 17.8349 5.04693 18.1321C3.98464 18.4293 2.87418 18.5142 1.77905 18.3819C3.69075 19.6114 5.91615 20.264 8.18905 20.2619C15.8821 20.2619 20.0891 13.8889 20.0891 8.36193C20.0891 8.18193 20.0841 7.99993 20.0761 7.82193C20.8949 7.23009 21.6017 6.49695 22.1631 5.65693L22.1621 5.65593Z"/>
                 </svg>
               </a>
             </li>
           </ul>
-          <strong class="guests__content-title" aria-label="ФИО гостя">
+          <strong class="guests__content-title" role="heading" aria-level="4" aria-roledescription="ФИО гостя">
             Ольга Мартынова
           </strong>
           <p class="guests__content-descr">
@@ -1292,7 +1296,7 @@
             &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;,
             коим является с&nbsp;2016&nbsp;года.
           </p>
-          <button class="btn guests__content-btn btn-reset">
+          <button class="btn guests__content-btn btn-reset" aria-label="Кнопка Эфира с гостем">
             Эфиры с гостем
           </button>
         </div>
@@ -1305,67 +1309,69 @@
       <div class="play-lists__row">
         <div class="play-lists__content">
           <h2 class="title play-lists__title">Плейлисты</h2>
-          <p class="play-lists__descr">Жанр</p>
-          <ul class="play-lists__items list-reset">
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check" checked>
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Постпанк</span>
-              </label>
-            </li>
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check">
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Хардкор</span>
-              </label>
-            </li>
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check">
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Панк-рок</span>
-              </label>
-            </li>
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check">
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Рок</span>
-              </label>
-            </li>
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check">
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Прогрессивный рок</span>
-              </label>
-            </li>
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check">
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Электронная музыка</span>
-              </label>
-            </li>
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check">
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Классическая музыка</span>
-              </label>
-            </li>
-            <li class="play-lists__item">
-              <label class="radio-new">
-                <input type="radio" name="rb" class="visually-hidden radio-new-check">
-                <span class="radio-new-checker"></span>
-                <span class="radio-new-caption">Звуки природы и&nbsp;шум города</span>
-              </label>
-            </li>
-          </ul>
+          <fieldset class="fieldset">
+            <legend class="play-lists__legend">Жанр</legend>
+            <ul class="play-lists__items list-reset">
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check" checked>
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Постпанк</span>
+                </label>
+              </li>
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check">
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Хардкор</span>
+                </label>
+              </li>
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check">
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Панк-рок</span>
+                </label>
+              </li>
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check">
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Рок</span>
+                </label>
+              </li>
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check">
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Прогрессивный рок</span>
+                </label>
+              </li>
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check">
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Электронная музыка</span>
+                </label>
+              </li>
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check">
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Классическая музыка</span>
+                </label>
+              </li>
+              <li class="play-lists__item">
+                <label class="radio-new">
+                  <input type="radio" name="rb" class="visually-hidden radio-new-check">
+                  <span class="radio-new-checker"></span>
+                  <span class="radio-new-caption">Звуки природы и&nbsp;шум города</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-        <div class="play-lists__warning">
+        <div class="play-lists__warning" role="alert">
           <p class="play-lists__descr warning">
             Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних.
           </p>
@@ -1375,9 +1381,9 @@
         <ul class="play-lists__cards list-reset">
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-1.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-1.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--ru"></span>
+            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Ploho</h3>
               <p class="descr play-lists__card-descr">3 последних альбома</p>
@@ -1385,9 +1391,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-2.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-2.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--ru"></span>
+            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Molchat Doma</h3>
               <p class="descr play-lists__card-descr">Все песни</p>
@@ -1395,9 +1401,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-3.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-3.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--ru"></span>
+            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Motorama</h3>
               <p class="descr play-lists__card-descr">Все синглы</p>
@@ -1405,9 +1411,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-4.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-4.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--ru"></span>
+            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Human Tetris</h3>
               <p class="descr play-lists__card-descr">3 последних альбома</p>
@@ -1415,9 +1421,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-5.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-5.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--ru"></span>
+            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Буерак</h3>
               <p class="descr play-lists__card-descr">Все EP</p>
@@ -1425,9 +1431,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-6.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-6.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--ru"></span>
+            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Июльские Дни</h3>
               <p class="descr play-lists__card-descr">Альбом &laquo;Колокол&raquo;</p>
@@ -1435,9 +1441,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-7.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-7.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--en"></span>
+            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Joy Division</h3>
               <p class="descr play-lists__card-descr">Лучшее за всё время</p>
@@ -1445,9 +1451,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-8.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-8.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--en"></span>
+            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">The Cure</h3>
               <p class="descr play-lists__card-descr">Лучшее за всё время</p>
@@ -1455,9 +1461,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-9.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-9.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--en"></span>
+            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">The Smiths</h3>
               <p class="descr play-lists__card-descr">Период 1984-1988</p>
@@ -1465,9 +1471,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-10.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-10.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--en"></span>
+            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">New Order</h3>
               <p class="descr play-lists__card-descr">Хиты</p>
@@ -1475,9 +1481,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-11.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-11.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--en"></span>
+            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Bauhaus</h3>
               <p class="descr play-lists__card-descr">Все синглы</p>
@@ -1485,9 +1491,9 @@
           </li>
           <li class="play-lists__card">
             <picture class="play-lists__card-picture">
-              <img class="play-lists__card-img" src="img/play-list-12.jpg" alt="Обложка альбола">
+              <img class="play-lists__card-img" src="img/play-list-12.jpg" alt="Обложка альбома">
             </picture>
-            <span class="play-lists__card-flag flag flag--en"></span>
+            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
             <div class="play-lists__card-content">
               <h3 class="title play-lists__card-title">Gang Of Four</h3>
               <p class="descr play-lists__card-descr">3 последних альбома</p>
