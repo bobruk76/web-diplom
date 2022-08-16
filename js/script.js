@@ -167,11 +167,25 @@ podcastsItemsBtn.forEach(podcastsItem =>
 
 // podcasts__btn
 const podcastsBtn = document.querySelector('.podcasts__btn')
-const podcastsItems = [...document.querySelectorAll('.podcasts__item')].slice(-4)
+const podcastsItems = document.querySelectorAll('.podcasts__item')
+let podcastsItemsHide = [...podcastsItems].slice((+window.innerWidth < 577) ? 8 : 4)
+
+window.addEventListener('resize', () =>{
+    let count = (+window.innerWidth < 577) ? -8 : -4
+    podcastsItemsHide = [...podcastsItems].slice(count)
+
+    podcastsItems.forEach(item => {
+        if (podcastsItemsHide.includes(item)) {
+            item.classList.add('podcasts__item--hide')
+        } else {
+            item.classList.remove('podcasts__item--hide')
+        }
+    })
+})
 
 podcastsBtn.addEventListener('click', (event) => {
     event.preventDefault()
-    podcastsItems.forEach(item => {
+    podcastsItemsHide.forEach(item => {
         item.classList.toggle('podcasts__item--hide')
     })
 })
