@@ -78,11 +78,6 @@ validation
             errorMessage: 'Вы не ввели имя',
         },
 
-        {
-            rule: 'customRegexp',
-            value: /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/,
-            errorMessage: 'Ошибка',
-        },
     ])
     .addField('#email', [
         {
@@ -121,13 +116,6 @@ searchButton.addEventListener('click', () => {
     }
 
 })
-
-function overWords() {
-    let a, w = document.createNodeIterator(document, NodeFilter.SHOW_TEXT);
-    while (a = w.nextNode()) {
-        if (a.textContent.trim().length && a.parentNode.tagName != 'STYLE' && a.parentNode.tagName !== 'TITLE' && a.parentNode.tagName !== 'SCRIPT') a.textContent = 'Одиннадцатиклассница пошла посмотреть на достопримечательность, а Константин Константинопольский рассказал о клиентоориентированности.'
-    }
-}
 
 // guests__item
 const guestsItems = document.querySelectorAll('.guests__item')

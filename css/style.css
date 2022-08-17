@@ -1088,26 +1088,32 @@ body {
 
 .broadcast__item-1 {
   order: 1;
+  background-image: url("../img/broadcast-1.jpg");
 }
 
 .broadcast__item-2 {
   order: 2;
+  background-image: url("../img/broadcast-2.jpg");
 }
 
 .broadcast__item-3 {
   order: 3;
+  background-image: url("../img/broadcast-3.jpg");
 }
 
 .broadcast__item-4 {
   order: 5;
+  background-image: url("../img/broadcast-4.jpg");
 }
 
 .broadcast__item-5 {
   order: 6;
+  background-image: url("../img/broadcast-5.jpg");
 }
 
 .broadcast__item-6 {
   order: 7;
+  background-image: url("../img/broadcast-6.jpg");
 }
 
 .broadcast__item-last {
@@ -1135,11 +1141,16 @@ body {
 
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 
   width: calc(25% - 22px);
   max-width: 25%;
 
   cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
 }
 
 .broadcast__item:hover .broadcast__item-picture:after {
@@ -1219,6 +1230,7 @@ body {
 
   min-height: 111px;
   border: 1px solid var(--color-athens-gray);
+  background-color: var(--color-bg);
 }
 
 .broadcast__item-last .broadcast__item-img {

@@ -831,7 +831,7 @@
 
   .footer__social {
     margin-right: 0;
-    justify-content: flex-start;
+    justify-content: center;
     width: 216px;
   }
 
@@ -1188,6 +1188,8 @@
     position: relative;
 
     min-height: 149px;
+
+    background-size: 100% auto;
   }
 
   .broadcast__item-down {
@@ -1437,7 +1439,14 @@
   }
 
   .play-lists__card-picture {
+    margin: 0;
+
+    width: 100%;
     max-width: initial;
+  }
+
+  .play-lists__card-img {
+    width: 100%;
   }
 
   .play-lists__card-title {
@@ -1517,10 +1526,6 @@
 
   .play-lists__card {
     margin-bottom: 30px;
-  }
-
-  .play-lists__card-picture {
-    margin: 0;
   }
 
   .play-lists__card-flag {
