@@ -168,7 +168,7 @@ podcastsItemsBtn.forEach(podcastsItem =>
 // podcasts__btn
 const podcastsBtn = document.querySelector('.podcasts__btn')
 const podcastsItems = document.querySelectorAll('.podcasts__item')
-let podcastsItemsHide = [...podcastsItems].slice((+window.innerWidth < 577) ? 8 : 4)
+let podcastsItemsHide = [...podcastsItems].slice((+window.innerWidth < 577) ? -8 : -4)
 
 window.addEventListener('resize', () =>{
     let count = (+window.innerWidth < 577) ? -8 : -4
