@@ -1695,10 +1695,6 @@ body {
   opacity: 1;
 }
 
-
-
-
-
 .play-lists__card:active .play-lists__card-content{
   background-color: var(--color-daisy-bush);
   color: var(--color-bg);

@@ -158,7 +158,7 @@ const podcastsBtn = document.querySelector('.podcasts__btn')
 const podcastsItems = document.querySelectorAll('.podcasts__item')
 let podcastsItemsHide = [...podcastsItems].slice((+window.innerWidth < 577) ? -8 : -4)
 
-window.addEventListener('resize', () =>{
+window.addEventListener('resize', () => {
     let count = (+window.innerWidth < 577) ? -8 : -4
     podcastsItemsHide = [...podcastsItems].slice(count)
 
@@ -178,7 +178,7 @@ podcastsBtn.addEventListener('click', (event) => {
     })
 })
 
-document.querySelector('.play-lists__row')
-    .addEventListener('submit', (event) => {
-        event.preventDefault()
-    })
+const playListsBtn = document.querySelector('.play-lists__row')
+playListsBtn.addEventListener('submit', (event) => {
+    event.preventDefault()
+})

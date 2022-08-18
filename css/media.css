@@ -1438,8 +1438,6 @@
   }
 
   .play-lists__card {
-
-
     width: 44%;
     min-width: 40%;
   }
@@ -1479,7 +1477,7 @@
   }
 
   .play-lists__items {
-    transform: translateX(-2px);
+    /*transform: translateX(-2px);*/
 
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1533,6 +1531,11 @@
 
   .play-lists__card {
     margin-bottom: 30px;
+  }
+
+  .play-lists__card-btn {
+    top: 59px;
+    left: calc(50% - 24px);
   }
 
   .play-lists__card-flag {
