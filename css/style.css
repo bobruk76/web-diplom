@@ -157,6 +157,7 @@ body {
   width: 24px;
 
   border: var(--color-mirage) solid 4px;
+  transition: opacity .3s ease-in-out;
 }
 
 .flag--en {
@@ -1146,6 +1147,8 @@ body {
   width: calc(25% - 22px);
   max-width: 25%;
 
+  min-height: 259px;
+
   cursor: pointer;
 
   background-repeat: no-repeat;
@@ -1564,6 +1567,7 @@ body {
 }
 
 .play-lists__cards {
+  margin: 0;
   padding: 13px 0 0;
 
   align-self: flex-end;
@@ -1575,10 +1579,11 @@ body {
   align-items: flex-start;
 
   max-width: calc((100% * 2 / 3) - 10px);
+  border: none;
 }
 
 .play-lists__card {
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 
   position: relative;
 
@@ -1586,16 +1591,16 @@ body {
   flex-direction: column;
 
   max-width: 160px;
-  min-height: 220px;
+  /*min-height: 220px;*/
   cursor: pointer;
 
   border: 1px solid var(--color-athens-gray);
+  background-color: var(--color-mirage);
 
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
-
-.play-lists__card:hover {
-  background-color: var(--color-electric-violet);
+.play-lists__card:hover .play-lists__card-content{
+  background: var(--color-electric-violet);
   color: var(--color-bg);
 }
 
@@ -1603,8 +1608,14 @@ body {
   color: var(--color-bg);
 }
 
-.play-lists__card:hover .play-lists__card-picture:after {
-  opacity: .8;
+.play-lists__card:hover .play-lists__card-content{
+  background: var(--color-electric-violet);
+  color: var(--color-bg);
+}
+
+.play-lists__card:hover .flag,
+.play-lists__card:hover .play-lists__card-img {
+  opacity: .2;
 }
 
 .play-lists__card:hover .play-lists__card-picture:before {
@@ -1637,7 +1648,8 @@ body {
   color: var(--color-bg);
 }
 
-.play-lists__card:active .play-lists__card-picture:after {
+.play-lists__card:active .play-lists__card-img {
+  background-color: var(--color-mirage);
   opacity: .8;
 }
 
@@ -1647,30 +1659,17 @@ body {
 }
 
 .play-lists__card-picture {
-  position: relative;
-  margin: 0 0 16px 0;
+  /*position: relative;*/
+  margin: 0;
   font-size: 0;
   line-height: 0;
-}
-
-.play-lists__card-picture:after {
-  content: "";
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-mirage);
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
 }
 
 .play-lists__card-picture:before {
   content: "";
   position: absolute;
   z-index: 101;
-  top: 0;
+  top: -59px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1682,16 +1681,24 @@ body {
 }
 
 .play-lists__card-img {
-  max-width: 100%;
+  width: 100%;
+
+  transition: opacity .3s ease-in-out;
 }
 
 .play-lists__card-content {
-  padding-left: 16px;
+  padding: 16px 0 16px 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  background-color: var(--color-bg);
+
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .play-lists__card-title {
-  /*padding-left: 16px;*/
-
   font-weight: 500;
   font-size: 16px;
 }

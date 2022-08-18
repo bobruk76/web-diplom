@@ -220,6 +220,7 @@
     order: 2;
 
     max-width: initial;
+    color: var(--color-gray-chateau);
   }
 
   .play-lists__cards {
@@ -227,26 +228,33 @@
     padding-top: 0;
     padding-bottom: 20px;
 
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 
     border-bottom: 1px solid var(--color-mischka);
     max-width: initial;
   }
 
   .play-lists__card {
-    margin-bottom: 13px;
+    margin-bottom: 28px;
 
     flex-direction: row;
 
-    align-items: center;
-
     min-width: 31%;
-    min-height: 129px;
   }
 
   .play-lists__card-picture {
-    margin-right: 9px;
-    max-width: 44%;
+    flex: 1 0 auto;
+    display: flex;
+    height: 100%;
+  }
+
+  .play-lists__card-picture:before {
+    top: 0;
+  }
+
+  .play-lists__card-img {
+    width: initial;
+    height: 112px;
   }
 
   .play-lists__card-flag {
@@ -258,8 +266,9 @@
   }
 
   .play-lists__card-content {
-    padding-left: 0;
-    margin-bottom: 15px;
+    padding: 0 0 0 8px;
+    flex: 1 0 auto;
+    justify-content: center;
   }
 
   .play-lists__row {
@@ -1187,9 +1196,7 @@
 
     position: relative;
 
-    min-height: 149px;
-
-    background-size: 100% auto;
+    min-height: 150px;
   }
 
   .broadcast__item-down {
