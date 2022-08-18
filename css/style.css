@@ -1583,6 +1583,7 @@ body {
 }
 
 .play-lists__card {
+  position: relative;
   margin-bottom: 28px;
 
   position: relative;
@@ -1591,7 +1592,6 @@ body {
   flex-direction: column;
 
   max-width: 160px;
-  /*min-height: 220px;*/
   cursor: pointer;
 
   border: 1px solid var(--color-athens-gray);
@@ -1618,7 +1618,7 @@ body {
   opacity: .2;
 }
 
-.play-lists__card:hover .play-lists__card-picture:before {
+.play-lists__card:hover .play-lists__card-btn {
   opacity: 1;
 }
 
@@ -1659,23 +1659,24 @@ body {
 }
 
 .play-lists__card-picture {
-  /*position: relative;*/
   margin: 0;
+
+  flex: 1 0 auto;
   font-size: 0;
   line-height: 0;
 }
 
-.play-lists__card-picture:before {
-  content: "";
+.play-lists__card-btn {
   position: absolute;
-  z-index: 101;
-  top: -59px;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  z-index: 2;
+  top: 59px;
+  left: calc(50% - 24px);
+
   background-image: url("../img/play_btn_blue.svg");
   background-repeat: no-repeat;
   background-position: center;
+  width: 48px;
+  height: 48px;
   opacity: 0;
   transition: opacity .3s ease-in-out, transform .3s ease-in-out;
 }

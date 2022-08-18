@@ -178,3 +178,7 @@ podcastsBtn.addEventListener('click', (event) => {
     })
 })
 
+document.querySelector('.play-lists__row')
+    .addEventListener('submit', (event) => {
+        event.preventDefault()
+    })
