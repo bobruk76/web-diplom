@@ -1586,8 +1586,6 @@ body {
   position: relative;
   margin-bottom: 28px;
 
-  position: relative;
-
   display: flex;
   flex-direction: column;
 
@@ -1598,64 +1596,6 @@ body {
   background-color: var(--color-mirage);
 
   transition: background-color .3s ease-in-out, color .3s ease-in-out;
-}
-.play-lists__card:hover .play-lists__card-content{
-  background: var(--color-electric-violet);
-  color: var(--color-bg);
-}
-
-.play-lists__card:hover .play-lists__card-descr {
-  color: var(--color-bg);
-}
-
-.play-lists__card:hover .play-lists__card-content{
-  background: var(--color-electric-violet);
-  color: var(--color-bg);
-}
-
-.play-lists__card:hover .flag,
-.play-lists__card:hover .play-lists__card-img {
-  opacity: .2;
-}
-
-.play-lists__card:hover .play-lists__card-btn {
-  opacity: 1;
-}
-
-.play-lists__card:focus {
-  background-color: var(--color-melrose);
-  color: var(--color-mirage);
-}
-
-.play-lists__card:focus .play-lists__card-descr {
-  color: var(--color-mirage);
-}
-
-.play-lists__card:focus .play-lists__card-picture:after {
-  opacity: .8;
-}
-
-.play-lists__card:focus .play-lists__card-picture:before {
-  opacity: 1;
-}
-
-.play-lists__card:active {
-  background-color: var(--color-daisy-bush);
-  color: var(--color-bg);
-}
-
-.play-lists__card:active .play-lists__card-descr {
-  color: var(--color-bg);
-}
-
-.play-lists__card:active .play-lists__card-img {
-  background-color: var(--color-mirage);
-  opacity: .8;
-}
-
-.play-lists__card:active .play-lists__card-picture:before {
-  opacity: 1;
-  transform: scale(calc(49 / 42));
 }
 
 .play-lists__card-picture {
@@ -1707,10 +1647,7 @@ body {
 .play-lists__card-descr {
   font-size: 12px;
   color: var(--color-gray-chateau);
-
-  transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
-
 
 .play-lists__card-flag {
   position: absolute;
@@ -1718,6 +1655,67 @@ body {
 
   right: 0;
   top: 0;
+}
+
+
+.play-lists__card:hover .play-lists__card-content{
+  background: var(--color-electric-violet);
+  color: var(--color-bg);
+}
+
+.play-lists__card:hover .play-lists__card-descr {
+  color: currentColor;
+}
+
+.play-lists__card:hover .play-lists__card-flag,
+.play-lists__card:hover .play-lists__card-img {
+  opacity: .2;
+}
+
+.play-lists__card:hover .play-lists__card-btn {
+  opacity: 1;
+}
+
+
+.play-lists__card:focus .play-lists__card-content{
+  background-color: var(--color-melrose);
+  color: var(--color-mirage);
+}
+
+.play-lists__card:focus .play-lists__card-descr {
+  color: currentColor;
+}
+
+.play-lists__card:focus .play-lists__card-flag,
+.play-lists__card:focus .play-lists__card-img {
+  opacity: .2;
+}
+
+.play-lists__card:focus .play-lists__card-btn {
+  opacity: 1;
+}
+
+
+
+
+
+.play-lists__card:active .play-lists__card-content{
+  background-color: var(--color-daisy-bush);
+  color: var(--color-bg);
+}
+
+.play-lists__card:active .play-lists__card-descr {
+  color: currentColor;
+}
+
+.play-lists__card:active .play-lists__card-flag,
+.play-lists__card:active .play-lists__card-img {
+  opacity: .2;
+}
+
+.play-lists__card:active .play-lists__card-btn {
+  opacity: 1;
+  transform: scale(calc(49 / 42));
 }
 
 .warning {
