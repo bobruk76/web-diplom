@@ -185,7 +185,3 @@ podcastsBtn.addEventListener('click', (event) => {
     podcastsBtn.classList.add('visually-hidden')
 })
 
-const playListsBtn = document.querySelector('.play-lists__row')
-playListsBtn.addEventListener('submit', (event) => {
-    event.preventDefault()
-})
