@@ -1477,20 +1477,22 @@
   }
 
   .play-lists__items {
-    /*transform: translateX(-2px);*/
+    position: relative;
+    overflow-x: scroll;
 
     flex-direction: row;
     flex-wrap: nowrap;
 
-    width: 100%;
-    overflow-x: scroll;
+    width: calc(100vw - (2 * var(--indent)));
   }
 
   .play-lists__item {
+    margin: 0;
     display: flex;
+  }
 
+  .play-lists__item:not(:last-child) {
     margin-right: 16px;
-    margin-bottom: 0;
   }
 
   .play-lists__content {

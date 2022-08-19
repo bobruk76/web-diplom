@@ -156,26 +156,30 @@ podcastsItemsBtn.forEach(podcastsItem =>
 // podcasts__btn
 const podcastsBtn = document.querySelector('.podcasts__btn')
 const podcastsItems = document.querySelectorAll('.podcasts__item')
-let podcastsItemsHide = [...podcastsItems].slice((+window.innerWidth < 577) ? -8 : -4)
+let podcastsItemsHide = [...document.querySelectorAll('.podcasts__item--hide')]
 
-window.addEventListener('resize', () => {
-    let count = (+window.innerWidth < 577) ? -8 : -4
-    podcastsItemsHide = [...podcastsItems].slice(count)
+const podcastsItemsHideInit = () => {
+    if (!podcastsBtn.classList.contains('visually-hidden')) {
+        podcastsItemPlay.classList.remove('podcasts__item-btn--paused')
 
-    podcastsItems.forEach(item => {
-        if (podcastsItemsHide.includes(item)) {
+        const count = (+window.innerWidth < 577) ? -8 : -4
+        podcastsItemsHide = [...podcastsItems].slice(count)
+        podcastsItemsHide.forEach(item => {
             item.classList.add('podcasts__item--hide')
-        } else {
-            item.classList.remove('podcasts__item--hide')
-        }
-    })
-})
+        })
+        podcastsBtn.classList.remove('visually-hidden')
+    }
+}
+
+window.addEventListener("load", podcastsItemsHideInit)
+window.addEventListener("resize", podcastsItemsHideInit)
 
 podcastsBtn.addEventListener('click', (event) => {
     event.preventDefault()
     podcastsItemsHide.forEach(item => {
         item.classList.toggle('podcasts__item--hide')
     })
+    podcastsBtn.classList.add('visually-hidden')
 })
 
 const playListsBtn = document.querySelector('.play-lists__row')

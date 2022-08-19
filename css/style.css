@@ -82,8 +82,11 @@ body {
 .fieldset {
   margin: 0;
   padding: 0;
+
+  width: 100vw;
   border: none;
 
+  overflow: hidden;
 }
 
 .list-reset {
@@ -1487,6 +1490,8 @@ body {
   flex-direction: column;
 
   max-height: 800px;
+
+  overflow: hidden;
 }
 
 .play-lists__warning {
