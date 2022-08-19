@@ -10,7 +10,7 @@
           href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
   />
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.css">
-  <link rel="stylesheet" href="fonts/muller.css">
+  <link rel="preload" href="fonts/muller.css" as="font">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -29,7 +29,7 @@
     <div class="container header__top-content">
       <div class="header__top-row">
         <a class="header__logo" aria-label="Лого" href="#">
-          <picture class="header__logo-picture" aria-hidden="true">
+          <picture class="header__logo-picture">
             <source media="(max-width: 576px)" srcset="img/logo-small.svg">
             <img src="img/logo.svg" alt="Лого" class="header__logo-img">
           </picture>
@@ -132,7 +132,7 @@
           </div>
         </div>
 
-        <div class="header__age" aria-label="Возрастные ограничения старше 12 лет">
+        <div class="header__age" role="alert" aria-roledescription="Возрастные ограничения старше 12 лет">
           <div class="header__info">
             <span>12+</span>
           </div>
@@ -738,7 +738,7 @@
       <h2 class="visually-hidden">Передачи всех авторов</h2>
       <div class="broadcast__items" role="list">
 
-        <div class="broadcast__item-first" role="option">
+        <div class="broadcast__item-first" role="listbox">
           <div class="title broadcast__title" role="heading" aria-label="3">Передачи</div>
           <div class="form-select broadcast__form">
             <label for="fselect" class="form-select__label">Автор:</label>
@@ -851,7 +851,7 @@
         </div>
 
         <div class="broadcast__item-last">
-          <picture aria-hidden="true">
+          <picture>
             <source media="(max-width: 576px)" srcset="img/mic-small.png">
             <source media="(max-width: 992px)" srcset="img/mic-phone.png">
             <img src="img/mic.png" alt="Микрофон" class="broadcast__item-img">
@@ -1379,10 +1379,10 @@
           <span class="copyright">&copy;&nbsp;2021&nbsp;l W-Wave</span>
           <span class="age-warning">18+</span>
         </div>
-        <fieldset class="play-lists__cards">
-          <button class="btn-reset play-lists__card">
+        <ul class="play-lists__cards list-reset">
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-1.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1390,10 +1390,10 @@
                 <p class="descr play-lists__card-descr">3 последних альбома</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-2.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1401,10 +1401,10 @@
                 <p class="descr play-lists__card-descr">Molchat Doma</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-3.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1412,10 +1412,10 @@
                 <p class="descr play-lists__card-descr">Все синглы</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-4.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1423,10 +1423,10 @@
                 <p class="descr play-lists__card-descr">3 последних альбома</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-5.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1434,10 +1434,10 @@
                 <p class="descr play-lists__card-descr">Все EP</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--ru" aria-label="Русский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-6.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1445,10 +1445,10 @@
                 <p class="descr play-lists__card-descr">Альбом &laquo;Колокол&raquo;</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-7.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1456,10 +1456,10 @@
                 <p class="descr play-lists__card-descr">Лучшее за всё время</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-8.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1467,10 +1467,10 @@
                 <p class="descr play-lists__card-descr">Лучшее за всё время</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-9.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1478,10 +1478,10 @@
                 <p class="descr play-lists__card-descr">Период 1984-1988</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-10.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1489,10 +1489,10 @@
                 <p class="descr play-lists__card-descr">Хиты</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-11.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1500,10 +1500,10 @@
                 <p class="descr play-lists__card-descr">Все синглы</p>
               </figcaption>
             </figure>
-          </button>
-          <button class="btn-reset play-lists__card">
+          </li>
+          <li class="btn-reset play-lists__card">
             <span class="play-lists__card-btn" aria-hidden="true"></span>
-            <span class="play-lists__card-flag flag flag--en" aria-label="Английский исполнитель"></span>
+            <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
               <img class="play-lists__card-img" src="img/play-list-12.jpg" alt="Обложка альбома">
               <figcaption class="play-lists__card-content">
@@ -1511,8 +1511,8 @@
                 <p class="descr play-lists__card-descr">3 последних альбома</p>
               </figcaption>
             </figure>
-          </button>
-        </fieldset>
+          </li>
+        </ul>
       </form>
     </div>
   </section>
@@ -1683,8 +1683,8 @@
   <div class="container footer__top">
     <div class="footer__top-row">
       <div class="footer__top-logo">
-        <ul class="social social-items footer__social list-reset">
-          <li class="social-item" aria-label="Список нас в социальных сетях">
+        <ul class="social social-items footer__social list-reset" aria-label="Список нас в социальных сетях">
+          <li class="social-item">
             <a class="social__link icon-link" href="https://www.youtube.com/" target="_blank">
               <span class="visually-hidden">Youtube</span>
               <svg class="social__link-desktop" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1742,7 +1742,7 @@
   <div class="footer__wave" aria-hidden="true">
   </div>
 
-  <div class="container footer__bottom" aria-label="Лого">
+  <div class="container footer__bottom" role="img" aria-roledescription="Лого">
     <p class="footer__bottom-logo" aria-hidden="true">
       W-WAVE <span class="reg">&reg;</span> 2021
     </p>

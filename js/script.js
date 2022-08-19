@@ -160,7 +160,10 @@ let podcastsItemsHide = [...document.querySelectorAll('.podcasts__item--hide')]
 
 const podcastsItemsHideInit = () => {
     if (!podcastsBtn.classList.contains('visually-hidden')) {
-        podcastsItemPlay.classList.remove('podcasts__item-btn--paused')
+        if (podcastsItemPlay) {
+            podcastsItemPlay.classList.remove('podcasts__item-btn--paused')
+        }
+
 
         const count = (+window.innerWidth < 577) ? -8 : -4
         podcastsItemsHide = [...podcastsItems].slice(count)
