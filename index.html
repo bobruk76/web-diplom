@@ -754,7 +754,7 @@
               Анонсируется отдельно
               <!--            <time></time>-->
             </p>
-            <a class="broadcast__item-link">
+            <a class="broadcast__item-link" href="#">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -771,7 +771,7 @@
               По понедельникам в
               <time datetime="10:00">10:00</time>
             </p>
-            <a class="broadcast__item-link">
+            <a class="broadcast__item-link" href="#">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -788,7 +788,7 @@
               По вторникам в
               <time datetime="12:00">12:00</time>
             </p>
-            <a class="broadcast__item-link">
+            <a class="broadcast__item-link" href="#">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -805,7 +805,7 @@
               По пятницам в
               <time datetime="17:00">17:00</time>
             </p>
-            <a class="broadcast__item-link">
+            <a class="broadcast__item-link" href="#">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -822,7 +822,7 @@
               По субботам в
               <time datetime="10:00">10:00</time>
             </p>
-            <a class="broadcast__item-link">
+            <a class="broadcast__item-link" href="#">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -839,7 +839,7 @@
               По воскресеньям в
               <time datetime="15:30">15:30</time>
             </p>
-            <a class="broadcast__item-link">
+            <a class="broadcast__item-link" href="#">
               Подробнее
               <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1254,11 +1254,14 @@
         </div>
 
         <div class="guests__content">
-          <picture class="guests__social-photo">
-            <source media="(max-width: 576px)" srcset="img/guest-1-small.jpg">
-            <source media="(max-width: 992px)" srcset="img/guest-1-phone.jpg">
-            <img src="img/guest-1.jpg" alt="Фото гостя">
-          </picture>
+          <div class="guests__social-photo">
+            <picture>
+              <source media="(max-width: 576px)" srcset="img/guest-1-small.jpg">
+              <source media="(max-width: 992px)" srcset="img/guest-1-phone.jpg">
+              <img src="img/guest-1.jpg" alt="Фото гостя">
+            </picture>
+          </div>
+
           <ul class="social social-items guests__social list-reset" aria-label="Список доступных соцсетей">
 
             <li class="social-item">

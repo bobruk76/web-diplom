@@ -1347,6 +1347,7 @@ body {
 }
 
 .guests__content {
+  width: 350px;
   max-width: calc((100% / 3) - 20px);
 }
 
@@ -1428,10 +1429,19 @@ body {
 .guests__accordion-item.is-active .arrow-in-circle {
   transform: rotate(180deg);
 }
+.guests__social-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.guests__social-photo > img {
+  margin: 0 0 8px 0;
+  width: 350px;
+  height: 220px;
+  background-color: var(--color-charade);
+}
+
+.guests__social-photo img {
   max-width: 100%;
-  margin-bottom: 8px;
 }
 
 .guests__content-title {

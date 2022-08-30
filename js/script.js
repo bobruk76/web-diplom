@@ -118,14 +118,29 @@ searchButton.addEventListener('click', () => {
 })
 
 // guests__item
+const guestsSocialPhoto = document.querySelector('.guests__social-photo').firstElementChild
+const guestsContentDescr = document.querySelector('.guests__content-descr')
+const guestsContentTitle = document.querySelector('.guests__content-title')
 const guestsItems = document.querySelectorAll('.guests__item')
 let guestsItemsActive = document.querySelectorAll('.guests__item--active')
 guestsItems.forEach(guestsItem =>
-    guestsItem.addEventListener('click', () => {
+    guestsItem.addEventListener('click', (e) => {
         if (!guestsItem.classList.contains('guests__item--active')) {
             guestsItemsActive.forEach(item =>
                 item.classList.remove('guests__item--active'))
             guestsItem.classList.add('guests__item--active')
+            guestsContentTitle.textContent = guestsItem.firstElementChild.textContent
+            guestsContentDescr.textContent = guestsItem.firstElementChild.textContent
+            let children=[...guestsSocialPhoto.children]
+            children.forEach(photo => {
+                if(photo.hasAttribute("src")) {
+                    photo.src = "img/guests-none.svg"
+
+                } else {
+                    photo.srcset = "img/guests-none.svg"
+                }
+
+            })
         }
         guestsItemsActive = [guestsItem]
     }))
