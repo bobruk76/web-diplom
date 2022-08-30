@@ -1407,7 +1407,8 @@
     padding-top: 30px;
   }
 
-  .guests__social-photo > img {
+  .guests__social-photo {
+    height: 159px;
     margin-bottom: 13px;
   }
 
