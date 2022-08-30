@@ -1435,7 +1435,6 @@ body {
   align-items: center;
 
   margin: 0 0 8px 0;
-  width: 350px;
   height: 220px;
   background-color: var(--color-charade);
 }

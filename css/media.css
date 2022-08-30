@@ -173,10 +173,15 @@
     padding-bottom: 96px;
   }
 
-  .guests__social-photo > img {
+  .guests__social-photo {
+    height: 159px;
     margin-bottom: 5px;
   }
 
+  .guests__social-photo img {
+    width: 138px;
+    height: 92px;
+  }
   .guests__items {
     columns: 3 auto;
     column-gap: 30px;
