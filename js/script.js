@@ -40,14 +40,12 @@ playButtons.forEach(item => {
     })
 })
 
-let openOnItem = (+window.innerWidth < 577) ? 4 : 0
-
 const accordion = new Accordion('.guests__accordion', {
     duration: 300,
     elementClass: 'guests__accordion-item',
     panelClass: 'guests__items',
     triggerClass: 'guests__accordion-item-title',
-    openOnInit: [openOnItem],
+    openOnInit: [0],
 })
 
 
@@ -199,4 +197,3 @@ podcastsBtn.addEventListener('click', (event) => {
     })
     podcastsBtn.classList.add('visually-hidden')
 })
-
