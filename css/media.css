@@ -182,6 +182,7 @@
     width: 138px;
     height: 92px;
   }
+
   .guests__items {
     columns: 3 auto;
     column-gap: 30px;
@@ -656,7 +657,7 @@
   }
 
   .guests__accordion {
-    max-width: 100%;
+    min-width: 100%;
   }
 
   .guests__accordion-item.is-active .guests__items {
@@ -667,15 +668,21 @@
     padding-top: 49px;
     padding-bottom: 0;
 
-    max-width: 100%;
+    min-width: 100%;
   }
 
   .guests__content-descr {
     width: 75%;
   }
 
-  .guests__social-photo > img {
+  .guests__social-photo {
+    width: 100%;
+    height: 220px;
     margin-bottom: 7px;
+  }
+
+  .guests__social-photo img {
+    height: 145px;
   }
 
   .guests__social {
