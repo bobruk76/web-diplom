@@ -1721,26 +1721,21 @@ body {
 }
 
 /* active */
-.play-lists__card:active .play-lists__card-content {
+.play-lists__card-btn:active ~ .play-lists__card-picture .play-lists__card-content {
   background-color: var(--color-daisy-bush);
   color: var(--color-bg);
 }
 
-.play-lists__card:active .play-lists__card-descr {
+.play-lists__card-btn:active ~ .play-lists__card-picture .play-lists__card-descr {
   color: currentColor;
 }
 
-.play-lists__card:active .play-lists__card-flag,
-.play-lists__card:active .play-lists__card-img {
+.play-lists__card-btn:active ~ .play-lists__card-picture .play-lists__card-img,
+.play-lists__card-btn:active ~ .play-lists__card-flag {
   opacity: .2;
 }
 
-.play-lists__card:active .play-lists__card-btn {
-  opacity: 1;
-  transform: scale(calc(49 / 42));
-}
-
-.play-lists__card-btn:active > .play-lists__card-btn:after {
+.play-lists__card-btn:active:after {
   opacity: 1;
   transform: scale(calc(49 / 42));
 }
