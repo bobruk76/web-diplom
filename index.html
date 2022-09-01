@@ -16,7 +16,7 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <title>Радио W-Wawe</title>
 
-<!--  scripts  -->
+  <!--  scripts  -->
   <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script defer src="https://unpkg.com/accordion-js@3.2.0/dist/accordion.min.js"></script>
   <script defer src="js/inputmask.min.js"></script>
@@ -736,7 +736,7 @@
   <section class="broadcast" id="broadcast">
     <div class="container broadcast__container">
       <h2 class="visually-hidden">Передачи всех авторов</h2>
-      <div class="broadcast__items" role="list">
+      <div class="broadcast__content">
 
         <div class="broadcast__item-first">
           <div class="title broadcast__title" role="heading" aria-label="3">Передачи</div>
@@ -747,108 +747,110 @@
           </div>
         </div>
 
-        <div class="broadcast__item broadcast__item-1" role="button">
-          <div class="broadcast__item-down">
-            <h3 class="broadcast__item-title title">О&nbsp;людях и&nbsp;книгах</h3>
-            <p class="descr broadcast__item-descr">
-              Анонсируется отдельно
-              <!--            <time></time>-->
-            </p>
-            <a class="broadcast__item-link" href="#">
-              Подробнее
-              <span>
+        <ul class="broadcast__items list-reset">
+          <li class="broadcast__item broadcast__item-1" role="button">
+            <div class="broadcast__item-down">
+              <h3 class="broadcast__item-title title">О&nbsp;людях и&nbsp;книгах</h3>
+              <p class="descr broadcast__item-descr">
+                Анонсируется отдельно
+                <!--            <time></time>-->
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+                <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
                 </svg>
               </span>
-            </a>
-          </div>
-        </div>
-        <div class="broadcast__item broadcast__item-2" role="button">
-          <div class="broadcast__item-down">
-            <h3 class="broadcast__item-title title">Графомания&nbsp;td.</h3>
-            <p class="descr broadcast__item-descr">
-              По понедельникам в
-              <time datetime="10:00">10:00</time>
-            </p>
-            <a class="broadcast__item-link" href="#">
-              Подробнее
-              <span>
+              </a>
+            </div>
+          </li>
+          <li class="broadcast__item broadcast__item-2" role="button">
+            <div class="broadcast__item-down">
+              <h3 class="broadcast__item-title title">Графомания&nbsp;td.</h3>
+              <p class="descr broadcast__item-descr">
+                По понедельникам в
+                <time datetime="10:00">10:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+                <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
                 </svg>
               </span>
-            </a>
-          </div>
-        </div>
-        <div class="broadcast__item broadcast__item-3" role="button">
-          <div class="broadcast__item-down">
-            <h3 class="broadcast__item-title title">Не&nbsp;Рим, не&nbsp;Троя</h3>
-            <p class="descr broadcast__item-descr">
-              По вторникам в
-              <time datetime="12:00">12:00</time>
-            </p>
-            <a class="broadcast__item-link" href="#">
-              Подробнее
-              <span>
+              </a>
+            </div>
+          </li>
+          <li class="broadcast__item broadcast__item-3" role="button">
+            <div class="broadcast__item-down">
+              <h3 class="broadcast__item-title title">Не&nbsp;Рим, не&nbsp;Троя</h3>
+              <p class="descr broadcast__item-descr">
+                По вторникам в
+                <time datetime="12:00">12:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+                <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
                 </svg>
               </span>
-            </a>
-          </div>
-        </div>
-        <div class="broadcast__item broadcast__item-4" role="button">
-          <div class="broadcast__item-down">
-            <h3 class="broadcast__item-title title">Эрудит</h3>
-            <p class="descr broadcast__item-descr">
-              По пятницам в
-              <time datetime="17:00">17:00</time>
-            </p>
-            <a class="broadcast__item-link" href="#">
-              Подробнее
-              <span>
+              </a>
+            </div>
+          </li>
+          <li class="broadcast__item broadcast__item-4" role="button">
+            <div class="broadcast__item-down">
+              <h3 class="broadcast__item-title title">Эрудит</h3>
+              <p class="descr broadcast__item-descr">
+                По пятницам в
+                <time datetime="17:00">17:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+                <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
                 </svg>
               </span>
-            </a>
-          </div>
-        </div>
-        <div class="broadcast__item broadcast__item-5" role="button">
-          <div class="broadcast__item-down">
-            <h3 class="broadcast__item-title title">Тонкости эпох</h3>
-            <p class="descr broadcast__item-descr">
-              По субботам в
-              <time datetime="10:00">10:00</time>
-            </p>
-            <a class="broadcast__item-link" href="#">
-              Подробнее
-              <span>
+              </a>
+            </div>
+          </li>
+          <li class="broadcast__item broadcast__item-5" role="button">
+            <div class="broadcast__item-down">
+              <h3 class="broadcast__item-title title">Тонкости эпох</h3>
+              <p class="descr broadcast__item-descr">
+                По субботам в
+                <time datetime="10:00">10:00</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+                <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
                 </svg>
               </span>
-            </a>
-          </div>
-        </div>
-        <div class="broadcast__item broadcast__item-6" role="button">
-          <div class="broadcast__item-down">
-            <h3 class="broadcast__item-title title">Живые мысли</h3>
-            <p class="descr broadcast__item-descr">
-              По воскресеньям в
-              <time datetime="15:30">15:30</time>
-            </p>
-            <a class="broadcast__item-link" href="#">
-              Подробнее
-              <span>
+              </a>
+            </div>
+          </li>
+          <li class="broadcast__item broadcast__item-6" role="button">
+            <div class="broadcast__item-down">
+              <h3 class="broadcast__item-title title">Живые мысли</h3>
+              <p class="descr broadcast__item-descr">
+                По воскресеньям в
+                <time datetime="15:30">15:30</time>
+              </p>
+              <a class="broadcast__item-link" href="#">
+                Подробнее
+                <span>
                 <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
                 </svg>
               </span>
-            </a>
-          </div>
-        </div>
+              </a>
+            </div>
+          </li>
+        </ul>
 
         <div class="broadcast__item-last">
           <picture>
@@ -1383,7 +1385,7 @@
           <span class="age-warning">18+</span>
         </div>
         <ul class="play-lists__cards list-reset">
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
@@ -1394,7 +1396,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
@@ -1405,7 +1407,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
@@ -1416,7 +1418,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
@@ -1427,7 +1429,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
@@ -1438,7 +1440,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--ru"></span>
             <figure class="play-lists__card-picture">
@@ -1449,7 +1451,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
@@ -1460,7 +1462,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
@@ -1471,7 +1473,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
@@ -1482,7 +1484,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
@@ -1493,7 +1495,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">
@@ -1504,7 +1506,7 @@
               </figcaption>
             </figure>
           </li>
-          <li class="play-lists__card" role="menuitemradio">
+          <li class="play-lists__card">
             <button class="btn-reset play-lists__card-btn" aria-label="Кнопка проиграть альбом"></button>
             <span class="play-lists__card-flag flag flag--en"></span>
             <figure class="play-lists__card-picture">

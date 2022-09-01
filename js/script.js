@@ -176,8 +176,6 @@ const podcastsItemsHideInit = () => {
         if (podcastsItemPlay) {
             podcastsItemPlay.classList.remove('podcasts__item-btn--paused')
         }
-
-
         const count = (+window.innerWidth < 577) ? -8 : -4
         podcastsItemsHide = [...podcastsItems].slice(count)
         podcastsItemsHide.forEach(item => {
