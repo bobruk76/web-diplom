@@ -139,6 +139,10 @@
     padding-bottom: 64px;
   }
 
+  .broadcast__content {
+    height: 840px;
+  }
+
   .broadcast__items {
     max-width: calc((200% / 3) - 30px);
     width: 840px;
@@ -162,7 +166,7 @@
     margin-right: 0;
   }
 
-  .broadcast__item:not(:nth-child(-n+2)) {
+  .broadcast__item:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
 
