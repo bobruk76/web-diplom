@@ -1209,7 +1209,7 @@
     width: 100%;
   }
 
-  .broadcast__item:not(:first-child):not(:last-child) {
+  .broadcast__item {
     margin-bottom: 29px;
 
     display: flex;
@@ -1220,8 +1220,12 @@
     min-height: 150px;
   }
 
+  .broadcast__items {
+    margin-bottom: 29px;
+  }
+
   .broadcast__item-down {
-    padding: 10px 0 0;
+    padding: 10px 0 10px 10px;
 
     min-height: 100px;
   }
@@ -1244,9 +1248,6 @@
   .broadcast__item-title {
     margin-bottom: 5px;
 
-    padding-left: 9px;
-    padding-right: 9px;
-
     font-weight: 500;
     font-size: 12px;
     line-height: 12px;
@@ -1261,8 +1262,6 @@
 
   .broadcast__item-descr {
     margin: 0;
-    padding-left: 9px;
-    padding-right: 15px;
     flex-grow: 5;
     font-weight: 400;
     font-size: 9px;
@@ -1270,9 +1269,6 @@
   }
 
   .broadcast__item-link {
-    padding-bottom: 11px;
-    padding-left: 10px;
-
     color: var(--color-electric-violet);
     font-weight: 400;
     font-size: 12px;
@@ -1413,12 +1409,12 @@
   }
 
   .guests__content {
-    padding-top: 30px;
+    padding-top: 33px;
   }
 
   .guests__social-photo {
     height: 159px;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
   }
 
   .guests__social {
@@ -1464,16 +1460,25 @@
     min-width: 40%;
   }
 
+  .play-lists__card-btn:after {
+     top: 0;
+     left: 0;
+    right: 0;
+  }
+
   .play-lists__card-picture {
     margin: 0;
 
     flex-direction: column;
     align-items: flex-start;
+    height: initial;
   }
 
   .play-lists__card-img {
     flex: 0;
     width: 100%;
+
+    object-fit: cover;
   }
 
   .play-lists__card-title {
@@ -1555,6 +1560,8 @@
 
   .play-lists__card {
     margin-bottom: 29px;
+
+    overflow: hidden;
   }
 
   .play-lists__card-btn {
