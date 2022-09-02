@@ -129,11 +129,11 @@ guestsItems.forEach(guestsItem =>
             guestsItem.classList.add('guests__item--active')
             guestsContentTitle.textContent = guestsItem.firstElementChild.textContent
             guestsContentDescr.textContent = guestsItem.firstElementChild.textContent
-            let children=[...guestsSocialPhoto.children]
+            guestsSocialPhoto.classList.add("guests__social-photo-img--none")
+            let children = [...guestsSocialPhoto.children]
             children.forEach(photo => {
-                if(photo.hasAttribute("src")) {
+                if (photo.hasAttribute("src")) {
                     photo.src = "img/guests-none.svg"
-
                 } else {
                     photo.srcset = "img/guests-none.svg"
                 }
