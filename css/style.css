@@ -1047,7 +1047,6 @@ body {
   fill: currentColor;
 }
 
-
 .reactions__btn:hover {
   color: var(--color-electric-violet);
 }
@@ -1085,7 +1084,7 @@ body {
 /* broadcast */
 .broadcast__container {
   padding-top: 108px;
-  padding-bottom: 66px;
+  padding-bottom: 94px;
 }
 
 .broadcast__title {
@@ -1103,13 +1102,13 @@ body {
 
 .broadcast__item-first {
   order: 0;
-  margin-right: 30px;
+  margin-right: 20px;
   flex: 1 0 auto;
 }
 
 .broadcast__item-last {
   order: 1;
-  margin-right: 30px;
+  margin-right: 20px;
   flex: 0 0 auto;
 
 
@@ -1160,6 +1159,7 @@ body {
 }
 
 .broadcast__item {
+  position: relative;
   margin-bottom: 30px;
 
   display: flex;
@@ -1183,50 +1183,6 @@ body {
 
 .broadcast__item:nth-last-child(-n+3) {
   margin-bottom: 0;
-}
-
-.broadcast__item:hover .broadcast__item-picture:after {
-  opacity: .7;
-}
-
-.broadcast__item:hover .broadcast__item-link {
-  color: var(--color-electric-violet);
-}
-
-.broadcast__item:focus-visible .broadcast__item-link,
-.broadcast__item:focus .broadcast__item-link {
-  padding: 0 5px 0 2px;
-  background-color: var(--color-melrose);
-  color: var(--color-bg);
-}
-
-.broadcast__item:focus .broadcast__item-link:after {
-  opacity: 1;
-}
-
-.broadcast__item:active .broadcast__item-link {
-  color: var(--color-daisy-bush);
-}
-
-.broadcast__item-picture {
-  position: relative;
-  margin: 0;
-  font-size: 0;
-  line-height: 0;
-}
-
-.broadcast__item-picture:after {
-  content: "";
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-bg);
-  opacity: 0;
-
-  transition: opacity .3s ease-in-out;
 }
 
 .broadcast__item-first {
@@ -1282,6 +1238,34 @@ body {
 
 .broadcast__item-link > span > svg {
   fill: currentColor;
+}
+
+.broadcast__item-link:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.broadcast__item-link:hover {
+  color: var(--color-electric-violet);
+}
+
+.broadcast__item-link:focus {
+  padding: 0 5px 0 2px;
+  background-color: var(--color-melrose);
+  color: var(--color-bg);
+}
+
+.broadcast__item-link:focus:after {
+  opacity: 1;
+}
+
+.broadcast__item-link:active {
+  color: var(--color-daisy-bush);
 }
 
 .broadcast__item-btn {
@@ -1518,6 +1502,7 @@ body {
 .play-lists__warning {
   max-width: calc(100% / 3);
   line-height: 137%;
+  color: var(--color-gray-chateau);
 }
 
 
@@ -1543,7 +1528,7 @@ body {
 
 .play-lists__items {
   padding-bottom: 13px;
-  margin-bottom: 29px;
+  margin-bottom: 13px;
 
   display: flex;
   flex-direction: column;
